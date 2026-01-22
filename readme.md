@@ -1,6 +1,5 @@
-Here is a clean, straightforward, and technical README.md, focused on how the project works and how to run it, without marketing jargon.
-AuraCEAF V4
-AuraCEAF is an architecture for AI agents that combines deterministic processing (structured code) with language models (LLMs).
+
+AuraX is an architecture for AI agents that combines deterministic processing (structured code) with language models (LLMs).
 Unlike common chatbots that only respond to the last prompt, this system has a "cognitive loop" managed via queues, vector long-term memory, and an "internal state" system (simulating fatigue, curiosity, and epistemic tension).
 What does it do?
 Geometric Perception: Before responding, the system mathematically calculates (via vectors) whether the user's message is new or repetitive.
