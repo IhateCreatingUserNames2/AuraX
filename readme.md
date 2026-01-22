@@ -1,77 +1,155 @@
+# AuraX
 
-AuraX is an architecture for AI agents that combines deterministic processing (structured code) with language models (LLMs).
-Unlike common chatbots that only respond to the last prompt, this system has a "cognitive loop" managed via queues, vector long-term memory, and an "internal state" system (simulating fatigue, curiosity, and epistemic tension).
-What does it do?
-Geometric Perception: Before responding, the system mathematically calculates (via vectors) whether the user's message is new or repetitive.
-Hybrid Memory: Uses Qdrant to store memories and retrieve them by semantic similarity.
-Resilient Orchestration: Uses Temporal.io to manage the flow of thought. If the server crashes in the middle of a thought process, it resumes from where it left off.
+AuraX is a neuro-symbolic architecture for AI agents that addresses limitations in theory of mind and temporal reasoning found in standard language models. The system implements geometric state representation and persistent memory through vector databases, enabling coherent perspective-taking and continuous temporal dynamics.
 
-Vector Steering (Optional): If running locally with a GPU, it can inject vectors directly into the model layers (via soul_engine.py) to alter the AI ​​behavior without using prompts.
+## Architecture Overview
 
-Architecture
-The system consists of 4 main parts that need to run simultaneously:
-Infrastructure (Docker): Database (Postgres), Cache (Redis), Vector Memory (Qdrant), and Task Queue (Temporal).
-API (FastAPI): Receives requests from the Frontend and manages users.
-Worker (Temporal Worker): The "brain" that processes heavy tasks in the background.
-Soul Engine (Optional): Local inference server for LLM models (e.g., Qwen) with vector injection.
+The architecture separates knowledge states using geometric constraints in vector space, preventing information leakage between agent perspective and external context. This structural approach solves the perspective-taking failures documented in comparative cognition studies (chimpanzee baseline tasks).
 
-Prerequisites
-Python 3.10+
-Docker Desktop (Required to run the infrastructure)
-Git
-Installation
-1. Clone the repository
-code
-Bash
-git clone https://github.com/your-username/auraceaf-v4.git
-cd auraceaf-v4
-2. Create the virtual environment and install dependencies
-code
-Bash
+### Core Components
+
+**Geometric State Engine**: Calculates epistemic tension using vector distances in embedding space. State transitions are modeled on manifolds rather than Euclidean space, allowing continuous evolution of internal parameters (curiosity, fatigue, coherence metrics).
+
+**Memory System**: Qdrant vector database implements retrieval-based knowledge access. The agent's knowledge is constrained to retrieved context, preventing omniscient behavior that violates theory of mind requirements.
+
+**Temporal Dynamics**: Redis-based exponential decay functions replace discrete time steps. Memory strength and activation energy degrade continuously, implementing liquid time-constant networks without requiring recurrent architectures.
+
+**Workflow Orchestration**: Temporal.io manages cognitive loops with checkpoint recovery. Processing failures resume from last committed state rather than restarting.
+
+**Vector Steering (Optional)**: Direct layer-wise vector injection for model behavior modification during inference. Requires GPU deployment with supported model formats.
+
+## System Requirements
+
+- Python 3.10+
+- Docker Desktop
+- 8GB RAM minimum (16GB recommended)
+- NVIDIA GPU (optional, for soul_engine)
+
+## Installation
+
+```bash
+git clone https://github.com/your-username/aurax.git
+cd aurax
+
+# Create virtual environment
 python -m venv .venv
-# Windows:
+
+# Activate environment
+# Windows
 .venv\Scripts\activate
-# Linux/Mac:
+# Linux/macOS
 source .venv/bin/activate
 
+# Install dependencies
 pip install -r requirements.txt
-3. Configure environment variables
-Create a .env file in the project root. Here's an example below:
+```
 
-code
-Ini
-# .env
+## Configuration
+
+Create `.env` file in project root:
+
+```ini
+# Database connections
 DATABASE_URL=postgresql+asyncpg://ceaf_user:ceaf_pass@localhost:5433/ceaf_db
 REDIS_URL=redis://localhost:6379/0
 QDRANT_URL=http://localhost:6333
 TEMPORAL_HOST=localhost:7233
 
-# API Keys (If using cloud)
-OPENROUTER_API_KEY=your-key-here
-
-# Inference Configuration (local or cloud)
-# Use 'openrouter' for external API or 'vastai' to run with the local soul_engine
+# Inference mode: 'openrouter' or 'vastai'
 INFERENCE_MODE=openrouter
+OPENROUTER_API_KEY=your-key-here
 VASTAI_ENDPOINT=http://localhost:1111
-How to Run
-You will need 3 (or 4) open terminals.
+```
 
-Step 1: Set up the Infrastructure (Docker)
-The system depends on Postgres, Redis, Qdrant, and Temporal. Do not attempt to run Python without them.
+## Deployment
 
-code.Bash: `docker compose up -d postgres redis qdrant temporal temporal-ui`
-Wait approximately 30 seconds for Temporal to initialize the database.
+### 1. Infrastructure Services
 
-Step 2: Run the API (Terminal 1)
-This is the server that serves the website and receives messages.
+```bash
+docker compose up -d postgres redis qdrant temporal temporal-ui
+```
 
-code.Bash: `python main_app.py`
-Access the frontend at: http://localhost:8000
-Step 3: Run the Worker (Terminal 2)
-This script processes the AI's reasoning. Without it, the chat will be stuck on "Thinking...".
+Wait 30 seconds for Temporal initialization before proceeding.
 
-Step 4 (Optional): Run the Soul Engine (Terminal 3)
-Only if you have an NVIDIA GPU and want to run the model locally with Vector Steering.
+### 2. API Server
 
-code Bash
+Terminal 1:
+```bash
+python main_app.py
+```
+
+Frontend accessible at `http://localhost:8000`
+
+### 3. Worker Process
+
+Terminal 2:
+```bash
 python worker.py
+```
+
+Required for cognitive loop processing. Without active worker, requests will timeout.
+
+### 4. Soul Engine (Optional)
+
+Terminal 3 (GPU deployment only):
+```bash
+python soul_engine.py
+```
+
+Enables local inference with layer-wise vector manipulation. Set `INFERENCE_MODE=vastai` in `.env`.
+
+## Architecture Details
+
+**Simulated Ignorance**: Memory-based scoping prevents context contamination. Agent responses are constrained to retrieved vectors, enforcing knowledge boundaries required for perspective-taking tasks.
+
+**Geometric Tension Calculation**: PCA-reduced state vectors measure deviation from homeostatic equilibrium. Tension magnitude determines response urgency and retrieval strategy.
+
+**Continuous Time Evolution**: State parameters decay exponentially between interactions via Redis TTL and scheduled updates. Implements liquid network dynamics without RNN overhead.
+
+**Checkpoint Recovery**: Temporal.io workflow persistence enables mid-process recovery. Cognitive loops resume from last committed decision point after crashes.
+
+## References
+
+This implementation builds on findings from:
+
+- Theory of mind evaluation in LLMs vs. primate baselines (arXiv:2601.12410)
+- Riemannian geometry for spatio-temporal graph networks (arXiv:2601.14115)
+
+More References: 
+https://arxiv.org/abs/2512.01797
+https://www.arxiv.org/abs/2512.07092
+https://arxiv.org/abs/2505.10779
+https://www.arxiv.org/abs/2506.12224
+https://arxiv.org/abs/1905.13049
+https://arxiv.org/abs/2308.08708
+https://arxiv.org/abs/2309.10063
+https://arxiv.org/abs/2502.17420
+https://arxiv.org/abs/2410.02536
+2512.24880v1( optional ) 
+2512.19466v1
+2512.24601v1
+https://arxiv.org/abs/2512.20605v2
+2512.22431v1
+https://arxiv.org/abs/2512.22199v1
+2512.22568v1
+2512.23412v1
+2507.16003v3
+2512.19135v1
+2310.01405v4
+2310.01405v4
+2512.01797v2
+2512.04469v1
+https://arxiv.org/abs/2511.20639v1
+https://arxiv.org/abs/2511.16043v1
+https://arxiv.org/abs/2510.26745v1
+
+
+Additional citations available in `/docs/references.md`
+
+## License
+
+[Specify license here]
+
+## Contact
+
+[Specify contact information]
