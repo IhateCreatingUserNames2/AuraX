@@ -1,0 +1,100 @@
+version: '3.8'
+
+services:
+  # --- Application Core ---
+  app:
+    build: .
+    container_name: ceaf_racecar_app
+    command: uvicorn main_app:app --host 0.0.0.0 --port 8000 --reload
+    volumes:
+      - .:/app
+    ports:
+      - "8000:8000"
+    environment:
+      - DATABASE_URL=postgresql+asyncpg://ceaf_user:ceaf_pass@localhost:5433/ceaf_db
+      - REDIS_URL=redis://redis:6379/0
+      - QDRANT_URL=http://qdrant:6333
+      - TEMPORAL_HOST=temporal:7233
+    depends_on:
+      - postgres
+      - redis
+      - qdrant
+      - temporal
+    networks:
+      - ceaf-net
+
+  # --- Data Layer (Relational) ---
+  postgres:
+    image: postgres:15-alpine
+    container_name: ceaf_postgres
+    environment:
+      POSTGRES_USER: ceaf_user
+      POSTGRES_PASSWORD: ceaf_pass
+      POSTGRES_DB: ceaf_db
+    ports:
+      - "5433:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - ceaf-net
+
+  # --- Memory Layer (Vector) ---
+  qdrant:
+    image: qdrant/qdrant:latest
+    container_name: ceaf_qdrant
+    ports:
+      - "6333:6333"
+    volumes:
+      - qdrant_data:/qdrant/storage
+    networks:
+      - ceaf-net
+
+  # --- Nervous System (State/Cache) ---
+  redis:
+    image: redis:alpine
+    container_name: ceaf_redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    networks:
+      - ceaf-net
+
+  # --- Orchestration Layer (Temporal) ---
+  temporal:
+    image: temporalio/auto-setup:latest
+    container_name: ceaf_temporal
+    environment:
+      - DB=postgres12             # <--- MUDAR DE 'postgresql' PARA 'postgres12'
+      - DB_PORT=5432
+      - POSTGRES_USER=ceaf_user
+      - POSTGRES_PWD=ceaf_pass
+      - POSTGRES_SEEDS=postgres   # Aponta para o nome do serviço do banco acima
+    ports:
+      - "7233:7233"
+    depends_on:
+      - postgres
+    networks:
+      - ceaf-net
+
+  temporal-ui:
+    image: temporalio/ui:latest
+    container_name: ceaf_temporal_ui
+    environment:
+      - TEMPORAL_ADDRESS=temporal:7233
+      - TEMPORAL_CORS_ORIGINS=http://localhost:3000
+    ports:
+      - "8080:8080"
+    depends_on:
+      - temporal
+    networks:
+      - ceaf-net
+
+networks:
+  ceaf-net:
+    driver: bridge
+
+volumes:
+  postgres_data:
+  qdrant_data:
+  redis_data:

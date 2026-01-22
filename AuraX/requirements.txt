@@ -1,0 +1,37 @@
+# --- Core Framework ---
+fastapi>=0.109.0
+uvicorn[standard]>=0.27.0
+pydantic>=2.6.0
+pydantic-settings>=2.2.0
+python-dotenv>=1.0.0
+
+# --- Database Drivers (Async) ---
+sqlalchemy>=2.0.25
+asyncpg>=0.29.0
+redis>=5.0.1
+qdrant-client>=1.7.0
+
+# --- Orchestration ---
+temporalio>=1.4.0
+
+# --- AI & Cognitive Logic (The Brain) ---
+torch>=2.2.0 --index-url https://download.pytorch.org/whl/cpu
+transformers>=4.37.0
+sentence-transformers>=2.3.0
+numpy>=1.26.0
+scikit-learn>=1.4.0
+networkx>=3.2.1
+nltk>=3.8.1
+ripser>=0.6.8
+persim>=0.3.5
+
+# --- Utilities & External APIs ---
+httpx>=0.26.0
+aiohttp>=3.9.0
+litellm>=1.0.0
+e2b-code-interpreter>=0.0.10
+
+# --- Security & Auth ---
+passlib[bcrypt]>=1.7.4
+python-jose[cryptography]>=3.3.0
+bcrypt>=4.1.0
