@@ -156,3 +156,10 @@ Check /frontend folder
 MIT
 
 
+## Considerations
+
+It has bugs, 
+It was not totally tested because i do not have good hardware nor budget. 
+The requeriments file may be missing libs, 
+
+
