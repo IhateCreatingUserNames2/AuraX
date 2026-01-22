@@ -144,12 +144,15 @@ https://arxiv.org/abs/2511.16043v1
 https://arxiv.org/abs/2510.26745v1
 
 
-Additional citations available in `/docs/references.md`
+## Frontend
+
+it has a basic FrontEND. 
+Check /frontend folder 
+<img width="1917" height="918" alt="image" src="https://github.com/user-attachments/assets/7bd7f8c4-d6a8-49b3-bce6-232a813a833a" />
+
 
 ## License
 
-[Specify license here]
+MIT
 
-## Contact
 
-[Specify contact information]
