@@ -110,7 +110,7 @@ Enables local inference with layer-wise vector manipulation. Set `INFERENCE_MODE
 
 ## References
 
-This implementation builds on findings from:
+This implementation builds on findings from, but, some i reached by myself, so they are here to validate AuraX. 
 
 - Theory of mind evaluation in LLMs vs. primate baselines (arXiv:2601.12410)
 - Riemannian geometry for spatio-temporal graph networks (arXiv:2601.14115)
