@@ -116,32 +116,31 @@ This implementation builds on findings from, but, some i reached by myself, so t
 - Riemannian geometry for spatio-temporal graph networks (arXiv:2601.14115)
 
 More References: 
-https://arxiv.org/abs/2512.01797
-https://www.arxiv.org/abs/2512.07092
-https://arxiv.org/abs/2505.10779
-https://www.arxiv.org/abs/2506.12224
-https://arxiv.org/abs/1905.13049
-https://arxiv.org/abs/2308.08708
-https://arxiv.org/abs/2309.10063
-https://arxiv.org/abs/2502.17420
-https://arxiv.org/abs/2410.02536
-2512.24880v1( optional ) 
-2512.19466v1
-2512.24601v1
-https://arxiv.org/abs/2512.20605v2
-2512.22431v1
-https://arxiv.org/abs/2512.22199v1
-2512.22568v1
-2512.23412v1
-2507.16003v3
-2512.19135v1
-2310.01405v4
-2310.01405v4
-2512.01797v2
-2512.04469v1
-https://arxiv.org/abs/2511.20639v1
-https://arxiv.org/abs/2511.16043v1
-https://arxiv.org/abs/2510.26745v1
+- https://arxiv.org/abs/2512.01797
+- https://www.arxiv.org/abs/2512.07092
+- https://arxiv.org/abs/2505.10779
+- https://www.arxiv.org/abs/2506.12224
+- https://arxiv.org/abs/1905.13049
+- https://arxiv.org/abs/2308.08708
+- https://arxiv.org/abs/2309.10063
+- https://arxiv.org/abs/2502.17420
+- https://arxiv.org/abs/2410.02536
+- 2512.24880v1( optional ) 
+- 2512.19466v1
+- 2512.24601v1
+- https://arxiv.org/abs/2512.20605v2
+- 2512.22431v1
+- https://arxiv.org/abs/2512.22199v1
+- 2512.22568v1
+- 2512.23412v1
+- 2507.16003v3
+- 2512.19135v1
+- 2310.01405v4
+- 2512.01797v2
+- 2512.04469v1
+- https://arxiv.org/abs/2511.20639v1
+- https://arxiv.org/abs/2511.16043v1
+- https://arxiv.org/abs/2510.26745v1
 
 
 ## Frontend
