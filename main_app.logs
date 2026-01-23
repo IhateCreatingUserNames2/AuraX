@@ -1,0 +1,26 @@
+E:\ProjetosPython\Aura2\.venv\Scripts\python.exe E:\ProjetosPython\CeafV3\main_app.py 
+All Python files have been combined into AuraCEAFV3.txt
+INFO:     Will watch for changes in these directories: ['E:\\ProjetosPython\\CeafV3']
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [8436] using WatchFiles
+All Python files have been combined into AuraCEAFV3.txt
+2026-01-23 13:15:16,780 - watchfiles.main - INFO - 1 change detected
+INFO:     Started server process [76]
+INFO:     Waiting for application startup.
+2026-01-23 13:15:31,649 - MainApp - INFO - 🏁 Starting CEAF V4 (Project Race Car)...
+2026-01-23 13:15:31,649 - MainApp - INFO - 🔌 Initializing Database Connection...
+2026-01-23 13:15:31,947 - MainApp - INFO - ✅ Database Tables Verified.
+INFO:     Application startup complete.
+2026-01-23 13:16:20,259 - watchfiles.main - INFO - 1 change detected
+INFO:     127.0.0.1:39794 - "GET / HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:39794 - "GET /ceaf/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39794 - "GET /ceaf/agents HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39794 - "GET /ceaf/prebuilt-agents/list HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39794 - "GET /ceaf/agents HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39794 - "GET /ceaf/agents/78db8340-4960-411f-83ba-e679840c6822 HTTP/1.1" 200 OK
+2026-01-23 13:16:53,187 - AuraV4_System_Client - INFO - Connecting to Temporal Server at localhost:7233...
+2026-01-23 13:16:53,196 - AuraV4_System_Client - INFO - ✅ Connected to Temporal.
+2026-01-23 13:16:53,196 - AuraV4_System_Client - INFO - 🚀 Triggering Cognitive Workflow: turn-b15a313d-16bd-41f3-acee-3dfa1564c0bb-1769185013 for Agent 78db8340-4960-411f-83ba-e679840c6822
+2026-01-23 13:17:54,320 - watchfiles.main - INFO - 1 change detected
+2026-01-23 13:18:00,312 - AuraV4_System_Client - INFO - ✅ Workflow turn-b15a313d-16bd-41f3-acee-3dfa1564c0bb-1769185013 completed successfully.
+INFO:     127.0.0.1:39794 - "POST /ceaf/agents/78db8340-4960-411f-83ba-e679840c6822/chat HTTP/1.1" 200 OK
