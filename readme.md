@@ -152,6 +152,13 @@ it has a basic FrontEND.
 Check /frontend folder 
 <img width="1917" height="918" alt="image" src="https://github.com/user-attachments/assets/7bd7f8c4-d6a8-49b3-bce6-232a813a833a" />
 
+## Backend - Soul Engine
+- Currently Soul Engine is a Bit Static, 
+- You need to run 'calibrate_aura_v4.py' First so it Will Map and Extract the VEctors and create a .npy file that Soul_engine will use it. 
+- This is a MANUAL way to Vector Steer, BUT, the system should do this automatically, but it doesnt do it YET. 
+- I recommend Using Soul Engine Tools in https://github.com/IhateCreatingUserNames2/GeometryPersona , Like the soul_scan, soul_arena, because they will find the Best Layers/best Vectors, Then you get that Result and Run in the calibrate_aura_v4.py then you use the .npy in soul_engine. 
+<img width="796" height="243" alt="image" src="https://github.com/user-attachments/assets/6c3d9a7b-2023-4840-b02c-7ce82dcc9c92" />
+
 
 ## License
 
