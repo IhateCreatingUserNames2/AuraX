@@ -163,7 +163,8 @@ NO VECTOR STEERING CONCEPTS LOADED
 <img width="821" height="126" alt="image" src="https://github.com/user-attachments/assets/f9d6c71a-ca99-4f88-9ae4-f2239aa29e4f" />
 
 Using Calibrate_aura to generate vector that Soul Engine will use: 
-<img width="599" height="93" alt="image" src="https://github.com/user-attachments/assets/14dbd313-937b-4a16-a199-278e58bdecfe" />
+<img width="897" height="509" alt="image" src="https://github.com/user-attachments/assets/db5fc5e4-b6b6-49be-b40d-eb6273e7ebda" />
+
 
 
 - check vector_lab.py in Modules folder for the Path for Automatic VEctor Steering Based on the System Feedback Loop. 
