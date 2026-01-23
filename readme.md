@@ -116,30 +116,32 @@ This implementation builds on findings from, but, some i reached by myself, so t
 - Riemannian geometry for spatio-temporal graph networks (arXiv:2601.14115)
 
 More References: 
-2512.01797 - H-Neurons: On the Existence, Impact, and Origin of Hallucination-Associated Neurons in LLMs
-2512.07092 - The Geometry of Persona: Disentangling Personality from Reasoning in Large Language Models
-2505.10779 - Qualia Optimization
-2506.12224 - Mapping Neural Theories of Consciousness onto the Common Model of Cognition
-1905.13049 - Neural Consciousness Flow
-2308.08708 - Consciousness in Artificial Intelligence: Insights from the Science of Consciousness
-2309.10063 - Survey of Consciousness Theory from Computational Perspective
-2502.17420 - The Geometry of Refusal in Large Language Models: Concept Cones and Representational Independence
-2410.02536 - Intelligence at the Edge of Chaos
-2512.24880 - mHC: Manifold-Constrained Hyper-Connections
-2512.19466 - Epistemological Fault Lines Between Human and Artificial Intelligence
-2512.24601 - Recursive Language Models
-2512.20605 - Emergent temporal abstractions in autoregressive models enable hierarchical reinforcement learning
-2512.22431 - Monadic Context Engineering
-2512.22199 - Bidirectional RAG: Safe Self-Improving Retrieval-Augmented Generation Through Multi-Stage Validation
-2512.22568 - Lessons from Neuroscience for AI: How integrating Actions, Compositional Structure and Episodic Memory could enable Safe, Interpretable and Human-Like AI
-2512.23412 - MindWatcher: Toward Smarter Multimodal Tool-Integrated Reasoning
-2507.16003 - Learning without training: The implicit dynamics of in-context learning
-2512.19135 - Understanding Chain-of-Thought in Large Language Models via Topological Data Analysis
-2310.01405 - Representation Engineering: A Top-Down Approach to AI Transparency
-2512.04469 - Mathematical Framing for Different Agent Strategies
-2511.20639 - Latent Collaboration in Multi-Agent Systems
-2511.16043 - Agent0: Unleashing Self-Evolving Agents from Zero Data via Tool-Integrated Reasoning
-2510.26745 - Deep sequence models tend to memorize geometrically; it is unclear why
+
+* **2512.01797** - H-Neurons: On the Existence, Impact, and Origin of Hallucination-Associated Neurons in LLMs
+* **2512.07092** - The Geometry of Persona: Disentangling Personality from Reasoning in Large Language Models
+* **2505.10779** - Qualia Optimization
+* **2506.12224** - Mapping Neural Theories of Consciousness onto the Common Model of Cognition
+* **1905.13049** - Neural Consciousness Flow
+* **2308.08708** - Consciousness in Artificial Intelligence: Insights from the Science of Consciousness
+* **2309.10063** - Survey of Consciousness Theory from Computational Perspective
+* **2502.17420** - The Geometry of Refusal in Large Language Models: Concept Cones and Representational Independence
+* **2410.02536** - Intelligence at the Edge of Chaos
+* **2512.24880** - mHC: Manifold-Constrained Hyper-Connections
+* **2512.19466** - Epistemological Fault Lines Between Human and Artificial Intelligence
+* **2512.24601** - Recursive Language Models
+* **2512.20605** - Emergent temporal abstractions in autoregressive models enable hierarchical reinforcement learning
+* **2512.22431** - Monadic Context Engineering
+* **2512.22199** - Bidirectional RAG: Safe Self-Improving Retrieval-Augmented Generation Through Multi-Stage Validation
+* **2512.22568** - Lessons from Neuroscience for AI: How integrating Actions, Compositional Structure and Episodic Memory could enable Safe, Interpretable and Human-Like AI
+* **2512.23412** - MindWatcher: Toward Smarter Multimodal Tool-Integrated Reasoning
+* **2507.16003** - Learning without training: The implicit dynamics of in-context learning
+* **2512.19135** - Understanding Chain-of-Thought in Large Language Models via Topological Data Analysis
+* **2310.01405** - Representation Engineering: A Top-Down Approach to AI Transparency
+* **2512.04469** - Mathematical Framing for Different Agent Strategies
+* **2511.20639** - Latent Collaboration in Multi-Agent Systems
+* **2511.16043** - Agent0: Unleashing Self-Evolving Agents from Zero Data via Tool-Integrated Reasoning
+* **2510.26745** - Deep sequence models tend to memorize geometrically; it is unclear why
+
 
 
 ## Frontend
