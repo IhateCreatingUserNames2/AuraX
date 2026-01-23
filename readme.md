@@ -157,8 +157,11 @@ Check /frontend folder
 - You need to run 'calibrate_aura_v4.py' First so it Will Map and Extract the VEctors and create a .npy file that Soul_engine will use it. 
 
 - I recommend Using Soul Engine Tools in https://github.com/IhateCreatingUserNames2/GeometryPersona , Like the soul_scan, soul_arena, because they will find the Best Layers/best Vectors, Then you get that Result and Run in the calibrate_aura_v4.py then you use the .npy in soul_engine. 
-- This is a MANUAL way to Prepare the Vector Steering, BUT, the system should do this automatically, but it doesnt do it YET. check vector_lab.py in Modules folder. 
-- Check optimize_identity_vectors_activity in background_tasks/dreaming_activities.py 
+- This is a MANUAL way to Prepare the Vector Steering, BUT, the system should do this automatically, but it doesnt do it YET. Because it Consumes Insane Amount of RAM and VRAM. 
+
+
+- check vector_lab.py in Modules folder for the Path for Automatic VEctor Steering Based on the System Feedback Loop. 
+- Check optimize_identity_vectors_activity in background_tasks/dreaming_activities.py for 
 <img width="796" height="243" alt="image" src="https://github.com/user-attachments/assets/6c3d9a7b-2023-4840-b02c-7ce82dcc9c92" />
 
 
