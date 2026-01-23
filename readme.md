@@ -157,8 +157,7 @@ Check /frontend folder
 
 ## BACKEND - Mycelial - Agency_Module.py
 
-max candidates = how many strategies should Agency create ?
-simulation depth = How many Simulations of the REACTIONS OF EACH STRATEGY should Agency Create ?
+
 
 
 The Default Config for the Agency Module(Mycelial network) is 2/0. 
@@ -171,6 +170,9 @@ The Agency Module votes for the best strategy based on simulation depth.
 
 This can scale Usage ALOTTTTTTT. this is why this is set to 2/1. But Optimal use would be 5/5(5*5). but it means each Prompt will generate at least 25 LLM calls ONLY FOR THE AGENCY. 
 
+- max candidates = how many strategies should Agency create ?
+- simulation depth = How many Simulations of the REACTIONS OF EACH STRATEGY should Agency Create ?
+- The system selects one of the BUDGET based on the complexity of the USer Prompt OR SPECIFICED in Configs
 <img width="902" height="450" alt="image" src="https://github.com/user-attachments/assets/97897ffa-6aa1-40de-b2a7-e2f9b1f9267e" />
 
 ## Backend - Soul Engine
