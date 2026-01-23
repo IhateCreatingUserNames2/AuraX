@@ -26,7 +26,7 @@ The architecture separates knowledge states using geometric constraints in vecto
 - Docker Desktop
 - 16gb RAM minimum to run main and worker WITH REMOTE INFERENCE and with MANUAL VECTOR STEERING. 
 - NVIDIA GPU for local Inference or Vast.AI.
-- eb2 Account APi KEY for RLM
+- e2b Account APi KEY for RLM
 - OpenRouter API KEY for fallback or remote inference without Vector Steering 
 
 
