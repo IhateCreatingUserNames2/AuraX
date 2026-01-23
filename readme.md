@@ -1,4 +1,5 @@
 # AuraX
+![unnamed](https://github.com/user-attachments/assets/79eeb70f-1895-4886-a585-6ee82b610046)
 
 AuraX is a neuro-symbolic architecture for AI agents that addresses limitations in theory of mind and temporal reasoning found in standard language models. The system implements geometric state representation and persistent memory through vector databases, enabling coherent perspective-taking and continuous temporal dynamics.
 
