@@ -6,6 +6,8 @@ from datetime import datetime, timedelta
 
 from temporalio import activity
 
+from ceaf_core.modules.vector_lab import VectorLab
+from ceaf_core.services.llm_service import LLMService
 # Data Services
 from database.models import AgentRepository
 from ceaf_core.services.state_manager import StateManager
@@ -40,6 +42,40 @@ async def fetch_active_agents_activity(lookback_hours: int = 48) -> List[str]:
     active_ids = await ctx.db.get_recently_active_agent_ids(hours=lookback_hours)
     logger.info(f"Dreamer: Found {len(active_ids)} active agents.")
     return active_ids
+
+
+@activity.defn
+async def optimize_identity_vectors_activity(agent_id: str) -> str:
+    """
+    Atividade de Sonho: Auto-otimização de vetores de conceito.
+    """
+    # 1. Decide O QUE aprender
+    # Lógica simples: Alterna entre conceitos base ou reage a falhas recentes
+    # Em produção, isso viria de uma análise de logs (LCAM)
+    concepts_to_optimize = ["Empathy", "Creativity", "Brevity"]
+    import random
+    target_concept = random.choice(concepts_to_optimize)
+
+    logger.info(f"💤 Dreamer: A Aura decidiu meditar sobre '{target_concept}' hoje.")
+
+    # 2. Instancia o Lab
+    # Precisa do LLMService para gerar os dados
+    llm_service = LLMService()
+    lab = VectorLab(llm_service=llm_service)
+
+    # 3. Roda o Ciclo
+    # Nota: Isso pode demorar minutos e usar muita GPU
+    try:
+        result_file = await lab.run_optimization_cycle(target_concept)
+
+        if result_file:
+            return f"Optimization Success: Generated {result_file} for {target_concept}"
+        else:
+            return f"Optimization Inconclusive for {target_concept}"
+
+    except Exception as e:
+        logger.error(f"Dreamer: Pesadelo no laboratório: {e}")
+        return f"Error optimizing {target_concept}: {e}"
 
 
 @activity.defn
