@@ -163,6 +163,7 @@ NO VECTOR STEERING CONCEPTS LOADED
 <img width="821" height="126" alt="image" src="https://github.com/user-attachments/assets/f9d6c71a-ca99-4f88-9ae4-f2239aa29e4f" />
 
 Using Calibrate_aura to generate vector that Soul Engine will use: 
+ - Pay Attention that in this example the Models are different to save hardware resource, SOME CONCEPTS ARE SHARED IN SAME FAMILY MODELS, which allows to small models to be able to 'hit' correctly higher models, BUT, THE CORRECT WAY IS TO USE SAME MODEL. use soul_scan and soul_arena to get the best results. 
 <img width="897" height="509" alt="image" src="https://github.com/user-attachments/assets/db5fc5e4-b6b6-49be-b40d-eb6273e7ebda" />
 
 
