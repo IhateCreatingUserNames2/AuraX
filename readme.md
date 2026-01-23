@@ -23,7 +23,7 @@ The architecture separates knowledge states using geometric constraints in vecto
 - Python 3.10+
 - Docker Desktop
 - 8GB RAM minimum (16GB recommended)
-- NVIDIA GPU (optional, for soul_engine)
+- NVIDIA GPU (optional, for soul_engine Vector Steering) or Vast.AI 
 
 ## Installation
 
