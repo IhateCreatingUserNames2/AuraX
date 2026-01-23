@@ -157,8 +157,8 @@ Check /frontend folder
 
 ## BACKEND - Mycelial - Agency_Module.py
 
-The Default Config for the Agency Module(Mycelial network) is 2/1. 
-It means it is producing only 2 STRATEGIES TO ANSWER THE USER REPLY and IT WILL SIMULATE 1 USER REACTION. 
+The Default Config for the Agency Module(Mycelial network) is 2/0. 
+It means it is producing only 2 STRATEGIES TO ANSWER THE USER REPLY and IT WILL SIMULATE 0 USER REACTION. 
  
 If you increase depth, you should take in consideration that each Answer will generate X depth. 
 
