@@ -158,11 +158,11 @@ Check /frontend folder
 ## BACKEND - Mycelial - Agency_Module.py
 
 The Default Config for the Agency Module(Mycelial network) is 2/1. 
-It means it is producing only 2 paths, and 1 depth. 
-It means that i may produce 2 answers with only 1 or 0 alternatives. 
+It means it is producing only 2 STRATEGIES TO ANSWER THE USER REPLY and IT WILL SIMULATE 1 USER REACTION. 
+ 
 If you increase depth, you should take in consideration that each Answer will generate X depth. 
 
-The Agency Module votes for the best approach/answer. 
+The Agency Module votes for the best strategy based on simulation depth. 
 
 This can scale Usage ALOTTTTTTT. this is why this is set to 2/1. But Optimal use would be 5/5(5*5). but it means each Prompt will generate at least 25 LLM calls ONLY FOR THE AGENCY. 
 
