@@ -155,6 +155,19 @@ it has a basic FrontEND.
 Check /frontend folder 
 <img width="1917" height="918" alt="image" src="https://github.com/user-attachments/assets/7bd7f8c4-d6a8-49b3-bce6-232a813a833a" />
 
+## BACKEND - Mycelial - Agency_Module.py
+
+The Default Config for the Agency Module(Mycelial network) is 2/1. 
+It means it is producing only 2 paths, and 1 depth. 
+It means that i may produce 2 answers with only 1 or 0 alternatives. 
+If you increase depth, you should take in consideration that each Answer will generate X depth. 
+
+The Agency Module votes for the best approach/answer. 
+
+This can scale Usage ALOTTTTTTT. this is why this is set to 2/1. But Optimal use would be 5/5(5*5). but it means each Prompt will generate at least 25 LLM calls ONLY FOR THE AGENCY. 
+
+<img width="902" height="450" alt="image" src="https://github.com/user-attachments/assets/97897ffa-6aa1-40de-b2a7-e2f9b1f9267e" />
+
 ## Backend - Soul Engine
 - Currently Soul Engine is a Bit Static, 
 - You need to run 'calibrate_aura_v4.py' First so it Will Map and Extract the VEctors and create a .npy file that Soul_engine will use it. 
