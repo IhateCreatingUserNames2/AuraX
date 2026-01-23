@@ -18,7 +18,7 @@ The architecture separates knowledge states using geometric constraints in vecto
 
 **Workflow Orchestration**: Temporal.io manages cognitive loops with checkpoint recovery. Processing failures resume from last committed state rather than restarting.
 
-**Vector Steering (Optional)**: Direct layer-wise vector injection for model behavior modification during inference. Requires GPU deployment with supported model formats.
+**Vector Steering (Optional)**: Direct layer-wise vector injection for model behavior modification during inference. Requires GPU deployment with supported model formats. If Vector Steering not Enabled, it will fallback to OpenRouter.
 
 ## System Requirements
 
