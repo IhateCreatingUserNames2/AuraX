@@ -1,0 +1,44 @@
+E:\ProjetosPython\Aura2\.venv\Scripts\python.exe E:\ProjetosPython\CeafV3\worker.py 
+All Python files have been combined into AuraCEAFV3.txt
+INFO:TemporalWorker:Connecting to Temporal Server at localhost:7233...
+INFO:TemporalWorker:Worker started. Listening on 'ceaf-cognitive-queue'...
+2026-01-23T16:16:40.308939Z  WARN temporalio_sdk_core::worker::heartbeat: Worker heartbeating configured for runtime, but server version does not support it.
+INFO:VastAIEngine:🚀 VastEngine Client Initialized pointing to: http://199.68.217.31:54073/generate_with_soul
+INFO:httpx:HTTP Request: GET http://localhost:6333 "HTTP/1.1 200 OK"
+INFO:VastAIEngine:🚀 VastEngine Client Initialized pointing to: http://199.68.217.31:54073/generate_with_soul
+INFO:ceaf_core.modules.vre_engine.vre_engine:Inicializando VREEngineV3 (V3.2 - Context-Aware) [STATUS: ATIVADO]
+INFO:VastAIEngine:🚀 VastEngine Client Initialized pointing to: http://199.68.217.31:54073/generate_with_soul
+INFO:ceaf_core.modules.vre_engine.ethical_governance:EthicalGovernanceFramework (Modular/Async) initialized
+INFO:CEAFv3_LCAM:LCAMModule (V3) inicializado.
+INFO:MCLEngine:Initializing MCLEngine (V3.9 Anti-Loop & Generous Tokens)...
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device_name: cuda:0
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+INFO:AgencyModule_V4_Intentional:AgencyModule: Modelo de embedding 'all-MiniLM-L6-v2' carregado.
+INFO:CEAFv3_NCIM:NCIMModule (V3.1 com Personas Dinâmicas) inicializado.
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device_name: cuda:0
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+INFO:StateManager:StateManager: Connecting to Redis at redis://localhost:6379/0...
+Batches: 100%|██████████| 1/1 [00:00<00:00,  3.57it/s]
+INFO:CEAF_Activities:Step 2: Investigation (RLM/MBS)
+INFO:httpx:HTTP Request: GET http://localhost:6333/collections "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://localhost:6333/collections/ceaf_memories/points/query "HTTP/1.1 200 OK"
+INFO:CEAF_Activities:Step 3: Hormonization (Xi: 1.55)
+INFO:CEAF_Activities:Step 4: Agency Deliberation
+INFO:AgencyModule_V4_Intentional:AgencyModule (V5 - Recursive Feedback): Iniciando ciclo de deliberação...
+INFO:AgencyModule_V4_Intentional:Deliberation Tier selected: 'deep' (Complexity: 1.00, Reality Score: 0.75)
+INFO:AgencyModule_V4_Intentional:Usando temperatura de simulação dinâmica: 0.55 (baseada no trust de 0.75)
+INFO:AgencyModule_V4_Intentional:AgencyModule: Geradas 2 estratégias candidatas sob a diretiva 'STRESSED'.
+INFO:AgencyModule_V4_Intentional:--- Ciclo de Deliberação Recursiva: Passo 1/1 ---
+INFO:AgencyModule_V4_Intentional:Melhor hipótese (Passo 1): 'Oferecer informações sobre como usar as funcionalidades principais do sistema.' (Valor: 0.60)
+INFO:MCLEngine:MCL (Re-evaluation): Reavaliando estado cognitivo hipotético...
+INFO:MCLEngine:MCL (Re-evaluation) Result: New Agency Score=0.00, New Coherence Bias=0.50
+WARNING:AgencyModule_V4_Intentional:Refinando estratégias com base no feedback: Feedback VRE: A estratégia levanta preocupações sobre 'Irrelevância Crítica'. Feedback MCL: Estratégia altera complexidade percebida (Delta Agência: -5.0). 
+INFO:AgencyModule_V4_Intentional:AgencyModule: Geradas 2 estratégias candidatas sob a diretiva 'STRESSED'.
+INFO:AgencyModule_V4_Intentional:Deliberação final: escolhendo a melhor estratégia do último conjunto de candidatos.
+CRITICAL:AgencyModule_V4_Intentional:DECISÃO FINAL (V5): Estratégia Vencedora='{'tool_name': 'generate_greeting_response', 'arguments': {}}', Valor=0.70
+INFO:CEAF_Activities:Step 5: Synthesis (GTH)
+INFO:httpx:HTTP Request: POST http://localhost:6333/collections/ceaf_memories/points "HTTP/1.1 200 OK"
+INFO:CEAFv3_System:--- [GTH Translator v4.5] Gerando resposta ---
+INFO:CEAFv3_System:🤖 GTH: Chamando LLM (openrouter/z-ai/glm-4.7) com prompt de 1378 chars...
+INFO:CEAFv3_System:✅ GTH: Resposta gerada com sucesso (77 chars).
+INFO:CEAF_Activities:Step 6: Evolution (BiRAG)
