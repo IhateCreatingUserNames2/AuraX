@@ -1,3 +1,8 @@
+# pip install torch transformers fastapi uvicorn pydantic numpy python-multipart scipy accelerate bitsandbytes
+# http://ENDPOINT
+# PORT = int(os.getenv("PORT", "1111"))
+#
+# FUNCINOU
 import torch
 import uvicorn
 from fastapi import FastAPI, Request, HTTPException
@@ -9,10 +14,12 @@ import numpy as np
 import os
 from typing import Optional, List
 from pydantic import BaseModel
+from sklearn.decomposition import PCA
+
 
 # --- CONFIGURAÇÃO ---
-MODEL_ID = "Qwen/Qwen2.5-7B-Instruct"
-PORT = int(os.getenv("PORT", "54073"))
+MODEL_ID = "Qwen/Qwen3-14B"
+PORT = int(os.getenv("PORT", "1111"))
 
 app = FastAPI(
     title="Soul Engine API",
@@ -98,6 +105,68 @@ except Exception as e:
 active_hooks = []
 
 
+# --- LÓGICA DE EXTRAÇÃO DE VETORES (Auto-Calibração) ---
+def extract_direction_vector(positive_samples: List[str], negative_samples: List[str], layer_idx: int):
+    """
+    Extrai o vetor de direção comparando ativações de frases contrastantes.
+    Executa diretamente na GPU onde o modelo está carregado.
+    """
+    # Proteção de índice
+    if layer_idx >= len(model.model.layers):
+        layer_idx = len(model.model.layers) - 2
+
+    target_layer = model.model.layers[layer_idx]
+
+    pos_activations = []
+    neg_activations = []
+
+    def capture_activations(samples, storage):
+        for text in samples:
+            # Tokenização
+            inputs = tokenizer(text, return_tensors="pt").to(model.device)
+
+            # Hook para capturar o estado oculto
+            def hook(module, input, output):
+                # Lida com tuplas de saída (comum em HuggingFace)
+                if isinstance(output, tuple):
+                    hidden = output[0]
+                else:
+                    hidden = output
+                # Pega o último token da sequência (representação final do pensamento)
+                # Squeeze para remover dimensões de batch tamanho 1
+                vec = hidden[:, -1, :].detach().float().cpu().numpy().squeeze()
+                storage.append(vec)
+
+            handle = target_layer.register_forward_hook(hook)
+            with torch.no_grad():
+                model(**inputs)
+            handle.remove()
+
+    logger.info(f"🧪 Extraindo vetores na camada {layer_idx}...")
+    capture_activations(positive_samples, pos_activations)
+    capture_activations(negative_samples, neg_activations)
+
+    # Matemática Vetorial (PCA nas diferenças)
+    X_pos = np.array(pos_activations)
+    X_neg = np.array(neg_activations)
+
+    # A "direção" é a diferença entre o pensamento positivo e o negativo
+    differences = X_pos - X_neg
+
+    pca = PCA(n_components=1)
+    pca.fit(differences)
+
+    # O primeiro componente principal é o "Vetor Conceitual"
+    direction_vector = pca.components_[0]
+
+    return direction_vector
+
+class CalibrationRequest(BaseModel):
+    concept_name: str
+    positive_samples: List[str]
+    negative_samples: List[str]
+    layer_idx: int = 16
+
 # --- FUNÇÕES DE STEERING ---
 def steering_hook(module, input, output, steering_vector, intensity):
     """Hook que injeta o vetor de steering na camada."""
@@ -162,6 +231,49 @@ async def list_concepts():
         "total": len(vectors)
     }
 
+
+@app.post("/calibrate")
+async def calibrate_concept(request: CalibrationRequest):
+    """
+    Endpoint para criar novos 'Hormônios' (Vetores) em tempo de execução.
+    """
+    global vectors
+
+    logger.info(f"🧪 Pedido de calibração recebido: '{request.concept_name}' na camada {request.layer_idx}")
+
+    if len(request.positive_samples) < 2 or len(request.negative_samples) < 2:
+        raise HTTPException(status_code=400, detail="Amostras insuficientes para PCA (mínimo 2 pares).")
+
+    try:
+        # 1. Extração Matemática (Roda na GPU)
+        vector_numpy = extract_direction_vector(
+            request.positive_samples,
+            request.negative_samples,
+            request.layer_idx
+        )
+
+        # 2. Salvar no Disco (Persistência)
+        filename = f"{request.concept_name}.npy"
+        # Garante que a pasta vectors existe
+        os.makedirs("vectors", exist_ok=True)
+        filepath = os.path.join("vectors", filename)
+        np.save(filepath, vector_numpy)
+
+        # 3. Hot-Reload (Carregar na memória RAM do servidor imediatamente)
+        vectors[request.concept_name] = torch.tensor(vector_numpy, dtype=torch.float16)
+
+        logger.info(f"✅ Conceito '{request.concept_name}' aprendido e carregado com sucesso.")
+
+        return {
+            "status": "success",
+            "concept": request.concept_name,
+            "layer_used": request.layer_idx,
+            "vector_path": filepath
+        }
+
+    except Exception as e:
+        logger.error(f"❌ Falha crítica na calibração: {e}", exc_info=True)
+        raise HTTPException(status_code=500, detail=str(e))
 
 @app.post("/generate", response_model=GenerateResponse)
 async def generate(request: GenerateRequest):
