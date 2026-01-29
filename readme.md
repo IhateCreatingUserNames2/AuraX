@@ -211,7 +211,8 @@ MIT
 - It has bugs, 
 - It was not totally tested because i do not have good hardware nor budget. 
 - The requeriments file may be missing libs, 
-- Most of the Comments/Functions are in Portuguese My native Language. 
+- Most of the Comments/Functions are in Portuguese My native Language.
+- This Project is based on the Dynamic Vector Steering: The Neuro-Symbolic Convergence in Artificial Agency  : https://claude.ai/public/artifacts/7efcd0d1-3548-4403-8612-a3a5031eb7ea 
 
 
 
