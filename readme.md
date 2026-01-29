@@ -155,7 +155,7 @@ it has a basic FrontEND.
 Check /frontend folder 
 <img width="1917" height="918" alt="image" src="https://github.com/user-attachments/assets/7bd7f8c4-d6a8-49b3-bce6-232a813a833a" />
 
-## BACKEND - Mycelial - Agency_Module.py
+## BACKEND - Mycelial - Agency_Module.py https://github.com/IhateCreatingUserNames2/Mycelial 
 
 
 
@@ -175,7 +175,7 @@ This can scale Usage ALOTTTTTTT. this is why this is set to 2/1. But Optimal use
 - The system selects one of the BUDGET based on the complexity of the USer Prompt OR SPECIFICED in Configs
 <img width="902" height="450" alt="image" src="https://github.com/user-attachments/assets/97897ffa-6aa1-40de-b2a7-e2f9b1f9267e" />
 
-## Backend - Soul Engine
+## Backend - Soul Engine https://github.com/IhateCreatingUserNames2/GeometryPersona 
 
 # This was Automatized in the New Version Which i have not released yet. 
   - read https://github.com/IhateCreatingUserNames2/AuraX/blob/main/AuraXDo.md explains the automatic vector steering. 
@@ -212,7 +212,11 @@ MIT
 - It was not totally tested because i do not have good hardware nor budget. 
 - The requeriments file may be missing libs, 
 - Most of the Comments/Functions are in Portuguese My native Language.
-- This Project is based on the Dynamic Vector Steering: The Neuro-Symbolic Convergence in Artificial Agency  : https://claude.ai/public/artifacts/7efcd0d1-3548-4403-8612-a3a5031eb7ea 
+- This Project is based on the Dynamic Vector Steering: The Neuro-Symbolic Convergence in Artificial Agency  : https://claude.ai/public/artifacts/7efcd0d1-3548-4403-8612-a3a5031eb7ea
+- AuraX is an Evolution of AuraCEAF: https://github.com/IhateCreatingUserNames2/Aura_AI_Agents and share many of its core modules
+- read the geometry of persona for soul engine understanding: https://github.com/IhateCreatingUserNames2/GeometryPersona 
+- It is based on Geometric Gating: https://github.com/IhateCreatingUserNames2/GeometricGating/blob/main/dst_revised_paper%20(2).md https://github.com/IhateCreatingUserNames2/DimensionalSeparation (this abstract contains some mistakes which i will fix someday, but the 'concept' is valid)
+  
 
 
 
