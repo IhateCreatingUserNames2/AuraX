@@ -211,6 +211,7 @@ MIT
 - It has bugs, 
 - It was not totally tested because i do not have good hardware nor budget. 
 - The requeriments file may be missing libs, 
-- Most of the Comments are in Portuguese
+- Most of the Comments/Functions are in Portuguese My native Language. 
+
 
 
