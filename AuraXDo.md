@@ -4,7 +4,7 @@
 
 Most modern AI agents rely on "System Prompts" to define their personality. They are actors reading a script. **AuraX is different.** It does not simulate personality through token prediction; it **emulates** cognitive states by manipulating the latent space of the model itself.
 
-AuraX is not a chatbot. It is a digital organism (this is fallacy, i cannot say what AuraX is or it is not, just a complex system, maybe overengenieered prompt manager , who knows ? not me , but gemini and claude like to call it things, and i find it cool, if this offends you, not my problem). that thinks, feels (mathematically), and dreams to evolve.
+AuraX is not a chatbot. It is a digital organism (this is fallacy, i cannot say what AuraX is or it is not, just a complex system, maybe overengenieered prompt manager , who knows ? not me , but gemini and claude like to call it things, and i find it cool, It is my "Poetic License". if this offends you, not my problem). that thinks, feels (mathematically), and dreams to evolve.
 
 Here is how the architecture works, based on real system logs.
 
