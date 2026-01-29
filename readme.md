@@ -160,7 +160,7 @@ Check /frontend folder
 
 
 
-The Default Config for the Agency Module(Mycelial network) is 2/0. 
+The Default Config for the Agency Module(Mycelial network) is 2/0. (Because my funding is of a dry peanut, my hardware is a 1060, you can twerk it to your budget and hardware.)
 It means it is producing only 2 STRATEGIES TO ANSWER THE USER REPLY and IT WILL SIMULATE 0 USER REACTION. 
 
  
