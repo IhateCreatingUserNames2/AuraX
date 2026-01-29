@@ -176,6 +176,11 @@ This can scale Usage ALOTTTTTTT. this is why this is set to 2/1. But Optimal use
 <img width="902" height="450" alt="image" src="https://github.com/user-attachments/assets/97897ffa-6aa1-40de-b2a7-e2f9b1f9267e" />
 
 ## Backend - Soul Engine
+
+# This was Automatized in the New Version Which i have not released yet. 
+  - read https://github.com/IhateCreatingUserNames2/AuraX/blob/main/AuraXDo.md explains the automatic vector steering. 
+
+  
 - Currently Soul Engine is a Bit Static, 
 - You need to run 'calibrate_aura_v4.py' First so it Will Map and Extract the VEctors and create a .npy file that Soul_engine will use it. 
 
