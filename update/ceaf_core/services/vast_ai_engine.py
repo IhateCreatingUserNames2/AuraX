@@ -40,7 +40,7 @@ class VastAIEngine:
                        vector_data: Optional[Dict[str, Any]] = None):
         """
         Sends generation request with optional RepE steering.
-        Now with Auto-Fallback mechanism.
+        Includes automatic fallback if the specific vector is missing on server.
         """
         # 1. Tenta com injeção hormonal (se houver)
         if vector_data:
@@ -48,22 +48,25 @@ class VastAIEngine:
                 "prompt": prompt,
                 "max_tokens": max_tokens,
                 "temperature": temperature,
+                # RepE Parameters
                 "concept": vector_data.get('concept'),
                 "intensity": vector_data.get('intensity', 0.0),
                 "layer_idx": vector_data.get('layer_idx', 16)
             }
             logger.info(f"💉 Sending RepE Injection to Vast.AI: {vector_data}")
 
-            try:
-                result = await self._send_request(payload, allow_fallback=False)
-                if not result.startswith("[ERROR"):
-                    return result
-                logger.warning(f"⚠️ Falha na injeção hormonal: {result}. Tentando geração Vanilla (sem alma)...")
-            except Exception as e:
-                logger.warning(f"⚠️ Erro crítico na injeção: {e}. Tentando geração Vanilla...")
+            # Tenta enviar. Se falhar por vetor inexistente, _send_request retorna um marcador especial
+            result = await self._send_request(payload, allow_fallback=False)
 
-        # 2. Fallback: Geração Vanilla (Sem vetor)
-        # Se a injeção falhou ou não havia dados vetoriais, gera normal
+            # Se não for erro de conceito, retorna o resultado
+            if not result.startswith("[ERROR: Concept Missing]"):
+                return result
+
+            # Se chegou aqui, é porque o conceito faltou. Loga aviso e segue para fallback.
+            logger.warning(
+                f"⚠️ Vetor '{vector_data.get('concept')}' não encontrado na GPU. Alternando para geração Vanilla.")
+
+        # 2. Fallback (ou padrão): Geração Vanilla (Sem vetor)
         payload_vanilla = {
             "prompt": prompt,
             "max_tokens": max_tokens,
@@ -75,7 +78,6 @@ class VastAIEngine:
 
     async def _send_request(self, payload: Dict[str, Any], allow_fallback: bool = True) -> str:
         try:
-            # Aumentamos o timeout para lidar com a concorrência do Calibrate
             timeout_settings = aiohttp.ClientTimeout(total=self.timeout)
 
             async with aiohttp.ClientSession(connector=aiohttp.TCPConnector(ssl=self.ssl_ctx),
@@ -85,11 +87,10 @@ class VastAIEngine:
                     if resp.status != 200:
                         text = await resp.text()
 
-                        # Se for erro 400 (Conceito não encontrado), retornamos erro específico
-                        # para que o método 'generate' possa fazer o fallback
+                        # TRATAMENTO ESPECÍFICO PARA ERRO 400 (Conceito não encontrado)
                         if resp.status == 400 and "Conceito" in text and not allow_fallback:
-                            logger.error(f"❌ Vast.AI Concept Missing: {text}")
-                            return f"[ERROR: Concept Missing]"
+                            # Retorna marcador especial para o método generate fazer o retry
+                            return f"[ERROR: Concept Missing] {text}"
 
                         logger.error(f"❌ Vast.AI HTTP {resp.status}: {text}")
                         return f"[ERROR: Vast.AI returned {resp.status}]"
@@ -97,7 +98,7 @@ class VastAIEngine:
                     result = await resp.json()
                     full_text = result.get("text", "").strip()
 
-                    # Basic Cleanup
+                    # Basic Cleanup (Remove prompt echo if present)
                     sent_prompt = payload.get("prompt", "").strip()
                     if full_text.startswith(sent_prompt):
                         full_text = full_text[len(sent_prompt):].strip()
