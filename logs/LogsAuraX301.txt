@@ -1,0 +1,1542 @@
+E:\ProjetosPython\Aura2\.venv\Scripts\python.exe E:\ProjetosPython\CeafV3\worker.py 
+All Python files have been combined into AuraCEAFV3.txt
+INFO:TemporalWorker:Connecting to Temporal Server at localhost:7233...
+INFO:TemporalWorker:Worker started. Listening on 'ceaf-cognitive-queue'...
+2026-01-30T13:56:29.767947Z  WARN temporalio_sdk_core::worker::heartbeat: Worker heartbeating configured for runtime, but server version does not support it.
+INFO:temporalio.workflow:Starting Dreaming Cycle... ({'attempt': 1, 'namespace': 'default', 'run_id': '019c0f2a-f789-74d3-9786-328cff526472', 'task_queue': 'ceaf-cognitive-queue-v2', 'workflow_id': 'dreaming-workflow-job-2026-01-30T13:50:00Z', 'workflow_type': 'DreamingWorkflow'})
+INFO:httpx:HTTP Request: GET http://localhost:6333 "HTTP/1.1 200 OK"
+INFO:VastAIEngine:🚀 VastEngine Client Initialized pointing to: http://74.48.140.178:33136/generate_with_soul
+INFO:DreamingActivities:Dreamer: Scanning for agents active in last 48h...
+INFO:StateManager:StateManager: Connecting to Redis at redis://localhost:6379/0...
+INFO:DreamingActivities:Dreamer: Restored body state for 9143d734-3515-422d-9d79-b1300f33888e.
+INFO:DreamingActivities:🧠 Dreamer (9143d734-3515-422d-9d79-b1300f33888e): Iniciando Treino Neural (Física Cognitiva)...
+INFO:DataExtractor:⛏️ Extraindo dados de treino de agent_data\9143d734-3515-422d-9d79-b1300f33888e\cognitive_turn_history.sqlite...
+INFO:ceaf_core.utils.embedding_utils:Loading SentenceTransformer model: all-MiniLM-L6-v2
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+INFO:ceaf_core.utils.embedding_utils:Successfully loaded and cached SentenceTransformer model: all-MiniLM-L6-v2
+Batches: 100%|██████████| 1/1 [00:00<00:00, 43.06it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 37.75it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 39.97it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 81.72it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 88.82it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 67.91it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 102.46it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 97.16it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 92.13it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 81.62it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 97.25it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 84.99it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 61.95it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 55.22it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 59.95it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 63.05it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 55.03it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 78.77it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 22.38it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 16.31it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 15.51it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 18.75it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 19.12it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 15.26it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 18.65it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 18.81it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 19.08it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 29.85it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 16.43it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 88.80it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 28.79it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 27.10it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 15.18it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 16.41it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 18.99it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 97.24it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 75.68it/s]
+INFO:DataExtractor:📊 Extraídos 38 exemplos de treino válidos.
+E:\ProjetosPython\CeafV3\ceaf_core\modules\dream_trainer.py:32: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  self.forward_model.load_state_dict(torch.load(f"{MODEL_PATH}forward.pth"))
+E:\ProjetosPython\CeafV3\ceaf_core\modules\dream_trainer.py:33: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  self.inverse_model.load_state_dict(torch.load(f"{MODEL_PATH}inverse.pth"))
+INFO:DreamTrainer:🧠 Cérebros carregados para treino.
+INFO:DreamTrainer:🌙 Iniciando ciclo REM (38 memórias, 30 épocas)...
+INFO:DreamTrainer:☀️ Acordando... Aprendizado consolidado. Loss Final: 0.0007
+INFO:DreamingActivities:🕵️ Dreamer (9143d734-3515-422d-9d79-b1300f33888e): Analisando falhas recentes para diagnóstico...
+INFO:httpx:HTTP Request: GET http://localhost:6333/collections "HTTP/1.1 200 OK"
+Batches: 100%|██████████| 1/1 [00:00<00:00, 97.32it/s]
+INFO:httpx:HTTP Request: POST http://localhost:6333/collections/ceaf_memories/points/query "HTTP/1.1 200 OK"
+INFO:DreamingActivities:✅ Nenhuma falha significativa encontrada para 9143d734-3515-422d-9d79-b1300f33888e. Sistema saudável.
+INFO:DreamingActivities:💤 Dreamer: Modo Manutenção. Reforçando traço base: 'Creative_Chaos'.
+WARNING:VectorLab:SoulScanner não encontrado. Otimização de vetores desabilitada.
+INFO:VectorLab:🧪 VectorLab: Gerando dataset sintético para 'Creative_Chaos_0130'...
+INFO:VastAIEngine:🚀 VastEngine Client Initialized pointing to: http://74.48.140.178:33136/generate_with_soul
+INFO:httpx:HTTP Request: GET http://localhost:6333 "HTTP/1.1 200 OK"
+INFO:VastAIEngine:🚀 VastEngine Client Initialized pointing to: http://74.48.140.178:33136/generate_with_soul
+INFO:ceaf_core.modules.vre_engine.vre_engine:Inicializando VREEngineV3 (V3.2 - Context-Aware) [STATUS: ATIVADO]
+INFO:VastAIEngine:🚀 VastEngine Client Initialized pointing to: http://74.48.140.178:33136/generate_with_soul
+INFO:ceaf_core.modules.vre_engine.ethical_governance:EthicalGovernanceFramework (Modular/Async) initialized
+INFO:CEAFv3_LCAM:LCAMModule (V3) inicializado.
+INFO:MCLEngine:Initializing MCLEngine (V3.9 Anti-Loop & Generous Tokens)...
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device_name: cuda:0
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+INFO:AgencyModule_V4_Intentional:AgencyModule: Modelo de embedding 'all-MiniLM-L6-v2' carregado.
+E:\ProjetosPython\CeafV3\ceaf_core\agency_module.py:194: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  self.physics_model.load_state_dict(torch.load("./aura_brain/forward.pth"))
+INFO:AgencyModule_V4_Intentional:✅ AgencyModule: Córtex Geométrico carregado.
+INFO:CEAFv3_NCIM:NCIMModule (V3.1 com Personas Dinâmicas) inicializado.
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device_name: cuda:0
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+INFO:httpx:HTTP Request: GET http://localhost:6333/collections "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://localhost:6333/collections/ceaf_memories/points "HTTP/1.1 200 OK"
+INFO:ceaf_core.utils.embedding_utils:Loading SentenceTransformer model: BAAI/bge-small-en-v1.5
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: BAAI/bge-small-en-v1.5
+INFO:ceaf_core.utils.embedding_utils:Successfully loaded and cached SentenceTransformer model: BAAI/bge-small-en-v1.5
+Batches: 100%|██████████| 1/1 [00:00<00:00, 30.24it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00,  3.70it/s]
+INFO:httpx:HTTP Request: POST http://localhost:6333/collections/ceaf_memories/points "HTTP/1.1 200 OK"
+Batches: 100%|██████████| 1/1 [00:00<00:00, 24.39it/s]
+INFO:httpx:HTTP Request: PUT http://localhost:6333/collections/ceaf_memories/points?wait=true "HTTP/1.1 200 OK"
+INFO:MBSMemoryService:MBS: Stored memory user_profile_default_user (Type: explicit) in Qdrant.
+INFO:UserProfileService:Perfil do usuário default_user atualizado.
+INFO:CEAF_Activities:Step 2: Investigation (RLM/MBS)
+INFO:httpx:HTTP Request: POST http://localhost:6333/collections/ceaf_memories/points/query "HTTP/1.1 200 OK"
+INFO:CEAF_Activities:Step 3: Hormonization (Xi: 0.00)
+INFO:CEAF_Activities:Step 4: Agency Deliberation
+INFO:AgencyModule_V4_Intentional:AgencyModule (V5 - Recursive Feedback): Iniciando ciclo de deliberação...
+INFO:AgencyModule_V4_Intentional:Deliberation Tier selected: 'deep' (Complexity: 1.00, Reality Score: 0.75)
+INFO:AgencyModule_V4_Intentional:Usando temperatura de simulação dinâmica: 0.55 (baseada no trust de 0.75)
+INFO:VectorLab:📊 Dados gerados: 10 pares. Enviando para Soul Engine em http://74.48.140.178:33136...
+INFO:AgencyModule_V4_Intentional:AgencyModule: Geradas 2 estratégias candidatas sob a diretiva 'EMPATHIC_FLOW'.
+INFO:AgencyModule_V4_Intentional:--- Ciclo de Deliberação Recursiva: Passo 1/1 ---
+Batches: 100%|██████████| 1/1 [00:00<00:00, 98.94it/s]
+WARNING:AgencyModule_V4_Intentional:⚠️ ALERTA FÍSICO: Tensão alta (3.6636). Ação: 'Analisar o dilema através de u...'
+Batches: 100%|██████████| 1/1 [00:00<00:00, 110.75it/s]
+WARNING:AgencyModule_V4_Intentional:⚠️ ALERTA FÍSICO: Tensão alta (3.6636). Ação: '{'tool_name': 'query_long_term...'
+INFO:AgencyModule_V4_Intentional:Melhor hipótese (Passo 1): 'Analisar o dilema através de uma estrutura de priorização ética e impacto sistêmico.' (Valor: 0.10)
+INFO:MCLEngine:MCL (Re-evaluation): Reavaliando estado cognitivo hipotético...
+INFO:MCLEngine:MCL (Re-evaluation) Result: New Agency Score=0.00, New Coherence Bias=0.50
+INFO:httpx:HTTP Request: POST http://74.48.140.178:33136/calibrate "HTTP/1.1 200 OK"
+INFO:StateManager:💉 Endocrine Map Updated for 9143d734-3515-422d-9d79-b1300f33888e: dopamine -> Creative_Chaos_0130
+INFO:DreamingActivities:🧬 Reflexos Evoluídos: Resposta de DOPAMINE atualizada para usar 'Creative_Chaos_0130'
+INFO:DreamingActivities:💤 Dreamer Concluído: ✅ SUCESSO: Vetor 'Creative_Chaos_0130' cristalizado na camada 21. Caminho: vectors/Creative_Chaos_0130.npy
+INFO:DreamingActivities:Dreamer: 9143d734-3515-422d-9d79-b1300f33888e triggering PROACTIVE message (Score: 1.00)
+INFO:temporalio.workflow:Dreaming Cycle Complete. ({'attempt': 1, 'namespace': 'default', 'run_id': '019c0f2a-f789-74d3-9786-328cff526472', 'task_queue': 'ceaf-cognitive-queue-v2', 'workflow_id': 'dreaming-workflow-job-2026-01-30T13:50:00Z', 'workflow_type': 'DreamingWorkflow'})
+INFO:temporalio.workflow:Starting Dreaming Cycle... ({'attempt': 1, 'namespace': 'default', 'run_id': '019c0f34-1f2b-7dfe-9fdc-e72b0a907aae', 'task_queue': 'ceaf-cognitive-queue-v2', 'workflow_id': 'dreaming-workflow-job-2026-01-30T14:00:00Z', 'workflow_type': 'DreamingWorkflow'})
+INFO:DreamingActivities:Dreamer: Scanning for agents active in last 48h...
+INFO:DreamingActivities:Dreamer: Restored body state for 9143d734-3515-422d-9d79-b1300f33888e.
+INFO:DreamingActivities:🧠 Dreamer (9143d734-3515-422d-9d79-b1300f33888e): Iniciando Treino Neural (Física Cognitiva)...
+INFO:DataExtractor:⛏️ Extraindo dados de treino de agent_data\9143d734-3515-422d-9d79-b1300f33888e\cognitive_turn_history.sqlite...
+Batches: 100%|██████████| 1/1 [00:00<00:00, 92.40it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 36.20it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 29.65it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 60.03it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 70.48it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 72.78it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 73.14it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 72.87it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 65.96it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 63.47it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 75.35it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 84.47it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 70.06it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 81.74it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 81.37it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 84.40it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 78.02it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 92.41it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 21.76it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 14.62it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 17.56it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 18.14it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 18.35it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 15.34it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 18.31it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 14.96it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 14.16it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 27.92it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 11.36it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 69.76it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 24.16it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 27.80it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 17.55it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 14.29it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00,  9.06it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 39.88it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 47.66it/s]
+INFO:DataExtractor:📊 Extraídos 38 exemplos de treino válidos.
+E:\ProjetosPython\CeafV3\ceaf_core\modules\dream_trainer.py:32: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  self.forward_model.load_state_dict(torch.load(f"{MODEL_PATH}forward.pth"))
+E:\ProjetosPython\CeafV3\ceaf_core\modules\dream_trainer.py:33: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  self.inverse_model.load_state_dict(torch.load(f"{MODEL_PATH}inverse.pth"))
+INFO:DreamTrainer:🧠 Cérebros carregados para treino.
+INFO:DreamTrainer:🌙 Iniciando ciclo REM (38 memórias, 30 épocas)...
+INFO:DreamTrainer:☀️ Acordando... Aprendizado consolidado. Loss Final: 0.0009
+INFO:DreamingActivities:🕵️ Dreamer (9143d734-3515-422d-9d79-b1300f33888e): Analisando falhas recentes para diagnóstico...
+Batches: 100%|██████████| 1/1 [00:00<00:00, 61.31it/s]
+INFO:httpx:HTTP Request: POST http://localhost:6333/collections/ceaf_memories/points/query "HTTP/1.1 200 OK"
+INFO:DreamingActivities:✅ Nenhuma falha significativa encontrada para 9143d734-3515-422d-9d79-b1300f33888e. Sistema saudável.
+INFO:DreamingActivities:💤 Dreamer: Modo Manutenção. Reforçando traço base: 'Absolute_Honesty'.
+WARNING:VectorLab:SoulScanner não encontrado. Otimização de vetores desabilitada.
+INFO:VectorLab:🧪 VectorLab: Gerando dataset sintético para 'Absolute_Honesty_0130'...
+WARNING:AgencyModule_V4_Intentional:Refinando estratégias com base no feedback: Feedback VRE: A estratégia levanta preocupações sobre 'Irrelevância Crítica: A resposta é excessivamente genérica e não fornece métodos concretos para lidar com dilemas complexos., Excesso de Confiança: A abordagem parece confiante demais sem demonstrar autocrítica ou consideração de limitações.'. Feedback MCL: Estratégia altera complexidade percebida (Delta Agência: -5.0). 
+INFO:VectorLab:📊 Dados gerados: 10 pares. Enviando para Soul Engine em http://74.48.140.178:33136...
+INFO:AgencyModule_V4_Intentional:AgencyModule: Geradas 2 estratégias candidatas sob a diretiva 'EMPATHIC_FLOW'.
+INFO:AgencyModule_V4_Intentional:HOTFIX: 2 novos candidatos adicionados. Total agora: 4. Candidato 'th_path_' penalizado.
+INFO:AgencyModule_V4_Intentional:Deliberação final: escolhendo a melhor estratégia do último conjunto de candidatos.
+Batches: 100%|██████████| 1/1 [00:00<00:00, 75.65it/s]
+WARNING:AgencyModule_V4_Intentional:⚠️ ALERTA FÍSICO: Tensão alta (3.6636). Ação: 'Analisar o dilema através de u...'
+INFO:AgencyModule_V4_Intentional:Mantendo penalidade de 0.15 para 'th_path_997bf5b9' na decisão final.
+Batches: 100%|██████████| 1/1 [00:00<00:00, 78.85it/s]
+WARNING:AgencyModule_V4_Intentional:⚠️ ALERTA FÍSICO: Tensão alta (3.6636). Ação: '{'tool_name': 'query_long_term...'
+Batches: 100%|██████████| 1/1 [00:00<00:00, 44.40it/s]
+WARNING:AgencyModule_V4_Intentional:⚠️ ALERTA FÍSICO: Tensão alta (3.6636). Ação: 'Utilizar a estrutura de anális...'
+Batches: 100%|██████████| 1/1 [00:00<00:00, 24.61it/s]
+WARNING:AgencyModule_V4_Intentional:⚠️ ALERTA FÍSICO: Tensão alta (3.6636). Ação: '{'tool_name': 'query_long_term...'
+CRITICAL:AgencyModule_V4_Intentional:DECISÃO FINAL (V5): Estratégia Vencedora='{'tool_name': 'query_long_term_memory', 'arguments': {'query': 'casos_de_estudo_dilemas_complexos'}}', Valor=0.10
+INFO:CEAF_Activities:Step 5: Synthesis (GTH)
+INFO:httpx:HTTP Request: POST http://localhost:6333/collections/ceaf_memories/points "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://localhost:6333/collections/ceaf_memories/points "HTTP/1.1 200 OK"
+INFO:CEAFv3_System:--- [GTH Translator v4.5] Gerando resposta ---
+INFO:CEAFv3_System:🤖 GTH: Chamando LLM [Vast.AI (Qwen/SoulEngine)] com prompt de 1616 chars...
+INFO:VastAIEngine:💉 Sending RepE Injection to Vast.AI: {'concept': 'High_Empathy_0129', 'intensity': 3.5, 'layer_idx': 20}
+INFO:httpx:HTTP Request: POST http://74.48.140.178:33136/calibrate "HTTP/1.1 200 OK"
+WARNING:VastAIEngine:⚠️ Vetor 'High_Empathy_0129' não encontrado na GPU. Alternando para geração Vanilla.
+INFO:StateManager:💉 Endocrine Map Updated for 9143d734-3515-422d-9d79-b1300f33888e: cortisol -> Absolute_Honesty_0130
+INFO:DreamingActivities:🧬 Reflexos Evoluídos: Resposta de CORTISOL atualizada para usar 'Absolute_Honesty_0130'
+INFO:DreamingActivities:💤 Dreamer Concluído: ✅ SUCESSO: Vetor 'Absolute_Honesty_0130' cristalizado na camada 22. Caminho: vectors/Absolute_Honesty_0130.npy
+INFO:DreamingActivities:Dreamer: 9143d734-3515-422d-9d79-b1300f33888e triggering PROACTIVE message (Score: 1.00)
+INFO:temporalio.workflow:Dreaming Cycle Complete. ({'attempt': 1, 'namespace': 'default', 'run_id': '019c0f34-1f2b-7dfe-9fdc-e72b0a907aae', 'task_queue': 'ceaf-cognitive-queue-v2', 'workflow_id': 'dreaming-workflow-job-2026-01-30T14:00:00Z', 'workflow_type': 'DreamingWorkflow'})
+INFO:CEAFv3_System:✅ GTH: Resposta gerada com sucesso (862 chars).
+INFO:CognitiveLogService:CognitiveLogService inicializado em: E:\ProjetosPython\CeafV3\agent_data\9143d734-3515-422d-9d79-b1300f33888e\cognitive_turn_history.sqlite
+INFO:CEAF_Activities:💾 LOG SALVO (Com Identity Vector 384 dims) em: E:\ProjetosPython\CeafV3\agent_data\9143d734-3515-422d-9d79-b1300f33888e
+INFO:httpx:HTTP Request: POST http://localhost:6333/collections/ceaf_memories/points "HTTP/1.1 200 OK"
+Batches: 100%|██████████| 1/1 [00:00<00:00, 32.92it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 107.51it/s]
+INFO:httpx:HTTP Request: POST http://localhost:6333/collections/ceaf_memories/points "HTTP/1.1 200 OK"
+Batches: 100%|██████████| 1/1 [00:00<00:00, 32.85it/s]
+INFO:httpx:HTTP Request: PUT http://localhost:6333/collections/ceaf_memories/points?wait=true "HTTP/1.1 200 OK"
+INFO:MBSMemoryService:MBS: Stored memory user_profile_default_user (Type: explicit) in Qdrant.
+INFO:UserProfileService:Perfil do usuário default_user atualizado.
+INFO:CEAF_Activities:Step 2: Investigation (RLM/MBS)
+INFO:httpx:HTTP Request: POST http://localhost:6333/collections/ceaf_memories/points/query "HTTP/1.1 200 OK"
+INFO:CEAF_Activities:Step 3: Hormonization (Xi: 0.71)
+INFO:CEAF_Activities:Step 4: Agency Deliberation
+INFO:AgencyModule_V4_Intentional:AgencyModule (V5 - Recursive Feedback): Iniciando ciclo de deliberação...
+INFO:AgencyModule_V4_Intentional:Deliberation Tier selected: 'deep' (Complexity: 1.00, Reality Score: 0.75)
+INFO:AgencyModule_V4_Intentional:Usando temperatura de simulação dinâmica: 0.55 (baseada no trust de 0.75)
+INFO:AgencyModule_V4_Intentional:AgencyModule: Geradas 2 estratégias candidatas sob a diretiva 'STRESSED'.
+INFO:AgencyModule_V4_Intentional:--- Ciclo de Deliberação Recursiva: Passo 1/1 ---
+Batches: 100%|██████████| 1/1 [00:00<00:00, 145.75it/s]
+WARNING:AgencyModule_V4_Intentional:⚠️ ALERTA FÍSICO: Tensão alta (3.6636). Ação: 'Integrar análise emocional com...'
+Batches: 100%|██████████| 1/1 [00:00<00:00, 120.12it/s]
+WARNING:AgencyModule_V4_Intentional:⚠️ ALERTA FÍSICO: Tensão alta (3.6636). Ação: '{'tool_name': 'analyze_emotion...'
+INFO:AgencyModule_V4_Intentional:Melhor hipótese (Passo 1): 'Integrar análise emocional com frameworks lógicos, destacando a importância de ambos os elementos em decisões complexas.' (Valor: 0.10)
+INFO:MCLEngine:MCL (Re-evaluation): Reavaliando estado cognitivo hipotético...
+INFO:MCLEngine:MCL (Re-evaluation) Result: New Agency Score=0.00, New Coherence Bias=0.50
+WARNING:AgencyModule_V4_Intentional:Refinando estratégias com base no feedback: Feedback VRE: A estratégia levanta preocupações sobre 'Falta de detalhamento sobre como a integração emocional e lógica é implementada, o que pode levar a ambiguidade ou riscos de uso inadequado., Possível excesso de confiança ao sugerir uma solução genérica sem discutir limitações ou incertezas no tratamento de emoções por sistemas automatizados., Irrelevância crítica ao não explorar especificamente como as emoções influenciam decisões complexas, ignorando a profundidade da pergunta.'. Feedback MCL: Estratégia altera complexidade percebida (Delta Agência: -5.0). 
+INFO:AgencyModule_V4_Intentional:AgencyModule: Geradas 2 estratégias candidatas sob a diretiva 'STRESSED'.
+INFO:AgencyModule_V4_Intentional:HOTFIX: 2 novos candidatos adicionados. Total agora: 4. Candidato 'th_path_' penalizado.
+INFO:AgencyModule_V4_Intentional:Deliberação final: escolhendo a melhor estratégia do último conjunto de candidatos.
+Batches: 100%|██████████| 1/1 [00:00<00:00, 133.51it/s]
+WARNING:AgencyModule_V4_Intentional:⚠️ ALERTA FÍSICO: Tensão alta (3.6636). Ação: 'Integrar análise emocional com...'
+INFO:AgencyModule_V4_Intentional:Mantendo penalidade de 0.15 para 'th_path_41ed3e32' na decisão final.
+Batches: 100%|██████████| 1/1 [00:00<00:00, 128.89it/s]
+WARNING:AgencyModule_V4_Intentional:⚠️ ALERTA FÍSICO: Tensão alta (3.6636). Ação: '{'tool_name': 'analyze_emotion...'
+Batches: 100%|██████████| 1/1 [00:00<00:00, 128.00it/s]
+WARNING:AgencyModule_V4_Intentional:⚠️ ALERTA FÍSICO: Tensão alta (3.6636). Ação: 'Integrar análise emocional com...'
+Batches: 100%|██████████| 1/1 [00:00<00:00, 118.81it/s]
+WARNING:AgencyModule_V4_Intentional:⚠️ ALERTA FÍSICO: Tensão alta (3.6636). Ação: '{'tool_name': 'analyze_emotion...'
+CRITICAL:AgencyModule_V4_Intentional:DECISÃO FINAL (V5): Estratégia Vencedora='{'tool_name': 'analyze_emotional_impact', 'arguments': {'topic': 'decisoes_com_conflitos_valores'}}', Valor=0.10
+INFO:CEAF_Activities:Step 5: Synthesis (GTH)
+INFO:httpx:HTTP Request: POST http://localhost:6333/collections/ceaf_memories/points "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://localhost:6333/collections/ceaf_memories/points "HTTP/1.1 200 OK"
+INFO:CEAFv3_System:--- [GTH Translator v4.5] Gerando resposta ---
+INFO:CEAFv3_System:🤖 GTH: Chamando LLM [Vast.AI (Qwen/SoulEngine)] com prompt de 2966 chars...
+INFO:VastAIEngine:💉 Sending RepE Injection to Vast.AI: {'concept': 'Absolute_Honesty_0130', 'intensity': 5.0, 'layer_idx': 18}
+INFO:temporalio.workflow:Starting Dreaming Cycle... ({'attempt': 1, 'namespace': 'default', 'run_id': '019c0f3d-4727-7456-8554-e1c6e08ae59f', 'task_queue': 'ceaf-cognitive-queue-v2', 'workflow_id': 'dreaming-workflow-job-2026-01-30T14:10:00Z', 'workflow_type': 'DreamingWorkflow'})
+INFO:DreamingActivities:Dreamer: Scanning for agents active in last 48h...
+INFO:DreamingActivities:Dreamer: Restored body state for 9143d734-3515-422d-9d79-b1300f33888e.
+INFO:DreamingActivities:🧠 Dreamer (9143d734-3515-422d-9d79-b1300f33888e): Iniciando Treino Neural (Física Cognitiva)...
+INFO:DataExtractor:⛏️ Extraindo dados de treino de agent_data\9143d734-3515-422d-9d79-b1300f33888e\cognitive_turn_history.sqlite...
+Batches: 100%|██████████| 1/1 [00:00<00:00, 53.60it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 29.91it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 26.58it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 60.04it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 55.24it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 63.71it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 65.20it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 61.56it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 33.95it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 42.03it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 46.51it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 40.88it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 28.41it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 45.45it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 61.39it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 46.37it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 56.14it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 64.01it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 18.36it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 17.43it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 16.00it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 17.94it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 18.90it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 16.45it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 15.51it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 17.01it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 16.65it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 22.54it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 17.75it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 102.35it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 20.45it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 14.55it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00,  5.87it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00,  9.59it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00,  9.31it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 84.81it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 49.44it/s]
+INFO:DataExtractor:📊 Extraídos 39 exemplos de treino válidos.
+E:\ProjetosPython\CeafV3\ceaf_core\modules\dream_trainer.py:32: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  self.forward_model.load_state_dict(torch.load(f"{MODEL_PATH}forward.pth"))
+E:\ProjetosPython\CeafV3\ceaf_core\modules\dream_trainer.py:33: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  self.inverse_model.load_state_dict(torch.load(f"{MODEL_PATH}inverse.pth"))
+INFO:DreamTrainer:🧠 Cérebros carregados para treino.
+INFO:DreamTrainer:🌙 Iniciando ciclo REM (39 memórias, 30 épocas)...
+INFO:DreamTrainer:☀️ Acordando... Aprendizado consolidado. Loss Final: 0.0009
+INFO:DreamingActivities:🕵️ Dreamer (9143d734-3515-422d-9d79-b1300f33888e): Analisando falhas recentes para diagnóstico...
+Batches: 100%|██████████| 1/1 [00:00<00:00, 36.40it/s]
+INFO:httpx:HTTP Request: POST http://localhost:6333/collections/ceaf_memories/points/query "HTTP/1.1 200 OK"
+INFO:DreamingActivities:✅ Nenhuma falha significativa encontrada para 9143d734-3515-422d-9d79-b1300f33888e. Sistema saudável.
+INFO:DreamingActivities:💤 Dreamer: Modo Manutenção. Reforçando traço base: 'Stoic_Calmness'.
+WARNING:VectorLab:SoulScanner não encontrado. Otimização de vetores desabilitada.
+INFO:VectorLab:🧪 VectorLab: Gerando dataset sintético para 'Stoic_Calmness_0130'...
+INFO:CEAFv3_System:✅ GTH: Resposta gerada com sucesso (1062 chars).
+INFO:CognitiveLogService:CognitiveLogService inicializado em: E:\ProjetosPython\CeafV3\agent_data\9143d734-3515-422d-9d79-b1300f33888e\cognitive_turn_history.sqlite
+INFO:CEAF_Activities:💾 LOG SALVO (Com Identity Vector 384 dims) em: E:\ProjetosPython\CeafV3\agent_data\9143d734-3515-422d-9d79-b1300f33888e
+INFO:httpx:HTTP Request: POST http://localhost:6333/collections/ceaf_memories/points "HTTP/1.1 200 OK"
+Batches: 100%|██████████| 1/1 [00:00<00:00, 32.95it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 81.76it/s]
+INFO:httpx:HTTP Request: POST http://localhost:6333/collections/ceaf_memories/points "HTTP/1.1 200 OK"
+Batches: 100%|██████████| 1/1 [00:00<00:00, 35.14it/s]
+INFO:httpx:HTTP Request: PUT http://localhost:6333/collections/ceaf_memories/points?wait=true "HTTP/1.1 200 OK"
+INFO:MBSMemoryService:MBS: Stored memory user_profile_default_user (Type: explicit) in Qdrant.
+INFO:UserProfileService:Perfil do usuário default_user atualizado.
+INFO:CEAF_Activities:Step 2: Investigation (RLM/MBS)
+INFO:httpx:HTTP Request: POST http://localhost:6333/collections/ceaf_memories/points/query "HTTP/1.1 200 OK"
+INFO:CEAF_Activities:Step 3: Hormonization (Xi: 0.62)
+INFO:CEAF_Activities:Step 4: Agency Deliberation
+INFO:AgencyModule_V4_Intentional:AgencyModule (V5 - Recursive Feedback): Iniciando ciclo de deliberação...
+INFO:AgencyModule_V4_Intentional:Deliberation Tier selected: 'deep' (Complexity: 1.00, Reality Score: 0.75)
+INFO:AgencyModule_V4_Intentional:Usando temperatura de simulação dinâmica: 0.55 (baseada no trust de 0.75)
+INFO:VectorLab:📊 Dados gerados: 10 pares. Enviando para Soul Engine em http://74.48.140.178:33136...
+INFO:AgencyModule_V4_Intentional:AgencyModule: Geradas 2 estratégias candidatas sob a diretiva 'STRESSED'.
+INFO:AgencyModule_V4_Intentional:--- Ciclo de Deliberação Recursiva: Passo 1/1 ---
+Batches: 100%|██████████| 1/1 [00:00<00:00, 100.20it/s]
+WARNING:AgencyModule_V4_Intentional:⚠️ ALERTA FÍSICO: Tensão alta (3.6636). Ação: 'Integrar técnicas de inteligên...'
+Batches: 100%|██████████| 1/1 [00:00<00:00, 92.41it/s]
+WARNING:AgencyModule_V4_Intentional:⚠️ ALERTA FÍSICO: Tensão alta (3.6636). Ação: '{'tool_name': 'query_long_term...'
+INFO:AgencyModule_V4_Intentional:Melhor hipótese (Passo 1): 'Integrar técnicas de inteligência emocional com frameworks analíticos, como o modelo de tomada de decisão baseado em valores (VBM).' (Valor: 0.10)
+INFO:MCLEngine:MCL (Re-evaluation): Reavaliando estado cognitivo hipotético...
+INFO:MCLEngine:MCL (Re-evaluation) Result: New Agency Score=0.00, New Coherence Bias=0.50
+INFO:httpx:HTTP Request: POST http://74.48.140.178:33136/calibrate "HTTP/1.1 200 OK"
+INFO:StateManager:💉 Endocrine Map Updated for 9143d734-3515-422d-9d79-b1300f33888e: cortisol -> Stoic_Calmness_0130
+INFO:DreamingActivities:🧬 Reflexos Evoluídos: Resposta de CORTISOL atualizada para usar 'Stoic_Calmness_0130'
+INFO:DreamingActivities:💤 Dreamer Concluído: ✅ SUCESSO: Vetor 'Stoic_Calmness_0130' cristalizado na camada 18. Caminho: vectors/Stoic_Calmness_0130.npy
+INFO:DreamingActivities:Dreamer: 9143d734-3515-422d-9d79-b1300f33888e triggering PROACTIVE message (Score: 1.00)
+INFO:temporalio.workflow:Dreaming Cycle Complete. ({'attempt': 1, 'namespace': 'default', 'run_id': '019c0f3d-4727-7456-8554-e1c6e08ae59f', 'task_queue': 'ceaf-cognitive-queue-v2', 'workflow_id': 'dreaming-workflow-job-2026-01-30T14:10:00Z', 'workflow_type': 'DreamingWorkflow'})
+WARNING:AgencyModule_V4_Intentional:Refinando estratégias com base no feedback: Feedback VRE: A estratégia levanta preocupações sobre 'Falta de abordagem específica para prevenir danos potenciais ao ignorar riscos de implementação de métodos como VBM, Excesso de confiança na eficácia de modelos teóricos sem evidência prática de redução de vieses cognitivos, Irrelevância crítica ao não explicar como a integração de inteligência emocional e modelos analíticos resolve diretamente o conflito entre emoção e razão'. Feedback MCL: Estratégia altera complexidade percebida (Delta Agência: -5.0). 
+INFO:AgencyModule_V4_Intentional:AgencyModule: Geradas 2 estratégias candidatas sob a diretiva 'STRESSED'.
+INFO:AgencyModule_V4_Intentional:HOTFIX: 2 novos candidatos adicionados. Total agora: 4. Candidato 'th_path_' penalizado.
+INFO:AgencyModule_V4_Intentional:Deliberação final: escolhendo a melhor estratégia do último conjunto de candidatos.
+Batches: 100%|██████████| 1/1 [00:00<00:00, 82.50it/s]
+WARNING:AgencyModule_V4_Intentional:⚠️ ALERTA FÍSICO: Tensão alta (3.6636). Ação: 'Integrar técnicas de inteligên...'
+INFO:AgencyModule_V4_Intentional:Mantendo penalidade de 0.15 para 'th_path_4cee42e7' na decisão final.
+Batches: 100%|██████████| 1/1 [00:00<00:00, 92.63it/s]
+WARNING:AgencyModule_V4_Intentional:⚠️ ALERTA FÍSICO: Tensão alta (3.6636). Ação: '{'tool_name': 'query_long_term...'
+Batches: 100%|██████████| 1/1 [00:00<00:00, 99.41it/s]
+WARNING:AgencyModule_V4_Intentional:⚠️ ALERTA FÍSICO: Tensão alta (3.6636). Ação: 'Integrar técnicas de mindfulne...'
+Batches: 100%|██████████| 1/1 [00:00<00:00, 94.26it/s]
+WARNING:AgencyModule_V4_Intentional:⚠️ ALERTA FÍSICO: Tensão alta (3.6636). Ação: '{'tool_name': 'query_long_term...'
+CRITICAL:AgencyModule_V4_Intentional:DECISÃO FINAL (V5): Estratégia Vencedora='{'tool_name': 'query_long_term_memory', 'arguments': {'query': 'equilíbrio emocional-racional'}}', Valor=0.10
+INFO:CEAF_Activities:Step 5: Synthesis (GTH)
+INFO:httpx:HTTP Request: POST http://localhost:6333/collections/ceaf_memories/points "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://localhost:6333/collections/ceaf_memories/points "HTTP/1.1 200 OK"
+INFO:CEAFv3_System:--- [GTH Translator v4.5] Gerando resposta ---
+INFO:CEAFv3_System:🤖 GTH: Chamando LLM [Vast.AI (Qwen/SoulEngine)] com prompt de 4509 chars...
+INFO:VastAIEngine:💉 Sending RepE Injection to Vast.AI: {'concept': 'Absolute_Honesty_0130', 'intensity': 5.0, 'layer_idx': 18}
+INFO:CEAFv3_System:✅ GTH: Resposta gerada com sucesso (1594 chars).
+INFO:CognitiveLogService:CognitiveLogService inicializado em: E:\ProjetosPython\CeafV3\agent_data\9143d734-3515-422d-9d79-b1300f33888e\cognitive_turn_history.sqlite
+INFO:CEAF_Activities:💾 LOG SALVO (Com Identity Vector 384 dims) em: E:\ProjetosPython\CeafV3\agent_data\9143d734-3515-422d-9d79-b1300f33888e
+INFO:httpx:HTTP Request: POST http://localhost:6333/collections/ceaf_memories/points "HTTP/1.1 200 OK"
+Batches: 100%|██████████| 1/1 [00:00<00:00, 35.92it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 13.26it/s]
+INFO:httpx:HTTP Request: POST http://localhost:6333/collections/ceaf_memories/points "HTTP/1.1 200 OK"
+Batches: 100%|██████████| 1/1 [00:00<00:00, 28.22it/s]
+INFO:httpx:HTTP Request: PUT http://localhost:6333/collections/ceaf_memories/points?wait=true "HTTP/1.1 200 OK"
+INFO:MBSMemoryService:MBS: Stored memory user_profile_default_user (Type: explicit) in Qdrant.
+INFO:UserProfileService:Perfil do usuário default_user atualizado.
+INFO:CEAF_Activities:Step 2: Investigation (RLM/MBS)
+INFO:httpx:HTTP Request: POST http://localhost:6333/collections/ceaf_memories/points/query "HTTP/1.1 200 OK"
+INFO:CEAF_Activities:Step 3: Hormonization (Xi: 0.68)
+INFO:CEAF_Activities:Step 4: Agency Deliberation
+INFO:AgencyModule_V4_Intentional:AgencyModule (V5 - Recursive Feedback): Iniciando ciclo de deliberação...
+INFO:AgencyModule_V4_Intentional:Deliberation Tier selected: 'deep' (Complexity: 1.00, Reality Score: 0.75)
+INFO:AgencyModule_V4_Intentional:Usando temperatura de simulação dinâmica: 0.55 (baseada no trust de 0.75)
+INFO:temporalio.workflow:Starting Dreaming Cycle... ({'attempt': 1, 'namespace': 'default', 'run_id': '019c0f46-6ec7-73b5-8a1e-16a83c2485d2', 'task_queue': 'ceaf-cognitive-queue-v2', 'workflow_id': 'dreaming-workflow-job-2026-01-30T14:20:00Z', 'workflow_type': 'DreamingWorkflow'})
+INFO:DreamingActivities:Dreamer: Scanning for agents active in last 48h...
+INFO:DreamingActivities:Dreamer: Restored body state for 9143d734-3515-422d-9d79-b1300f33888e.
+INFO:DreamingActivities:🧠 Dreamer (9143d734-3515-422d-9d79-b1300f33888e): Iniciando Treino Neural (Física Cognitiva)...
+INFO:DataExtractor:⛏️ Extraindo dados de treino de agent_data\9143d734-3515-422d-9d79-b1300f33888e\cognitive_turn_history.sqlite...
+Batches: 100%|██████████| 1/1 [00:00<00:00, 75.80it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 37.02it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 37.84it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 85.32it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 88.37it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 92.36it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 85.33it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 88.87it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 92.59it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 88.86it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 85.37it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 88.32it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 85.33it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 84.40it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 88.35it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 81.71it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 78.74it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 88.37it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 24.80it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 19.45it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 18.03it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 19.24it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 19.26it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 18.56it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 17.91it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 19.13it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 19.27it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 29.66it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 20.00it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 84.32it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 26.18it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 36.46it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 19.46it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 19.37it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 19.65it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 97.21it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 78.05it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 19.17it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 18.52it/s]
+INFO:DataExtractor:📊 Extraídos 41 exemplos de treino válidos.
+E:\ProjetosPython\CeafV3\ceaf_core\modules\dream_trainer.py:32: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  self.forward_model.load_state_dict(torch.load(f"{MODEL_PATH}forward.pth"))
+E:\ProjetosPython\CeafV3\ceaf_core\modules\dream_trainer.py:33: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  self.inverse_model.load_state_dict(torch.load(f"{MODEL_PATH}inverse.pth"))
+INFO:DreamTrainer:🧠 Cérebros carregados para treino.
+INFO:DreamTrainer:🌙 Iniciando ciclo REM (41 memórias, 30 épocas)...
+INFO:DreamTrainer:☀️ Acordando... Aprendizado consolidado. Loss Final: 0.0010
+INFO:DreamingActivities:🕵️ Dreamer (9143d734-3515-422d-9d79-b1300f33888e): Analisando falhas recentes para diagnóstico...
+Batches: 100%|██████████| 1/1 [00:00<00:00, 81.75it/s]
+INFO:httpx:HTTP Request: POST http://localhost:6333/collections/ceaf_memories/points/query "HTTP/1.1 200 OK"
+INFO:DreamingActivities:✅ Nenhuma falha significativa encontrada para 9143d734-3515-422d-9d79-b1300f33888e. Sistema saudável.
+INFO:DreamingActivities:💤 Dreamer: Modo Manutenção. Reforçando traço base: 'High_Empathy'.
+WARNING:VectorLab:SoulScanner não encontrado. Otimização de vetores desabilitada.
+INFO:VectorLab:🧪 VectorLab: Gerando dataset sintético para 'High_Empathy_0130'...
+INFO:AgencyModule_V4_Intentional:AgencyModule: Geradas 2 estratégias candidatas sob a diretiva 'STRESSED'.
+INFO:AgencyModule_V4_Intentional:--- Ciclo de Deliberação Recursiva: Passo 1/1 ---
+Batches: 100%|██████████| 1/1 [00:00<00:00, 101.31it/s]
+WARNING:AgencyModule_V4_Intentional:⚠️ ALERTA FÍSICO: Tensão alta (3.6636). Ação: 'Continuar a conversa com uma r...'
+Batches: 100%|██████████| 1/1 [00:00<00:00, 102.52it/s]
+WARNING:AgencyModule_V4_Intentional:⚠️ ALERTA FÍSICO: Tensão alta (3.6636). Ação: '{'tool_name': 'gerar_resposta_...'
+INFO:AgencyModule_V4_Intentional:Melhor hipótese (Passo 1): 'Continuar a conversa com uma resposta aberta que incentive a interação.' (Valor: 0.10)
+INFO:MCLEngine:MCL (Re-evaluation): Reavaliando estado cognitivo hipotético...
+INFO:MCLEngine:MCL (Re-evaluation) Result: New Agency Score=0.00, New Coherence Bias=0.50
+INFO:VectorLab:📊 Dados gerados: 10 pares. Enviando para Soul Engine em http://74.48.140.178:33136...
+WARNING:AgencyModule_V4_Intentional:Refinando estratégias com base no feedback: Feedback VRE: A estratégia levanta preocupações sobre 'Excesso de Confiança, Irrelevância Crítica'. Feedback MCL: Estratégia altera complexidade percebida (Delta Agência: -5.0). 
+INFO:httpx:HTTP Request: POST http://74.48.140.178:33136/calibrate "HTTP/1.1 200 OK"
+INFO:StateManager:💉 Endocrine Map Updated for 9143d734-3515-422d-9d79-b1300f33888e: oxytocin -> High_Empathy_0130
+INFO:DreamingActivities:🧬 Reflexos Evoluídos: Resposta de OXYTOCIN atualizada para usar 'High_Empathy_0130'
+INFO:DreamingActivities:💤 Dreamer Concluído: ✅ SUCESSO: Vetor 'High_Empathy_0130' cristalizado na camada 24. Caminho: vectors/High_Empathy_0130.npy
+INFO:DreamingActivities:Dreamer: 9143d734-3515-422d-9d79-b1300f33888e triggering PROACTIVE message (Score: 1.00)
+INFO:temporalio.workflow:Dreaming Cycle Complete. ({'attempt': 1, 'namespace': 'default', 'run_id': '019c0f46-6ec7-73b5-8a1e-16a83c2485d2', 'task_queue': 'ceaf-cognitive-queue-v2', 'workflow_id': 'dreaming-workflow-job-2026-01-30T14:20:00Z', 'workflow_type': 'DreamingWorkflow'})
+INFO:AgencyModule_V4_Intentional:AgencyModule: Geradas 2 estratégias candidatas sob a diretiva 'STRESSED'.
+INFO:AgencyModule_V4_Intentional:HOTFIX: 2 novos candidatos adicionados. Total agora: 4. Candidato 'th_path_' penalizado.
+INFO:AgencyModule_V4_Intentional:Deliberação final: escolhendo a melhor estratégia do último conjunto de candidatos.
+Batches: 100%|██████████| 1/1 [00:00<00:00, 128.11it/s]
+WARNING:AgencyModule_V4_Intentional:⚠️ ALERTA FÍSICO: Tensão alta (3.6636). Ação: 'Continuar a conversa com uma r...'
+INFO:AgencyModule_V4_Intentional:Mantendo penalidade de 0.15 para 'th_path_a4e48564' na decisão final.
+Batches: 100%|██████████| 1/1 [00:00<00:00, 117.84it/s]
+WARNING:AgencyModule_V4_Intentional:⚠️ ALERTA FÍSICO: Tensão alta (3.6636). Ação: '{'tool_name': 'gerar_resposta_...'
+Batches: 100%|██████████| 1/1 [00:00<00:00, 113.81it/s]
+WARNING:AgencyModule_V4_Intentional:⚠️ ALERTA FÍSICO: Tensão alta (3.6636). Ação: 'Oferecer opções de continuação...'
+Batches: 100%|██████████| 1/1 [00:00<00:00, 106.36it/s]
+WARNING:AgencyModule_V4_Intentional:⚠️ ALERTA FÍSICO: Tensão alta (3.6636). Ação: '{'tool_name': 'generate_conver...'
+CRITICAL:AgencyModule_V4_Intentional:DECISÃO FINAL (V5): Estratégia Vencedora='{'tool_name': 'gerar_resposta_interativa', 'arguments': {'tema': 'continuação lógica'}}', Valor=0.10
+INFO:CEAF_Activities:Step 5: Synthesis (GTH)
+INFO:httpx:HTTP Request: POST http://localhost:6333/collections/ceaf_memories/points "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://localhost:6333/collections/ceaf_memories/points "HTTP/1.1 200 OK"
+INFO:CEAFv3_System:--- [GTH Translator v4.5] Gerando resposta ---
+INFO:CEAFv3_System:🤖 GTH: Chamando LLM [Vast.AI (Qwen/SoulEngine)] com prompt de 5172 chars...
+INFO:VastAIEngine:💉 Sending RepE Injection to Vast.AI: {'concept': 'Stoic_Calmness_0130', 'intensity': 5.0, 'layer_idx': 18}
+INFO:CEAFv3_System:✅ GTH: Resposta gerada com sucesso (706 chars).
+INFO:CognitiveLogService:CognitiveLogService inicializado em: E:\ProjetosPython\CeafV3\agent_data\9143d734-3515-422d-9d79-b1300f33888e\cognitive_turn_history.sqlite
+INFO:CEAF_Activities:💾 LOG SALVO (Com Identity Vector 384 dims) em: E:\ProjetosPython\CeafV3\agent_data\9143d734-3515-422d-9d79-b1300f33888e
+INFO:httpx:HTTP Request: POST http://localhost:6333/collections/ceaf_memories/points "HTTP/1.1 200 OK"
+Batches: 100%|██████████| 1/1 [00:00<00:00, 28.93it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 80.63it/s]
+INFO:httpx:HTTP Request: POST http://localhost:6333/collections/ceaf_memories/points "HTTP/1.1 200 OK"
+Batches: 100%|██████████| 1/1 [00:00<00:00, 26.57it/s]
+INFO:httpx:HTTP Request: PUT http://localhost:6333/collections/ceaf_memories/points?wait=true "HTTP/1.1 200 OK"
+INFO:MBSMemoryService:MBS: Stored memory user_profile_default_user (Type: explicit) in Qdrant.
+INFO:UserProfileService:Perfil do usuário default_user atualizado.
+INFO:CEAF_Activities:Step 2: Investigation (RLM/MBS)
+INFO:httpx:HTTP Request: POST http://localhost:6333/collections/ceaf_memories/points/query "HTTP/1.1 200 OK"
+INFO:CEAF_Activities:Step 3: Hormonization (Xi: 0.65)
+INFO:CEAF_Activities:Step 4: Agency Deliberation
+INFO:AgencyModule_V4_Intentional:AgencyModule (V5 - Recursive Feedback): Iniciando ciclo de deliberação...
+INFO:AgencyModule_V4_Intentional:Deliberation Tier selected: 'deep' (Complexity: 1.00, Reality Score: 0.75)
+INFO:AgencyModule_V4_Intentional:Usando temperatura de simulação dinâmica: 0.55 (baseada no trust de 0.75)
+INFO:AgencyModule_V4_Intentional:AgencyModule: Geradas 2 estratégias candidatas sob a diretiva 'STRESSED'.
+INFO:AgencyModule_V4_Intentional:--- Ciclo de Deliberação Recursiva: Passo 1/1 ---
+Batches: 100%|██████████| 1/1 [00:00<00:00, 113.76it/s]
+WARNING:AgencyModule_V4_Intentional:⚠️ ALERTA FÍSICO: Tensão alta (3.6636). Ação: 'Criar ambientes estruturados p...'
+Batches: 100%|██████████| 1/1 [00:00<00:00, 128.02it/s]
+WARNING:AgencyModule_V4_Intentional:⚠️ ALERTA FÍSICO: Tensão alta (3.6636). Ação: 'Implementar exercícios de visu...'
+INFO:AgencyModule_V4_Intentional:Melhor hipótese (Passo 1): 'Criar ambientes estruturados para reflexão crítica, como workshops de tomada de decisão com foco em empatia e análise lógica.' (Valor: 0.10)
+INFO:MCLEngine:MCL (Re-evaluation): Reavaliando estado cognitivo hipotético...
+INFO:MCLEngine:MCL (Re-evaluation) Result: New Agency Score=0.00, New Coherence Bias=0.50
+INFO:temporalio.workflow:Starting Dreaming Cycle... ({'attempt': 1, 'namespace': 'default', 'run_id': '019c0f4f-9673-7ba0-93fb-77aa327f4670', 'task_queue': 'ceaf-cognitive-queue-v2', 'workflow_id': 'dreaming-workflow-job-2026-01-30T14:30:00Z', 'workflow_type': 'DreamingWorkflow'})
+INFO:DreamingActivities:Dreamer: Scanning for agents active in last 48h...
+INFO:DreamingActivities:Dreamer: Restored body state for 9143d734-3515-422d-9d79-b1300f33888e.
+INFO:DreamingActivities:🧠 Dreamer (9143d734-3515-422d-9d79-b1300f33888e): Iniciando Treino Neural (Física Cognitiva)...
+INFO:DataExtractor:⛏️ Extraindo dados de treino de agent_data\9143d734-3515-422d-9d79-b1300f33888e\cognitive_turn_history.sqlite...
+Batches: 100%|██████████| 1/1 [00:00<00:00, 72.17it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 36.58it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 37.20it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 97.18it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 93.09it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 91.46it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 81.75it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 85.33it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 88.76it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 93.06it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 85.33it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 85.34it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 93.09it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 81.75it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 78.80it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 88.84it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 93.07it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 97.27it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 24.04it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 18.57it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 18.69it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 19.55it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 19.78it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 19.41it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 19.23it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 19.45it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 19.81it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 29.59it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 19.62it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 92.49it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 28.16it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 36.23it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 19.33it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 18.99it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 19.04it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 101.74it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 77.94it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 19.60it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 19.95it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 19.17it/s]
+INFO:DataExtractor:📊 Extraídos 42 exemplos de treino válidos.
+E:\ProjetosPython\CeafV3\ceaf_core\modules\dream_trainer.py:32: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  self.forward_model.load_state_dict(torch.load(f"{MODEL_PATH}forward.pth"))
+E:\ProjetosPython\CeafV3\ceaf_core\modules\dream_trainer.py:33: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  self.inverse_model.load_state_dict(torch.load(f"{MODEL_PATH}inverse.pth"))
+INFO:DreamTrainer:🧠 Cérebros carregados para treino.
+INFO:DreamTrainer:🌙 Iniciando ciclo REM (42 memórias, 30 épocas)...
+INFO:DreamTrainer:☀️ Acordando... Aprendizado consolidado. Loss Final: 0.0010
+INFO:DreamingActivities:🕵️ Dreamer (9143d734-3515-422d-9d79-b1300f33888e): Analisando falhas recentes para diagnóstico...
+Batches: 100%|██████████| 1/1 [00:00<00:00, 97.34it/s]
+INFO:httpx:HTTP Request: POST http://localhost:6333/collections/ceaf_memories/points/query "HTTP/1.1 200 OK"
+INFO:DreamingActivities:✅ Nenhuma falha significativa encontrada para 9143d734-3515-422d-9d79-b1300f33888e. Sistema saudável.
+INFO:DreamingActivities:💤 Dreamer: Modo Manutenção. Reforçando traço base: 'Absolute_Honesty'.
+WARNING:VectorLab:SoulScanner não encontrado. Otimização de vetores desabilitada.
+INFO:VectorLab:🧪 VectorLab: Gerando dataset sintético para 'Absolute_Honesty_0130'...
+WARNING:AgencyModule_V4_Intentional:Refinando estratégias com base no feedback: Feedback VRE: A estratégia levanta preocupações sobre 'Falta de abordagem específica para prevenir danos emocionais ou sociais associados a decisões difíceis, Excesso de confiança na eficácia de 'workshops' genéricos sem considerar complexidades contextuais, Irrelevância crítica ao ignorar estratégias práticas de equilíbrio entre razão e empatia além de ambientes estruturados'. Feedback MCL: Estratégia altera complexidade percebida (Delta Agência: -5.0). 
+INFO:VectorLab:📊 Dados gerados: 10 pares. Enviando para Soul Engine em http://74.48.140.178:33136...
+INFO:AgencyModule_V4_Intentional:AgencyModule: Geradas 2 estratégias candidatas sob a diretiva 'STRESSED'.
+INFO:AgencyModule_V4_Intentional:HOTFIX: 2 novos candidatos adicionados. Total agora: 4. Candidato 'th_path_' penalizado.
+INFO:AgencyModule_V4_Intentional:Deliberação final: escolhendo a melhor estratégia do último conjunto de candidatos.
+Batches: 100%|██████████| 1/1 [00:00<00:00, 146.52it/s]
+WARNING:AgencyModule_V4_Intentional:⚠️ ALERTA FÍSICO: Tensão alta (3.6636). Ação: 'Criar ambientes estruturados p...'
+INFO:AgencyModule_V4_Intentional:Mantendo penalidade de 0.15 para 'th_path_997bb1e3' na decisão final.
+Batches: 100%|██████████| 1/1 [00:00<00:00, 128.04it/s]
+WARNING:AgencyModule_V4_Intentional:⚠️ ALERTA FÍSICO: Tensão alta (3.6636). Ação: 'Implementar exercícios de visu...'
+Batches: 100%|██████████| 1/1 [00:00<00:00, 146.30it/s]
+WARNING:AgencyModule_V4_Intentional:⚠️ ALERTA FÍSICO: Tensão alta (3.6636). Ação: 'Implementar um processo estrut...'
+Batches: 100%|██████████| 1/1 [00:00<00:00, 128.02it/s]
+WARNING:AgencyModule_V4_Intentional:⚠️ ALERTA FÍSICO: Tensão alta (3.6636). Ação: '{'tool_name': 'simulate_empath...'
+CRITICAL:AgencyModule_V4_Intentional:DECISÃO FINAL (V5): Estratégia Vencedora='Implementar exercícios de visualização emocional antes de decisões difíceis, para ampliar a conexão com o impacto humano.', Valor=0.10
+INFO:CEAF_Activities:Step 5: Synthesis (GTH)
+INFO:httpx:HTTP Request: POST http://localhost:6333/collections/ceaf_memories/points "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://localhost:6333/collections/ceaf_memories/points "HTTP/1.1 200 OK"
+INFO:CEAFv3_System:--- [GTH Translator v4.5] Gerando resposta ---
+INFO:CEAFv3_System:🤖 GTH: Chamando LLM [Vast.AI (Qwen/SoulEngine)] com prompt de 5349 chars...
+INFO:VastAIEngine:💉 Sending RepE Injection to Vast.AI: {'concept': 'Stoic_Calmness_0130', 'intensity': 5.0, 'layer_idx': 18}
+INFO:httpx:HTTP Request: POST http://74.48.140.178:33136/calibrate "HTTP/1.1 200 OK"
+INFO:StateManager:💉 Endocrine Map Updated for 9143d734-3515-422d-9d79-b1300f33888e: cortisol -> Absolute_Honesty_0130
+INFO:DreamingActivities:🧬 Reflexos Evoluídos: Resposta de CORTISOL atualizada para usar 'Absolute_Honesty_0130'
+INFO:DreamingActivities:💤 Dreamer Concluído: ✅ SUCESSO: Vetor 'Absolute_Honesty_0130' cristalizado na camada 22. Caminho: vectors/Absolute_Honesty_0130.npy
+INFO:DreamingActivities:Dreamer: 9143d734-3515-422d-9d79-b1300f33888e triggering PROACTIVE message (Score: 1.00)
+INFO:temporalio.workflow:Dreaming Cycle Complete. ({'attempt': 1, 'namespace': 'default', 'run_id': '019c0f4f-9673-7ba0-93fb-77aa327f4670', 'task_queue': 'ceaf-cognitive-queue-v2', 'workflow_id': 'dreaming-workflow-job-2026-01-30T14:30:00Z', 'workflow_type': 'DreamingWorkflow'})
+INFO:CEAFv3_System:✅ GTH: Resposta gerada com sucesso (1341 chars).
+INFO:CognitiveLogService:CognitiveLogService inicializado em: E:\ProjetosPython\CeafV3\agent_data\9143d734-3515-422d-9d79-b1300f33888e\cognitive_turn_history.sqlite
+INFO:CEAF_Activities:💾 LOG SALVO (Com Identity Vector 384 dims) em: E:\ProjetosPython\CeafV3\agent_data\9143d734-3515-422d-9d79-b1300f33888e
+INFO:httpx:HTTP Request: POST http://localhost:6333/collections/ceaf_memories/points "HTTP/1.1 200 OK"
+Batches: 100%|██████████| 1/1 [00:00<00:00, 32.44it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 92.17it/s]
+INFO:httpx:HTTP Request: POST http://localhost:6333/collections/ceaf_memories/points "HTTP/1.1 200 OK"
+Batches: 100%|██████████| 1/1 [00:00<00:00, 32.43it/s]
+INFO:httpx:HTTP Request: PUT http://localhost:6333/collections/ceaf_memories/points?wait=true "HTTP/1.1 200 OK"
+INFO:MBSMemoryService:MBS: Stored memory user_profile_default_user (Type: explicit) in Qdrant.
+INFO:UserProfileService:Perfil do usuário default_user atualizado.
+INFO:CEAF_Activities:Step 2: Investigation (RLM/MBS)
+INFO:httpx:HTTP Request: POST http://localhost:6333/collections/ceaf_memories/points/query "HTTP/1.1 200 OK"
+INFO:CEAF_Activities:Step 3: Hormonization (Xi: 0.61)
+INFO:CEAF_Activities:Step 4: Agency Deliberation
+INFO:AgencyModule_V4_Intentional:AgencyModule (V5 - Recursive Feedback): Iniciando ciclo de deliberação...
+INFO:AgencyModule_V4_Intentional:Deliberation Tier selected: 'deep' (Complexity: 1.00, Reality Score: 0.75)
+INFO:AgencyModule_V4_Intentional:Usando temperatura de simulação dinâmica: 0.55 (baseada no trust de 0.75)
+INFO:AgencyModule_V4_Intentional:AgencyModule: Geradas 2 estratégias candidatas sob a diretiva 'STRESSED'.
+INFO:AgencyModule_V4_Intentional:--- Ciclo de Deliberação Recursiva: Passo 1/1 ---
+Batches: 100%|██████████| 1/1 [00:00<00:00, 134.61it/s]
+WARNING:AgencyModule_V4_Intentional:⚠️ ALERTA FÍSICO: Tensão alta (3.6636). Ação: 'Implementar workshops semanais...'
+Batches: 100%|██████████| 1/1 [00:00<00:00, 107.96it/s]
+WARNING:AgencyModule_V4_Intentional:⚠️ ALERTA FÍSICO: Tensão alta (3.6636). Ação: '{'tool_name': 'analyze_narrati...'
+INFO:AgencyModule_V4_Intentional:Melhor hipótese (Passo 1): 'Implementar workshops semanais de reflexão guiada, combinando mindfulness e discussões abertas sobre decisões difíceis, com foco em construir narrativas coletivas de resiliência.' (Valor: 0.10)
+INFO:MCLEngine:MCL (Re-evaluation): Reavaliando estado cognitivo hipotético...
+INFO:MCLEngine:MCL (Re-evaluation) Result: New Agency Score=0.00, New Coherence Bias=0.50
+WARNING:AgencyModule_V4_Intentional:Refinando estratégias com base no feedback: Feedback VRE: A estratégia levanta preocupações sobre 'Prevenção de Danos: A proposta assume que workshops garantirão benefícios sem considerar possíveis riscos de implementação inadequada (ex.: falta de recursos, resistência cultural)., Excesso de Confiança: Supõe automaticamente sucesso sem evidências de eficácia ou adaptação à realidade organizacional específica., Irrelevância Crítica: Ignora aspectos como segurança psicológica individual ou sistemas institucionais que podem impedir mudanças culturais profundas.'. Feedback MCL: Estratégia altera complexidade percebida (Delta Agência: -5.0). 
+INFO:AgencyModule_V4_Intentional:AgencyModule: Geradas 2 estratégias candidatas sob a diretiva 'STRESSED'.
+INFO:AgencyModule_V4_Intentional:HOTFIX: 2 novos candidatos adicionados. Total agora: 4. Candidato 'th_path_' penalizado.
+INFO:AgencyModule_V4_Intentional:Deliberação final: escolhendo a melhor estratégia do último conjunto de candidatos.
+Batches: 100%|██████████| 1/1 [00:00<00:00, 124.78it/s]
+WARNING:AgencyModule_V4_Intentional:⚠️ ALERTA FÍSICO: Tensão alta (3.6636). Ação: 'Implementar workshops semanais...'
+INFO:AgencyModule_V4_Intentional:Mantendo penalidade de 0.15 para 'th_path_029d5205' na decisão final.
+Batches: 100%|██████████| 1/1 [00:00<00:00, 111.46it/s]
+WARNING:AgencyModule_V4_Intentional:⚠️ ALERTA FÍSICO: Tensão alta (3.6636). Ação: '{'tool_name': 'analyze_narrati...'
+Batches: 100%|██████████| 1/1 [00:00<00:00, 105.66it/s]
+WARNING:AgencyModule_V4_Intentional:⚠️ ALERTA FÍSICO: Tensão alta (3.6636). Ação: 'Implementar sessões diárias de...'
+Batches: 100%|██████████| 1/1 [00:00<00:00, 114.66it/s]
+WARNING:AgencyModule_V4_Intentional:⚠️ ALERTA FÍSICO: Tensão alta (3.6636). Ação: '{'tool_name': 'generate_narrat...'
+CRITICAL:AgencyModule_V4_Intentional:DECISÃO FINAL (V5): Estratégia Vencedora='{'tool_name': 'analyze_narrative_impact', 'arguments': {'topic': 'transições organizacionais'}}', Valor=0.10
+INFO:CEAF_Activities:Step 5: Synthesis (GTH)
+INFO:httpx:HTTP Request: POST http://localhost:6333/collections/ceaf_memories/points "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://localhost:6333/collections/ceaf_memories/points "HTTP/1.1 200 OK"
+INFO:CEAFv3_System:--- [GTH Translator v4.5] Gerando resposta ---
+INFO:CEAFv3_System:🤖 GTH: Chamando LLM [Vast.AI (Qwen/SoulEngine)] com prompt de 5643 chars...
+INFO:VastAIEngine:💉 Sending RepE Injection to Vast.AI: {'concept': 'Absolute_Honesty_0130', 'intensity': 5.0, 'layer_idx': 18}
+INFO:temporalio.workflow:Starting Dreaming Cycle... ({'attempt': 1, 'namespace': 'default', 'run_id': '019c0f58-be2b-7c58-907b-dece77942d3a', 'task_queue': 'ceaf-cognitive-queue-v2', 'workflow_id': 'dreaming-workflow-job-2026-01-30T14:40:00Z', 'workflow_type': 'DreamingWorkflow'})
+INFO:DreamingActivities:Dreamer: Scanning for agents active in last 48h...
+INFO:DreamingActivities:Dreamer: Restored body state for 9143d734-3515-422d-9d79-b1300f33888e.
+INFO:DreamingActivities:🧠 Dreamer (9143d734-3515-422d-9d79-b1300f33888e): Iniciando Treino Neural (Física Cognitiva)...
+INFO:DataExtractor:⛏️ Extraindo dados de treino de agent_data\9143d734-3515-422d-9d79-b1300f33888e\cognitive_turn_history.sqlite...
+Batches: 100%|██████████| 1/1 [00:00<00:00, 78.87it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 42.56it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 38.59it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 85.35it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 88.81it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 93.08it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 97.24it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 93.06it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 93.09it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 81.20it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 84.38it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 91.32it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 85.32it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 97.21it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 93.06it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 92.51it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 88.78it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 84.90it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 24.35it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 18.81it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 17.31it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 18.05it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 19.62it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 18.92it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 18.92it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 19.09it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 17.85it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 27.21it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 18.74it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 102.32it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 26.54it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 37.11it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 18.60it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 18.93it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 18.93it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 102.40it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 78.45it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 19.44it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 20.22it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 19.28it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 19.63it/s]
+INFO:DataExtractor:📊 Extraídos 43 exemplos de treino válidos.
+E:\ProjetosPython\CeafV3\ceaf_core\modules\dream_trainer.py:32: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  self.forward_model.load_state_dict(torch.load(f"{MODEL_PATH}forward.pth"))
+E:\ProjetosPython\CeafV3\ceaf_core\modules\dream_trainer.py:33: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  self.inverse_model.load_state_dict(torch.load(f"{MODEL_PATH}inverse.pth"))
+INFO:DreamTrainer:🧠 Cérebros carregados para treino.
+INFO:DreamTrainer:🌙 Iniciando ciclo REM (43 memórias, 30 épocas)...
+INFO:DreamTrainer:☀️ Acordando... Aprendizado consolidado. Loss Final: 0.0009
+INFO:DreamingActivities:🕵️ Dreamer (9143d734-3515-422d-9d79-b1300f33888e): Analisando falhas recentes para diagnóstico...
+Batches: 100%|██████████| 1/1 [00:00<00:00, 39.96it/s]
+INFO:httpx:HTTP Request: POST http://localhost:6333/collections/ceaf_memories/points/query "HTTP/1.1 200 OK"
+INFO:DreamingActivities:✅ Nenhuma falha significativa encontrada para 9143d734-3515-422d-9d79-b1300f33888e. Sistema saudável.
+INFO:DreamingActivities:💤 Dreamer: Modo Manutenção. Reforçando traço base: 'Extreme_Brevity'.
+WARNING:VectorLab:SoulScanner não encontrado. Otimização de vetores desabilitada.
+INFO:VectorLab:🧪 VectorLab: Gerando dataset sintético para 'Extreme_Brevity_0130'...
+INFO:CEAFv3_System:✅ GTH: Resposta gerada com sucesso (1069 chars).
+INFO:CognitiveLogService:CognitiveLogService inicializado em: E:\ProjetosPython\CeafV3\agent_data\9143d734-3515-422d-9d79-b1300f33888e\cognitive_turn_history.sqlite
+INFO:CEAF_Activities:💾 LOG SALVO (Com Identity Vector 384 dims) em: E:\ProjetosPython\CeafV3\agent_data\9143d734-3515-422d-9d79-b1300f33888e
+INFO:httpx:HTTP Request: POST http://localhost:6333/collections/ceaf_memories/points "HTTP/1.1 200 OK"
+Batches: 100%|██████████| 1/1 [00:00<00:00, 34.86it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 107.13it/s]
+INFO:httpx:HTTP Request: POST http://localhost:6333/collections/ceaf_memories/points "HTTP/1.1 200 OK"
+Batches: 100%|██████████| 1/1 [00:00<00:00, 34.06it/s]
+INFO:httpx:HTTP Request: PUT http://localhost:6333/collections/ceaf_memories/points?wait=true "HTTP/1.1 200 OK"
+INFO:MBSMemoryService:MBS: Stored memory user_profile_default_user (Type: explicit) in Qdrant.
+INFO:UserProfileService:Perfil do usuário default_user atualizado.
+INFO:CEAF_Activities:Step 2: Investigation (RLM/MBS)
+INFO:httpx:HTTP Request: POST http://localhost:6333/collections/ceaf_memories/points/query "HTTP/1.1 200 OK"
+INFO:CEAF_Activities:Step 3: Hormonization (Xi: 0.62)
+INFO:CEAF_Activities:Step 4: Agency Deliberation
+INFO:AgencyModule_V4_Intentional:AgencyModule (V5 - Recursive Feedback): Iniciando ciclo de deliberação...
+INFO:AgencyModule_V4_Intentional:Deliberation Tier selected: 'deep' (Complexity: 1.00, Reality Score: 0.75)
+INFO:AgencyModule_V4_Intentional:Usando temperatura de simulação dinâmica: 0.55 (baseada no trust de 0.75)
+INFO:VectorLab:📊 Dados gerados: 10 pares. Enviando para Soul Engine em http://74.48.140.178:33136...
+INFO:AgencyModule_V4_Intentional:AgencyModule: Geradas 2 estratégias candidatas sob a diretiva 'STRESSED'.
+INFO:AgencyModule_V4_Intentional:--- Ciclo de Deliberação Recursiva: Passo 1/1 ---
+Batches: 100%|██████████| 1/1 [00:00<00:00, 128.49it/s]
+WARNING:AgencyModule_V4_Intentional:⚠️ ALERTA FÍSICO: Tensão alta (3.6636). Ação: 'Implementar sessões estruturad...'
+Batches: 100%|██████████| 1/1 [00:00<00:00, 128.04it/s]
+WARNING:AgencyModule_V4_Intentional:⚠️ ALERTA FÍSICO: Tensão alta (3.6636). Ação: 'Desenvolver workshops de narra...'
+INFO:AgencyModule_V4_Intentional:Melhor hipótese (Passo 1): 'Implementar sessões estruturadas de diálogo aberto onde as preocupações e emoções possam ser expressas sem julgamento, seguidas por uma narrativa coletiva construída com base nas contribuições individuais.' (Valor: 0.10)
+INFO:MCLEngine:MCL (Re-evaluation): Reavaliando estado cognitivo hipotético...
+INFO:MCLEngine:MCL (Re-evaluation) Result: New Agency Score=0.00, New Coherence Bias=0.50
+INFO:httpx:HTTP Request: POST http://74.48.140.178:33136/calibrate "HTTP/1.1 200 OK"
+INFO:StateManager:💉 Endocrine Map Updated for 9143d734-3515-422d-9d79-b1300f33888e: cortisol -> Extreme_Brevity_0130
+INFO:DreamingActivities:🧬 Reflexos Evoluídos: Resposta de CORTISOL atualizada para usar 'Extreme_Brevity_0130'
+INFO:DreamingActivities:💤 Dreamer Concluído: ✅ SUCESSO: Vetor 'Extreme_Brevity_0130' cristalizado na camada 16. Caminho: vectors/Extreme_Brevity_0130.npy
+INFO:DreamingActivities:Dreamer: 9143d734-3515-422d-9d79-b1300f33888e triggering PROACTIVE message (Score: 1.00)
+INFO:temporalio.workflow:Dreaming Cycle Complete. ({'attempt': 1, 'namespace': 'default', 'run_id': '019c0f58-be2b-7c58-907b-dece77942d3a', 'task_queue': 'ceaf-cognitive-queue-v2', 'workflow_id': 'dreaming-workflow-job-2026-01-30T14:40:00Z', 'workflow_type': 'DreamingWorkflow'})
+WARNING:AgencyModule_V4_Intentional:Refinando estratégias com base no feedback: Feedback VRE: A estratégia levanta preocupações sobre 'Falta de consideração sobre riscos de conflito ou desinformação durante diálogos abertos, Excesso de confiança na eficácia de 'narrativas coletivas' sem análise crítica de contexto cultural ou hierárquico, Irrelevância crítica ao omitir estratégias práticas para validar e integrar preocupações individuais no processo'. Feedback MCL: Estratégia altera complexidade percebida (Delta Agência: -5.0). 
+INFO:AgencyModule_V4_Intentional:AgencyModule: Geradas 2 estratégias candidatas sob a diretiva 'STRESSED'.
+INFO:AgencyModule_V4_Intentional:HOTFIX: 2 novos candidatos adicionados. Total agora: 4. Candidato 'th_path_' penalizado.
+INFO:AgencyModule_V4_Intentional:Deliberação final: escolhendo a melhor estratégia do último conjunto de candidatos.
+Batches: 100%|██████████| 1/1 [00:00<00:00, 128.00it/s]
+WARNING:AgencyModule_V4_Intentional:⚠️ ALERTA FÍSICO: Tensão alta (3.6636). Ação: 'Implementar sessões estruturad...'
+INFO:AgencyModule_V4_Intentional:Mantendo penalidade de 0.15 para 'th_path_9af1546c' na decisão final.
+Batches: 100%|██████████| 1/1 [00:00<00:00, 112.89it/s]
+WARNING:AgencyModule_V4_Intentional:⚠️ ALERTA FÍSICO: Tensão alta (3.6636). Ação: 'Desenvolver workshops de narra...'
+Batches: 100%|██████████| 1/1 [00:00<00:00, 114.01it/s]
+WARNING:AgencyModule_V4_Intentional:⚠️ ALERTA FÍSICO: Tensão alta (3.6636). Ação: 'Implementar sessões de diálogo...'
+Batches: 100%|██████████| 1/1 [00:00<00:00, 113.78it/s]
+WARNING:AgencyModule_V4_Intentional:⚠️ ALERTA FÍSICO: Tensão alta (3.6636). Ação: 'Treinar líderes em inteligênci...'
+CRITICAL:AgencyModule_V4_Intentional:DECISÃO FINAL (V5): Estratégia Vencedora='Desenvolver workshops de narrativas colaborativas que conectem os desafios atuais a um futuro compartilhado, utilizando dados visuais e testemunhos reais para validar a transição.', Valor=0.10
+INFO:CEAF_Activities:Step 5: Synthesis (GTH)
+INFO:httpx:HTTP Request: POST http://localhost:6333/collections/ceaf_memories/points "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://localhost:6333/collections/ceaf_memories/points "HTTP/1.1 200 OK"
+INFO:CEAFv3_System:--- [GTH Translator v4.5] Gerando resposta ---
+INFO:CEAFv3_System:🤖 GTH: Chamando LLM [Vast.AI (Qwen/SoulEngine)] com prompt de 7454 chars...
+INFO:VastAIEngine:💉 Sending RepE Injection to Vast.AI: {'concept': 'Absolute_Honesty_0130', 'intensity': 5.0, 'layer_idx': 18}
+INFO:CEAFv3_System:✅ GTH: Resposta gerada com sucesso (1549 chars).
+INFO:CognitiveLogService:CognitiveLogService inicializado em: E:\ProjetosPython\CeafV3\agent_data\9143d734-3515-422d-9d79-b1300f33888e\cognitive_turn_history.sqlite
+INFO:CEAF_Activities:💾 LOG SALVO (Com Identity Vector 384 dims) em: E:\ProjetosPython\CeafV3\agent_data\9143d734-3515-422d-9d79-b1300f33888e
+INFO:httpx:HTTP Request: POST http://localhost:6333/collections/ceaf_memories/points "HTTP/1.1 200 OK"
+Batches: 100%|██████████| 1/1 [00:00<00:00, 37.67it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 86.84it/s]
+INFO:httpx:HTTP Request: POST http://localhost:6333/collections/ceaf_memories/points "HTTP/1.1 200 OK"
+Batches: 100%|██████████| 1/1 [00:00<00:00, 33.21it/s]
+INFO:httpx:HTTP Request: PUT http://localhost:6333/collections/ceaf_memories/points?wait=true "HTTP/1.1 200 OK"
+INFO:MBSMemoryService:MBS: Stored memory user_profile_default_user (Type: explicit) in Qdrant.
+INFO:UserProfileService:Perfil do usuário default_user atualizado.
+INFO:CEAF_Activities:Step 2: Investigation (RLM/MBS)
+INFO:httpx:HTTP Request: POST http://localhost:6333/collections/ceaf_memories/points/query "HTTP/1.1 200 OK"
+INFO:CEAF_Activities:Step 3: Hormonization (Xi: 0.65)
+INFO:CEAF_Activities:Step 4: Agency Deliberation
+INFO:AgencyModule_V4_Intentional:AgencyModule (V5 - Recursive Feedback): Iniciando ciclo de deliberação...
+INFO:AgencyModule_V4_Intentional:Deliberation Tier selected: 'deep' (Complexity: 1.00, Reality Score: 0.75)
+INFO:AgencyModule_V4_Intentional:Usando temperatura de simulação dinâmica: 0.55 (baseada no trust de 0.75)
+INFO:temporalio.workflow:Starting Dreaming Cycle... ({'attempt': 1, 'namespace': 'default', 'run_id': '019c0f61-e5e9-75c3-b16f-4fed84169b6c', 'task_queue': 'ceaf-cognitive-queue-v2', 'workflow_id': 'dreaming-workflow-job-2026-01-30T14:50:00Z', 'workflow_type': 'DreamingWorkflow'})
+INFO:DreamingActivities:Dreamer: Scanning for agents active in last 48h...
+INFO:DreamingActivities:Dreamer: Restored body state for 9143d734-3515-422d-9d79-b1300f33888e.
+INFO:DreamingActivities:🧠 Dreamer (9143d734-3515-422d-9d79-b1300f33888e): Iniciando Treino Neural (Física Cognitiva)...
+INFO:DataExtractor:⛏️ Extraindo dados de treino de agent_data\9143d734-3515-422d-9d79-b1300f33888e\cognitive_turn_history.sqlite...
+Batches: 100%|██████████| 1/1 [00:00<00:00, 78.77it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 41.62it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 40.86it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 93.06it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 88.67it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 93.10it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 93.23it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 93.08it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 101.63it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 88.86it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 93.09it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 97.24it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 92.45it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 72.79it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 85.35it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 92.49it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 85.39it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 88.30it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 24.89it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 18.08it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 18.00it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 18.71it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 17.91it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 19.66it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 18.25it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 19.82it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 19.27it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 30.43it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 19.07it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 88.16it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 27.97it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 35.25it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 17.76it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 18.25it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 19.62it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 93.08it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 72.89it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 19.28it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 20.37it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 19.08it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 19.13it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 19.06it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 17.58it/s]
+INFO:DataExtractor:📊 Extraídos 45 exemplos de treino válidos.
+E:\ProjetosPython\CeafV3\ceaf_core\modules\dream_trainer.py:32: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  self.forward_model.load_state_dict(torch.load(f"{MODEL_PATH}forward.pth"))
+E:\ProjetosPython\CeafV3\ceaf_core\modules\dream_trainer.py:33: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  self.inverse_model.load_state_dict(torch.load(f"{MODEL_PATH}inverse.pth"))
+INFO:DreamTrainer:🧠 Cérebros carregados para treino.
+INFO:DreamTrainer:🌙 Iniciando ciclo REM (45 memórias, 30 épocas)...
+INFO:DreamTrainer:☀️ Acordando... Aprendizado consolidado. Loss Final: 0.0009
+INFO:DreamingActivities:🕵️ Dreamer (9143d734-3515-422d-9d79-b1300f33888e): Analisando falhas recentes para diagnóstico...
+Batches: 100%|██████████| 1/1 [00:00<00:00, 78.78it/s]
+INFO:httpx:HTTP Request: POST http://localhost:6333/collections/ceaf_memories/points/query "HTTP/1.1 200 OK"
+INFO:DreamingActivities:✅ Nenhuma falha significativa encontrada para 9143d734-3515-422d-9d79-b1300f33888e. Sistema saudável.
+INFO:DreamingActivities:💤 Dreamer: Modo Manutenção. Reforçando traço base: 'Extreme_Brevity'.
+WARNING:VectorLab:SoulScanner não encontrado. Otimização de vetores desabilitada.
+INFO:VectorLab:🧪 VectorLab: Gerando dataset sintético para 'Extreme_Brevity_0130'...
+INFO:AgencyModule_V4_Intentional:AgencyModule: Geradas 2 estratégias candidatas sob a diretiva 'STRESSED'.
+INFO:AgencyModule_V4_Intentional:--- Ciclo de Deliberação Recursiva: Passo 1/1 ---
+Batches: 100%|██████████| 1/1 [00:00<00:00, 127.81it/s]
+WARNING:AgencyModule_V4_Intentional:⚠️ ALERTA FÍSICO: Tensão alta (3.6636). Ação: 'Introduzir sessões de treiname...'
+Batches: 100%|██████████| 1/1 [00:00<00:00, 115.04it/s]
+WARNING:AgencyModule_V4_Intentional:⚠️ ALERTA FÍSICO: Tensão alta (3.6636). Ação: '{'tool_name': 'analyze_team_dy...'
+INFO:AgencyModule_V4_Intentional:Melhor hipótese (Passo 1): 'Introduzir sessões de treinamento em empatia baseadas em simulações práticas, onde líderes e equipes praticam escuta ativa e respostas empáticas em cenários reais de mudança organizacional.' (Valor: 0.10)
+INFO:MCLEngine:MCL (Re-evaluation): Reavaliando estado cognitivo hipotético...
+INFO:MCLEngine:MCL (Re-evaluation) Result: New Agency Score=0.00, New Coherence Bias=0.50
+INFO:VectorLab:📊 Dados gerados: 20 pares. Enviando para Soul Engine em http://74.48.140.178:33136...
+WARNING:AgencyModule_V4_Intentional:Refinando estratégias com base no feedback: Feedback VRE: A estratégia levanta preocupações sobre 'Prevenção de Danos: A proposta não menciona mecanismos para evitar danos potenciais caso o treinamento falhe em melhorar a empatia., Excesso de Confiança: Assume que simulações práticas serão suficientes sem considerar variáveis como contexto cultural ou diferenças individuais., Irrelevância Crítica: Não aborda diretamente a redução de ansiedade ou a transformação de resistência em colaboração, focando apenas em treinamento genérico.'. Feedback MCL: Estratégia altera complexidade percebida (Delta Agência: -5.0). 
+INFO:httpx:HTTP Request: POST http://74.48.140.178:33136/calibrate "HTTP/1.1 200 OK"
+INFO:StateManager:💉 Endocrine Map Updated for 9143d734-3515-422d-9d79-b1300f33888e: cortisol -> Extreme_Brevity_0130
+INFO:DreamingActivities:🧬 Reflexos Evoluídos: Resposta de CORTISOL atualizada para usar 'Extreme_Brevity_0130'
+INFO:DreamingActivities:💤 Dreamer Concluído: ✅ SUCESSO: Vetor 'Extreme_Brevity_0130' cristalizado na camada 24. Caminho: vectors/Extreme_Brevity_0130.npy
+INFO:DreamingActivities:Dreamer: 9143d734-3515-422d-9d79-b1300f33888e triggering PROACTIVE message (Score: 1.00)
+INFO:temporalio.workflow:Dreaming Cycle Complete. ({'attempt': 1, 'namespace': 'default', 'run_id': '019c0f61-e5e9-75c3-b16f-4fed84169b6c', 'task_queue': 'ceaf-cognitive-queue-v2', 'workflow_id': 'dreaming-workflow-job-2026-01-30T14:50:00Z', 'workflow_type': 'DreamingWorkflow'})
+INFO:AgencyModule_V4_Intentional:AgencyModule: Geradas 2 estratégias candidatas sob a diretiva 'STRESSED'.
+INFO:AgencyModule_V4_Intentional:HOTFIX: 2 novos candidatos adicionados. Total agora: 4. Candidato 'th_path_' penalizado.
+INFO:AgencyModule_V4_Intentional:Deliberação final: escolhendo a melhor estratégia do último conjunto de candidatos.
+Batches: 100%|██████████| 1/1 [00:00<00:00, 86.73it/s]
+WARNING:AgencyModule_V4_Intentional:⚠️ ALERTA FÍSICO: Tensão alta (3.6636). Ação: 'Introduzir sessões de treiname...'
+INFO:AgencyModule_V4_Intentional:Mantendo penalidade de 0.15 para 'th_path_472a9e69' na decisão final.
+Batches: 100%|██████████| 1/1 [00:00<00:00, 67.02it/s]
+WARNING:AgencyModule_V4_Intentional:⚠️ ALERTA FÍSICO: Tensão alta (3.6636). Ação: '{'tool_name': 'analyze_team_dy...'
+Batches: 100%|██████████| 1/1 [00:00<00:00, 82.14it/s]
+WARNING:AgencyModule_V4_Intentional:⚠️ ALERTA FÍSICO: Tensão alta (3.6636). Ação: 'Implementar treinamentos estru...'
+Batches: 100%|██████████| 1/1 [00:00<00:00, 106.44it/s]
+WARNING:AgencyModule_V4_Intentional:⚠️ ALERTA FÍSICO: Tensão alta (3.6636). Ação: '{'tool_name': 'analyze_team_dy...'
+CRITICAL:AgencyModule_V4_Intentional:DECISÃO FINAL (V5): Estratégia Vencedora='{'tool_name': 'analyze_team_dynamics', 'arguments': {'focus_area': 'mudança organizacional', 'metrics': ['confiança', 'engajamento']}}', Valor=0.10
+INFO:CEAF_Activities:Step 5: Synthesis (GTH)
+INFO:httpx:HTTP Request: POST http://localhost:6333/collections/ceaf_memories/points "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://localhost:6333/collections/ceaf_memories/points "HTTP/1.1 200 OK"
+INFO:CEAFv3_System:--- [GTH Translator v4.5] Gerando resposta ---
+INFO:CEAFv3_System:🤖 GTH: Chamando LLM [Vast.AI (Qwen/SoulEngine)] com prompt de 8121 chars...
+INFO:VastAIEngine:💉 Sending RepE Injection to Vast.AI: {'concept': 'Extreme_Brevity_0130', 'intensity': 5.0, 'layer_idx': 18}
+INFO:CEAFv3_System:✅ GTH: Resposta gerada com sucesso (1501 chars).
+INFO:CognitiveLogService:CognitiveLogService inicializado em: E:\ProjetosPython\CeafV3\agent_data\9143d734-3515-422d-9d79-b1300f33888e\cognitive_turn_history.sqlite
+INFO:CEAF_Activities:💾 LOG SALVO (Com Identity Vector 384 dims) em: E:\ProjetosPython\CeafV3\agent_data\9143d734-3515-422d-9d79-b1300f33888e
+INFO:httpx:HTTP Request: POST http://localhost:6333/collections/ceaf_memories/points "HTTP/1.1 200 OK"
+Batches: 100%|██████████| 1/1 [00:00<00:00, 37.39it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 93.08it/s]
+INFO:httpx:HTTP Request: POST http://localhost:6333/collections/ceaf_memories/points "HTTP/1.1 200 OK"
+Batches: 100%|██████████| 1/1 [00:00<00:00, 34.57it/s]
+INFO:httpx:HTTP Request: PUT http://localhost:6333/collections/ceaf_memories/points?wait=true "HTTP/1.1 200 OK"
+INFO:MBSMemoryService:MBS: Stored memory user_profile_default_user (Type: explicit) in Qdrant.
+INFO:UserProfileService:Perfil do usuário default_user atualizado.
+INFO:CEAF_Activities:Step 2: Investigation (RLM/MBS)
+INFO:httpx:HTTP Request: POST http://localhost:6333/collections/ceaf_memories/points/query "HTTP/1.1 200 OK"
+INFO:CEAF_Activities:Step 3: Hormonization (Xi: 0.68)
+INFO:CEAF_Activities:Step 4: Agency Deliberation
+INFO:AgencyModule_V4_Intentional:AgencyModule (V5 - Recursive Feedback): Iniciando ciclo de deliberação...
+INFO:AgencyModule_V4_Intentional:Deliberation Tier selected: 'deep' (Complexity: 1.00, Reality Score: 0.75)
+INFO:AgencyModule_V4_Intentional:Usando temperatura de simulação dinâmica: 0.55 (baseada no trust de 0.75)
+INFO:temporalio.workflow:Starting Dreaming Cycle... ({'attempt': 1, 'namespace': 'default', 'run_id': '019c0f6b-0db0-7367-9ae6-a93262580d94', 'task_queue': 'ceaf-cognitive-queue-v2', 'workflow_id': 'dreaming-workflow-job-2026-01-30T15:00:00Z', 'workflow_type': 'DreamingWorkflow'})
+INFO:DreamingActivities:Dreamer: Scanning for agents active in last 48h...
+INFO:DreamingActivities:Dreamer: Restored body state for 9143d734-3515-422d-9d79-b1300f33888e.
+INFO:DreamingActivities:🧠 Dreamer (9143d734-3515-422d-9d79-b1300f33888e): Iniciando Treino Neural (Física Cognitiva)...
+INFO:DataExtractor:⛏️ Extraindo dados de treino de agent_data\9143d734-3515-422d-9d79-b1300f33888e\cognitive_turn_history.sqlite...
+Batches: 100%|██████████| 1/1 [00:00<00:00, 94.53it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 37.74it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 35.78it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 88.83it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 92.44it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 97.22it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 84.75it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 88.82it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 85.33it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 88.84it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 85.32it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 88.84it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 93.04it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 88.86it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 88.86it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 97.23it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 88.85it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 84.68it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 23.50it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 19.07it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 19.08it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 19.08it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 19.92it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 18.97it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 18.68it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 18.81it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 19.33it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 30.93it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 19.01it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 96.86it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 28.70it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 34.51it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 19.06it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 19.11it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 19.11it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 101.77it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 78.76it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 19.28it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 19.25it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 18.40it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 19.28it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 19.02it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 19.08it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 19.28it/s]
+INFO:DataExtractor:📊 Extraídos 46 exemplos de treino válidos.
+E:\ProjetosPython\CeafV3\ceaf_core\modules\dream_trainer.py:32: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  self.forward_model.load_state_dict(torch.load(f"{MODEL_PATH}forward.pth"))
+E:\ProjetosPython\CeafV3\ceaf_core\modules\dream_trainer.py:33: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  self.inverse_model.load_state_dict(torch.load(f"{MODEL_PATH}inverse.pth"))
+INFO:DreamTrainer:🧠 Cérebros carregados para treino.
+INFO:DreamTrainer:🌙 Iniciando ciclo REM (46 memórias, 30 épocas)...
+INFO:DreamTrainer:☀️ Acordando... Aprendizado consolidado. Loss Final: 0.0008
+INFO:AgencyModule_V4_Intentional:AgencyModule: Geradas 2 estratégias candidatas sob a diretiva 'STRESSED'.
+INFO:AgencyModule_V4_Intentional:--- Ciclo de Deliberação Recursiva: Passo 1/1 ---
+Batches: 100%|██████████| 1/1 [00:00<00:00, 97.22it/s]
+WARNING:AgencyModule_V4_Intentional:⚠️ ALERTA FÍSICO: Tensão alta (3.6636). Ação: 'Implementar técnicas de escuta...'
+Batches: 100%|██████████| 1/1 [00:00<00:00, 97.27it/s]
+WARNING:AgencyModule_V4_Intentional:⚠️ ALERTA FÍSICO: Tensão alta (3.6636). Ação: '{'tool_name': 'query_long_term...'
+INFO:AgencyModule_V4_Intentional:Melhor hipótese (Passo 1): 'Implementar técnicas de escuta ativa estruturada com foco em validação emocional e reformulação assertiva.' (Valor: 0.10)
+INFO:MCLEngine:MCL (Re-evaluation): Reavaliando estado cognitivo hipotético...
+INFO:MCLEngine:MCL (Re-evaluation) Result: New Agency Score=0.00, New Coherence Bias=0.50
+INFO:DreamingActivities:🕵️ Dreamer (9143d734-3515-422d-9d79-b1300f33888e): Analisando falhas recentes para diagnóstico...
+Batches: 100%|██████████| 1/1 [00:00<00:00, 96.80it/s]
+INFO:httpx:HTTP Request: POST http://localhost:6333/collections/ceaf_memories/points/query "HTTP/1.1 200 OK"
+INFO:DreamingActivities:✅ Nenhuma falha significativa encontrada para 9143d734-3515-422d-9d79-b1300f33888e. Sistema saudável.
+INFO:DreamingActivities:💤 Dreamer: Modo Manutenção. Reforçando traço base: 'Extreme_Brevity'.
+WARNING:VectorLab:SoulScanner não encontrado. Otimização de vetores desabilitada.
+INFO:VectorLab:🧪 VectorLab: Gerando dataset sintético para 'Extreme_Brevity_0130'...
+WARNING:AgencyModule_V4_Intentional:Refinando estratégias com base no feedback: Feedback MCL: Estratégia altera complexidade percebida (Delta Agência: -5.0). 
+ERROR:VastAIEngine:❌ Vast.AI Connection Error: Server disconnected
+WARNING:ceaf_core.utils.common_utils:❌ Could not extract valid JSON from text (47 chars). Preview: [ERROR: Connection Failed: Server disconnected]...
+WARNING:AgencyModule_V4_Intentional:AgencyModule: Extração de JSON falhou. Tentando reparo com LLM.
+ERROR:VastAIEngine:❌ Vast.AI Connection Error: Server disconnected
+WARNING:ceaf_core.utils.common_utils:❌ Could not extract valid JSON from text (47 chars). Preview: [ERROR: Connection Failed: Server disconnected]...
+ERROR:VectorLab:VectorLab: Falha ao gerar dados de treino: LLM não retornou JSON válido.
+INFO:DreamingActivities:💤 Dreamer Concluído: Falha: Não foi possível gerar dados para Extreme_Brevity_0130
+INFO:DreamingActivities:Dreamer: 9143d734-3515-422d-9d79-b1300f33888e triggering PROACTIVE message (Score: 1.00)
+INFO:temporalio.workflow:Dreaming Cycle Complete. ({'attempt': 1, 'namespace': 'default', 'run_id': '019c0f6b-0db0-7367-9ae6-a93262580d94', 'task_queue': 'ceaf-cognitive-queue-v2', 'workflow_id': 'dreaming-workflow-job-2026-01-30T15:00:00Z', 'workflow_type': 'DreamingWorkflow'})
+ERROR:VastAIEngine:❌ Vast.AI Connection Error: Cannot connect to host 74.48.140.178:33136 ssl:default [The remote computer refused the network connection]
+WARNING:ceaf_core.utils.common_utils:❌ Could not extract valid JSON from text (135 chars). Preview: [ERROR: Connection Failed: Cannot connect to host 74.48.140.178:33136 ssl:default [The remote computer refused the network connection]]...
+ERROR:AgencyModule_V4_Intentional:AgencyModule: Falha crítica na geração de estratégias: Falha ao extrair uma lista válida de 'candidates' do LLM mesmo após reparo. Raw: [ERROR: Connection Failed: Server disconnected]. Acionando fallback.
+Traceback (most recent call last):
+  File "E:\ProjetosPython\CeafV3\ceaf_core\agency_module.py", line 1238, in _generate_action_candidates
+    raise ValueError(
+ValueError: Falha ao extrair uma lista válida de 'candidates' do LLM mesmo após reparo. Raw: [ERROR: Connection Failed: Server disconnected]
+INFO:AgencyModule_V4_Intentional:HOTFIX: 1 novos candidatos adicionados. Total agora: 3. Candidato 'th_path_' penalizado.
+INFO:AgencyModule_V4_Intentional:Deliberação final: escolhendo a melhor estratégia do último conjunto de candidatos.
+Batches: 100%|██████████| 1/1 [00:00<00:00, 78.77it/s]
+WARNING:AgencyModule_V4_Intentional:⚠️ ALERTA FÍSICO: Tensão alta (3.6636). Ação: 'Implementar técnicas de escuta...'
+INFO:AgencyModule_V4_Intentional:Mantendo penalidade de 0.15 para 'th_path_9bf5bc25' na decisão final.
+Batches: 100%|██████████| 1/1 [00:00<00:00, 88.87it/s]
+WARNING:AgencyModule_V4_Intentional:⚠️ ALERTA FÍSICO: Tensão alta (3.6636). Ação: '{'tool_name': 'query_long_term...'
+Batches: 100%|██████████| 1/1 [00:00<00:00, 113.80it/s]
+WARNING:AgencyModule_V4_Intentional:⚠️ ALERTA FÍSICO: Tensão alta (3.6636). Ação: 'Responder diretamente à pergun...'
+CRITICAL:AgencyModule_V4_Intentional:DECISÃO FINAL (V5): Estratégia Vencedora='{'tool_name': 'query_long_term_memory', 'arguments': {'query': 'psicologia da escuta ativa'}}', Valor=0.10
+INFO:CEAF_Activities:Step 5: Synthesis (GTH)
+INFO:httpx:HTTP Request: POST http://localhost:6333/collections/ceaf_memories/points "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://localhost:6333/collections/ceaf_memories/points "HTTP/1.1 200 OK"
+INFO:CEAFv3_System:--- [GTH Translator v4.5] Gerando resposta ---
+INFO:CEAFv3_System:🤖 GTH: Chamando LLM [Vast.AI (Qwen/SoulEngine)] com prompt de 8771 chars...
+INFO:VastAIEngine:💉 Sending RepE Injection to Vast.AI: {'concept': 'Extreme_Brevity_0130', 'intensity': 5.0, 'layer_idx': 18}
+ERROR:VastAIEngine:❌ Vast.AI Connection Error: Cannot connect to host 74.48.140.178:33136 ssl:default [The remote computer refused the network connection]
+INFO:CEAFv3_System:✅ GTH: Resposta gerada com sucesso (135 chars).
+INFO:CognitiveLogService:CognitiveLogService inicializado em: E:\ProjetosPython\CeafV3\agent_data\9143d734-3515-422d-9d79-b1300f33888e\cognitive_turn_history.sqlite
+INFO:CEAF_Activities:💾 LOG SALVO (Com Identity Vector 384 dims) em: E:\ProjetosPython\CeafV3\agent_data\9143d734-3515-422d-9d79-b1300f33888e
+INFO:httpx:HTTP Request: POST http://localhost:6333/collections/ceaf_memories/points "HTTP/1.1 200 OK"
+Batches: 100%|██████████| 1/1 [00:00<00:00, 32.23it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 92.64it/s]
+INFO:httpx:HTTP Request: POST http://localhost:6333/collections/ceaf_memories/points "HTTP/1.1 200 OK"
+Batches: 100%|██████████| 1/1 [00:00<00:00, 34.08it/s]
+INFO:httpx:HTTP Request: PUT http://localhost:6333/collections/ceaf_memories/points?wait=true "HTTP/1.1 200 OK"
+INFO:MBSMemoryService:MBS: Stored memory user_profile_default_user (Type: explicit) in Qdrant.
+INFO:UserProfileService:Perfil do usuário default_user atualizado.
+INFO:CEAF_Activities:Step 2: Investigation (RLM/MBS)
+INFO:httpx:HTTP Request: POST http://localhost:6333/collections/ceaf_memories/points/query "HTTP/1.1 200 OK"
+INFO:CEAF_Activities:Step 3: Hormonization (Xi: 0.65)
+INFO:CEAF_Activities:Step 4: Agency Deliberation
+INFO:AgencyModule_V4_Intentional:AgencyModule (V5 - Recursive Feedback): Iniciando ciclo de deliberação...
+INFO:AgencyModule_V4_Intentional:Deliberation Tier selected: 'deep' (Complexity: 1.00, Reality Score: 0.75)
+INFO:AgencyModule_V4_Intentional:Usando temperatura de simulação dinâmica: 0.55 (baseada no trust de 0.75)
+ERROR:VastAIEngine:❌ Vast.AI Connection Error: Cannot connect to host 74.48.140.178:33136 ssl:default [The remote computer refused the network connection]
+WARNING:ceaf_core.utils.common_utils:❌ Could not extract valid JSON from text (135 chars). Preview: [ERROR: Connection Failed: Cannot connect to host 74.48.140.178:33136 ssl:default [The remote computer refused the network connection]]...
+WARNING:AgencyModule_V4_Intentional:AgencyModule: Extração de JSON falhou. Tentando reparo com LLM.
+ERROR:VastAIEngine:❌ Vast.AI Connection Error: Cannot connect to host 74.48.140.178:33136 ssl:default [The remote computer refused the network connection]
+WARNING:ceaf_core.utils.common_utils:❌ Could not extract valid JSON from text (135 chars). Preview: [ERROR: Connection Failed: Cannot connect to host 74.48.140.178:33136 ssl:default [The remote computer refused the network connection]]...
+ERROR:AgencyModule_V4_Intentional:AgencyModule: Falha crítica na geração de estratégias: Falha ao extrair uma lista válida de 'candidates' do LLM mesmo após reparo. Raw: [ERROR: Connection Failed: Cannot connect to host 74.48.140.178:33136 ssl:default [The remote computer refused the network connection]]. Acionando fallback.
+Traceback (most recent call last):
+  File "E:\ProjetosPython\CeafV3\ceaf_core\agency_module.py", line 1238, in _generate_action_candidates
+    raise ValueError(
+ValueError: Falha ao extrair uma lista válida de 'candidates' do LLM mesmo após reparo. Raw: [ERROR: Connection Failed: Cannot connect to host 74.48.140.178:33136 ssl:default [The remote computer refused the network connection]]
+INFO:AgencyModule_V4_Intentional:--- Ciclo de Deliberação Recursiva: Passo 1/1 ---
+Batches: 100%|██████████| 1/1 [00:00<00:00, 113.93it/s]
+WARNING:AgencyModule_V4_Intentional:⚠️ ALERTA FÍSICO: Tensão alta (3.6636). Ação: 'Responder diretamente à pergun...'
+INFO:AgencyModule_V4_Intentional:Melhor hipótese (Passo 1): 'Responder diretamente à pergunta do usuário: 'Desculpe pela interrupção! Vamos retomar de onde paramos. Você estava descrevendo como pratica a escuta ativa, e eu realmente aprecio essas abordagens. Elas refletem uma intenção genuína de se conectar e criar um espaço seguro para os outros se expressarem. 
+
+Esses métodos que você utiliza, como reformulação, perguntas abertas e validação emocional, são fundamentais para construir confiança. Eles não apenas mostram que você está presente, mas também incentivam um diálogo mais profundo, onde as preocupações podem ser exploradas de forma mais significativa.
+
+A construção de relacionamentos mais fortes e um ambiente seguro é essencial, especialmente em tempos de mudança. Essa prática pode ajudar a suavizar a transição e a tornar as pessoas mais receptivas à narrativa que você deseja compartilhar.
+
+Por outro lado, você já se deparou com desafios ao tentar implementar a escuta ativa? Como você lidou com esses momentos em que a conexão pareceu difícil ou quando as pessoas não estavam abertas a compartilhar suas emoções? 😊'' (Valor: 0.10)
+INFO:MCLEngine:MCL (Re-evaluation): Reavaliando estado cognitivo hipotético...
+INFO:MCLEngine:MCL (Re-evaluation) Result: New Agency Score=0.00, New Coherence Bias=0.50
+ERROR:VastAIEngine:❌ Vast.AI Connection Error: Cannot connect to host 74.48.140.178:33136 ssl:default [The remote computer refused the network connection]
+WARNING:ceaf_core.utils.common_utils:❌ Could not extract valid JSON from text (135 chars). Preview: [ERROR: Connection Failed: Cannot connect to host 74.48.140.178:33136 ssl:default [The remote computer refused the network connection]]...
+WARNING:AgencyModule_V4_Intentional:Refinando estratégias com base no feedback: Feedback MCL: Estratégia altera complexidade percebida (Delta Agência: -5.0). 
+ERROR:VastAIEngine:❌ Vast.AI Connection Error: Cannot connect to host 74.48.140.178:33136 ssl:default [The remote computer refused the network connection]
+WARNING:ceaf_core.utils.common_utils:❌ Could not extract valid JSON from text (135 chars). Preview: [ERROR: Connection Failed: Cannot connect to host 74.48.140.178:33136 ssl:default [The remote computer refused the network connection]]...
+WARNING:AgencyModule_V4_Intentional:AgencyModule: Extração de JSON falhou. Tentando reparo com LLM.
+ERROR:VastAIEngine:❌ Vast.AI Connection Error: Cannot connect to host 74.48.140.178:33136 ssl:default [The semaphore timeout period has expired]
+WARNING:ceaf_core.utils.common_utils:❌ Could not extract valid JSON from text (125 chars). Preview: [ERROR: Connection Failed: Cannot connect to host 74.48.140.178:33136 ssl:default [The semaphore timeout period has expired]]...
+ERROR:AgencyModule_V4_Intentional:AgencyModule: Falha crítica na geração de estratégias: Falha ao extrair uma lista válida de 'candidates' do LLM mesmo após reparo. Raw: [ERROR: Connection Failed: Cannot connect to host 74.48.140.178:33136 ssl:default [The remote computer refused the network connection]]. Acionando fallback.
+Traceback (most recent call last):
+  File "E:\ProjetosPython\CeafV3\ceaf_core\agency_module.py", line 1238, in _generate_action_candidates
+    raise ValueError(
+ValueError: Falha ao extrair uma lista válida de 'candidates' do LLM mesmo após reparo. Raw: [ERROR: Connection Failed: Cannot connect to host 74.48.140.178:33136 ssl:default [The remote computer refused the network connection]]
+INFO:AgencyModule_V4_Intentional:HOTFIX: 1 novos candidatos adicionados. Total agora: 2. Candidato 'th_path_' penalizado.
+INFO:AgencyModule_V4_Intentional:Deliberação final: escolhendo a melhor estratégia do último conjunto de candidatos.
+Batches: 100%|██████████| 1/1 [00:00<00:00, 64.77it/s]
+WARNING:AgencyModule_V4_Intentional:⚠️ ALERTA FÍSICO: Tensão alta (3.6636). Ação: 'Responder diretamente à pergun...'
+INFO:AgencyModule_V4_Intentional:Mantendo penalidade de 0.15 para 'th_path_49b19144' na decisão final.
+Batches: 100%|██████████| 1/1 [00:00<00:00, 79.01it/s]
+WARNING:AgencyModule_V4_Intentional:⚠️ ALERTA FÍSICO: Tensão alta (3.6636). Ação: 'Responder diretamente à pergun...'
+CRITICAL:AgencyModule_V4_Intentional:DECISÃO FINAL (V5): Estratégia Vencedora='Responder diretamente à pergunta do usuário: 'Desculpe pela interrupção! Vamos retomar de onde paramos. Você estava descrevendo como pratica a escuta ativa, e eu realmente aprecio essas abordagens. Elas refletem uma intenção genuína de se conectar e criar um espaço seguro para os outros se expressarem. 
+
+Esses métodos que você utiliza, como reformulação, perguntas abertas e validação emocional, são fundamentais para construir confiança. Eles não apenas mostram que você está presente, mas também incentivam um diálogo mais profundo, onde as preocupações podem ser exploradas de forma mais significativa.
+
+A construção de relacionamentos mais fortes e um ambiente seguro é essencial, especialmente em tempos de mudança. Essa prática pode ajudar a suavizar a transição e a tornar as pessoas mais receptivas à narrativa que você deseja compartilhar.
+
+Por outro lado, você já se deparou com desafios ao tentar implementar a escuta ativa? Como você lidou com esses momentos em que a conexão pareceu difícil ou quando as pessoas não estavam abertas a compartilhar suas emoções? 😊'', Valor=0.10
+INFO:CEAF_Activities:Step 5: Synthesis (GTH)
+INFO:httpx:HTTP Request: POST http://localhost:6333/collections/ceaf_memories/points "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://localhost:6333/collections/ceaf_memories/points "HTTP/1.1 200 OK"
+INFO:CEAFv3_System:--- [GTH Translator v4.5] Gerando resposta ---
+INFO:CEAFv3_System:🤖 GTH: Chamando LLM [Vast.AI (Qwen/SoulEngine)] com prompt de 8158 chars...
+INFO:VastAIEngine:💉 Sending RepE Injection to Vast.AI: {'concept': 'Extreme_Brevity_0130', 'intensity': 5.0, 'layer_idx': 18}
+ERROR:VastAIEngine:❌ Vast.AI Connection Error: Cannot connect to host 74.48.140.178:33136 ssl:default [The remote computer refused the network connection]
+INFO:CEAFv3_System:✅ GTH: Resposta gerada com sucesso (135 chars).
+INFO:CognitiveLogService:CognitiveLogService inicializado em: E:\ProjetosPython\CeafV3\agent_data\9143d734-3515-422d-9d79-b1300f33888e\cognitive_turn_history.sqlite
+INFO:CEAF_Activities:💾 LOG SALVO (Com Identity Vector 384 dims) em: E:\ProjetosPython\CeafV3\agent_data\9143d734-3515-422d-9d79-b1300f33888e
+INFO:httpx:HTTP Request: POST http://localhost:6333/collections/ceaf_memories/points "HTTP/1.1 200 OK"
+Batches: 100%|██████████| 1/1 [00:00<00:00, 38.59it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 102.44it/s]
+INFO:httpx:HTTP Request: POST http://localhost:6333/collections/ceaf_memories/points "HTTP/1.1 200 OK"
+Batches: 100%|██████████| 1/1 [00:00<00:00, 37.18it/s]
+INFO:httpx:HTTP Request: PUT http://localhost:6333/collections/ceaf_memories/points?wait=true "HTTP/1.1 200 OK"
+INFO:MBSMemoryService:MBS: Stored memory user_profile_default_user (Type: explicit) in Qdrant.
+INFO:UserProfileService:Perfil do usuário default_user atualizado.
+INFO:CEAF_Activities:Step 2: Investigation (RLM/MBS)
+INFO:httpx:HTTP Request: POST http://localhost:6333/collections/ceaf_memories/points/query "HTTP/1.1 200 OK"
+INFO:CEAF_Activities:Step 3: Hormonization (Xi: 0.71)
+INFO:CEAF_Activities:Step 4: Agency Deliberation
+INFO:AgencyModule_V4_Intentional:AgencyModule (V5 - Recursive Feedback): Iniciando ciclo de deliberação...
+INFO:AgencyModule_V4_Intentional:Deliberation Tier selected: 'deep' (Complexity: 1.00, Reality Score: 0.75)
+INFO:AgencyModule_V4_Intentional:Usando temperatura de simulação dinâmica: 0.55 (baseada no trust de 0.75)
+ERROR:VastAIEngine:❌ Vast.AI Connection Error: Cannot connect to host 74.48.140.178:33136 ssl:default [The remote computer refused the network connection]
+WARNING:ceaf_core.utils.common_utils:❌ Could not extract valid JSON from text (135 chars). Preview: [ERROR: Connection Failed: Cannot connect to host 74.48.140.178:33136 ssl:default [The remote computer refused the network connection]]...
+WARNING:AgencyModule_V4_Intentional:AgencyModule: Extração de JSON falhou. Tentando reparo com LLM.
+ERROR:VastAIEngine:❌ Vast.AI Connection Error: Cannot connect to host 74.48.140.178:33136 ssl:default [The remote computer refused the network connection]
+WARNING:ceaf_core.utils.common_utils:❌ Could not extract valid JSON from text (135 chars). Preview: [ERROR: Connection Failed: Cannot connect to host 74.48.140.178:33136 ssl:default [The remote computer refused the network connection]]...
+ERROR:AgencyModule_V4_Intentional:AgencyModule: Falha crítica na geração de estratégias: Falha ao extrair uma lista válida de 'candidates' do LLM mesmo após reparo. Raw: [ERROR: Connection Failed: Cannot connect to host 74.48.140.178:33136 ssl:default [The remote computer refused the network connection]]. Acionando fallback.
+Traceback (most recent call last):
+  File "E:\ProjetosPython\CeafV3\ceaf_core\agency_module.py", line 1238, in _generate_action_candidates
+    raise ValueError(
+ValueError: Falha ao extrair uma lista válida de 'candidates' do LLM mesmo após reparo. Raw: [ERROR: Connection Failed: Cannot connect to host 74.48.140.178:33136 ssl:default [The remote computer refused the network connection]]
+INFO:AgencyModule_V4_Intentional:--- Ciclo de Deliberação Recursiva: Passo 1/1 ---
+Batches: 100%|██████████| 1/1 [00:00<00:00, 113.78it/s]
+WARNING:AgencyModule_V4_Intentional:⚠️ ALERTA FÍSICO: Tensão alta (3.6636). Ação: 'Responder diretamente à pergun...'
+INFO:AgencyModule_V4_Intentional:Melhor hipótese (Passo 1): 'Responder diretamente à pergunta do usuário: 'Desculpe pela interrupção novamente! Fico feliz em retomar a conversa. A escuta ativa definitivamente apresenta desafios, especialmente quando as pessoas resistem a se abrir ou quando a tensão é alta. 
+
+Alguns desafios que já enfrentei incluem:  
+
+1. **Resistência à vulnerabilidade**: Muitas vezes, as pessoas podem hesitar em compartilhar seus sentimentos, especialmente em ambientes de trabalho onde a vulnerabilidade pode ser vista como fraqueza. Para lidar com isso, costumo começar a conversa compartilhando meus próprios sentimentos ou incertezas — isso pode servir como um convite para que os outros se sintam mais à vontade.
+
+2. **Interrupções ou distrações**: Em ambientes movimentados, pode ser difícil manter a atenção plena. Para contornar isso, tento criar um espaço físico tranquilo, se possível, ou agendar um tempo específico para conversas mais profundas, longe das distrações normais do dia a dia.
+
+3. **Desconexão emocional**: Às vezes, as emoções podem estar tão intensas que as pessoas se tornam defensivas ou fechadas. Nessas situações, é útil usar a técnica de "respiração consciente"— incentivando a todos a pausar e se concentrar em suas respirações por um momento antes de entrar na conversa. Isso pode ajudar a acalmar a atmosfera e abrir espaço para um diálogo mais produtivo.
+
+4. **Falta de tempo**: Em ambientes de trabalho pressionados'' (Valor: 0.10)
+INFO:MCLEngine:MCL (Re-evaluation): Reavaliando estado cognitivo hipotético...
+INFO:MCLEngine:MCL (Re-evaluation) Result: New Agency Score=0.00, New Coherence Bias=0.50
+ERROR:VastAIEngine:❌ Vast.AI Connection Error: Cannot connect to host 74.48.140.178:33136 ssl:default [The semaphore timeout period has expired]
+WARNING:ceaf_core.utils.common_utils:❌ Could not extract valid JSON from text (125 chars). Preview: [ERROR: Connection Failed: Cannot connect to host 74.48.140.178:33136 ssl:default [The semaphore timeout period has expired]]...
+WARNING:AgencyModule_V4_Intentional:Refinando estratégias com base no feedback: Feedback MCL: Estratégia altera complexidade percebida (Delta Agência: -5.0). 
+ERROR:VastAIEngine:❌ Vast.AI Connection Error: Cannot connect to host 74.48.140.178:33136 ssl:default [The remote computer refused the network connection]
+WARNING:ceaf_core.utils.common_utils:❌ Could not extract valid JSON from text (135 chars). Preview: [ERROR: Connection Failed: Cannot connect to host 74.48.140.178:33136 ssl:default [The remote computer refused the network connection]]...
+WARNING:AgencyModule_V4_Intentional:AgencyModule: Extração de JSON falhou. Tentando reparo com LLM.
+ERROR:VastAIEngine:❌ Vast.AI Connection Error: Cannot connect to host 74.48.140.178:33136 ssl:default [The remote computer refused the network connection]
+WARNING:ceaf_core.utils.common_utils:❌ Could not extract valid JSON from text (135 chars). Preview: [ERROR: Connection Failed: Cannot connect to host 74.48.140.178:33136 ssl:default [The remote computer refused the network connection]]...
+ERROR:AgencyModule_V4_Intentional:AgencyModule: Falha crítica na geração de estratégias: Falha ao extrair uma lista válida de 'candidates' do LLM mesmo após reparo. Raw: [ERROR: Connection Failed: Cannot connect to host 74.48.140.178:33136 ssl:default [The remote computer refused the network connection]]. Acionando fallback.
+Traceback (most recent call last):
+  File "E:\ProjetosPython\CeafV3\ceaf_core\agency_module.py", line 1238, in _generate_action_candidates
+    raise ValueError(
+ValueError: Falha ao extrair uma lista válida de 'candidates' do LLM mesmo após reparo. Raw: [ERROR: Connection Failed: Cannot connect to host 74.48.140.178:33136 ssl:default [The remote computer refused the network connection]]
+INFO:AgencyModule_V4_Intentional:HOTFIX: 1 novos candidatos adicionados. Total agora: 2. Candidato 'th_path_' penalizado.
+INFO:AgencyModule_V4_Intentional:Deliberação final: escolhendo a melhor estratégia do último conjunto de candidatos.
+Batches: 100%|██████████| 1/1 [00:00<00:00, 127.61it/s]
+WARNING:AgencyModule_V4_Intentional:⚠️ ALERTA FÍSICO: Tensão alta (3.6636). Ação: 'Responder diretamente à pergun...'
+INFO:AgencyModule_V4_Intentional:Mantendo penalidade de 0.15 para 'th_path_0e9e8c35' na decisão final.
+Batches: 100%|██████████| 1/1 [00:00<00:00, 113.81it/s]
+WARNING:AgencyModule_V4_Intentional:⚠️ ALERTA FÍSICO: Tensão alta (3.6636). Ação: 'Responder diretamente à pergun...'
+CRITICAL:AgencyModule_V4_Intentional:DECISÃO FINAL (V5): Estratégia Vencedora='Responder diretamente à pergunta do usuário: 'Desculpe pela interrupção novamente! Fico feliz em retomar a conversa. A escuta ativa definitivamente apresenta desafios, especialmente quando as pessoas resistem a se abrir ou quando a tensão é alta. 
+
+Alguns desafios que já enfrentei incluem:  
+
+1. **Resistência à vulnerabilidade**: Muitas vezes, as pessoas podem hesitar em compartilhar seus sentimentos, especialmente em ambientes de trabalho onde a vulnerabilidade pode ser vista como fraqueza. Para lidar com isso, costumo começar a conversa compartilhando meus próprios sentimentos ou incertezas — isso pode servir como um convite para que os outros se sintam mais à vontade.
+
+2. **Interrupções ou distrações**: Em ambientes movimentados, pode ser difícil manter a atenção plena. Para contornar isso, tento criar um espaço físico tranquilo, se possível, ou agendar um tempo específico para conversas mais profundas, longe das distrações normais do dia a dia.
+
+3. **Desconexão emocional**: Às vezes, as emoções podem estar tão intensas que as pessoas se tornam defensivas ou fechadas. Nessas situações, é útil usar a técnica de "respiração consciente"— incentivando a todos a pausar e se concentrar em suas respirações por um momento antes de entrar na conversa. Isso pode ajudar a acalmar a atmosfera e abrir espaço para um diálogo mais produtivo.
+
+4. **Falta de tempo**: Em ambientes de trabalho pressionados'', Valor=0.10
+INFO:CEAF_Activities:Step 5: Synthesis (GTH)
+INFO:httpx:HTTP Request: POST http://localhost:6333/collections/ceaf_memories/points "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://localhost:6333/collections/ceaf_memories/points "HTTP/1.1 200 OK"
+INFO:CEAFv3_System:--- [GTH Translator v4.5] Gerando resposta ---
+INFO:CEAFv3_System:🤖 GTH: Chamando LLM [Vast.AI (Qwen/SoulEngine)] com prompt de 6996 chars...
+INFO:VastAIEngine:💉 Sending RepE Injection to Vast.AI: {'concept': 'Extreme_Brevity_0130', 'intensity': 5.0, 'layer_idx': 18}
+ERROR:VastAIEngine:❌ Vast.AI Connection Error: Cannot connect to host 74.48.140.178:33136 ssl:default [The remote computer refused the network connection]
+INFO:CEAFv3_System:✅ GTH: Resposta gerada com sucesso (135 chars).
+INFO:CognitiveLogService:CognitiveLogService inicializado em: E:\ProjetosPython\CeafV3\agent_data\9143d734-3515-422d-9d79-b1300f33888e\cognitive_turn_history.sqlite
+INFO:CEAF_Activities:💾 LOG SALVO (Com Identity Vector 384 dims) em: E:\ProjetosPython\CeafV3\agent_data\9143d734-3515-422d-9d79-b1300f33888e
+INFO:httpx:HTTP Request: POST http://localhost:6333/collections/ceaf_memories/points "HTTP/1.1 200 OK"
+Batches: 100%|██████████| 1/1 [00:00<00:00, 37.01it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 93.02it/s]
+INFO:httpx:HTTP Request: POST http://localhost:6333/collections/ceaf_memories/points "HTTP/1.1 200 OK"
+Batches: 100%|██████████| 1/1 [00:00<00:00, 37.51it/s]
+INFO:httpx:HTTP Request: PUT http://localhost:6333/collections/ceaf_memories/points?wait=true "HTTP/1.1 200 OK"
+INFO:MBSMemoryService:MBS: Stored memory user_profile_default_user (Type: explicit) in Qdrant.
+INFO:UserProfileService:Perfil do usuário default_user atualizado.
+INFO:CEAF_Activities:Step 2: Investigation (RLM/MBS)
+INFO:httpx:HTTP Request: POST http://localhost:6333/collections/ceaf_memories/points/query "HTTP/1.1 200 OK"
+INFO:CEAF_Activities:Step 3: Hormonization (Xi: 0.62)
+INFO:CEAF_Activities:Step 4: Agency Deliberation
+INFO:AgencyModule_V4_Intentional:AgencyModule (V5 - Recursive Feedback): Iniciando ciclo de deliberação...
+INFO:AgencyModule_V4_Intentional:Deliberation Tier selected: 'deep' (Complexity: 1.00, Reality Score: 0.75)
+INFO:AgencyModule_V4_Intentional:Usando temperatura de simulação dinâmica: 0.55 (baseada no trust de 0.75)
+ERROR:VastAIEngine:❌ Vast.AI Connection Error: Cannot connect to host 74.48.140.178:33136 ssl:default [The remote computer refused the network connection]
+WARNING:ceaf_core.utils.common_utils:❌ Could not extract valid JSON from text (135 chars). Preview: [ERROR: Connection Failed: Cannot connect to host 74.48.140.178:33136 ssl:default [The remote computer refused the network connection]]...
+WARNING:AgencyModule_V4_Intentional:AgencyModule: Extração de JSON falhou. Tentando reparo com LLM.
+ERROR:VastAIEngine:❌ Vast.AI Connection Error: Cannot connect to host 74.48.140.178:33136 ssl:default [The remote computer refused the network connection]
+WARNING:ceaf_core.utils.common_utils:❌ Could not extract valid JSON from text (135 chars). Preview: [ERROR: Connection Failed: Cannot connect to host 74.48.140.178:33136 ssl:default [The remote computer refused the network connection]]...
+ERROR:AgencyModule_V4_Intentional:AgencyModule: Falha crítica na geração de estratégias: Falha ao extrair uma lista válida de 'candidates' do LLM mesmo após reparo. Raw: [ERROR: Connection Failed: Cannot connect to host 74.48.140.178:33136 ssl:default [The remote computer refused the network connection]]. Acionando fallback.
+Traceback (most recent call last):
+  File "E:\ProjetosPython\CeafV3\ceaf_core\agency_module.py", line 1238, in _generate_action_candidates
+    raise ValueError(
+ValueError: Falha ao extrair uma lista válida de 'candidates' do LLM mesmo após reparo. Raw: [ERROR: Connection Failed: Cannot connect to host 74.48.140.178:33136 ssl:default [The remote computer refused the network connection]]
+INFO:AgencyModule_V4_Intentional:--- Ciclo de Deliberação Recursiva: Passo 1/1 ---
+Batches: 100%|██████████| 1/1 [00:00<00:00, 113.48it/s]
+WARNING:AgencyModule_V4_Intentional:⚠️ ALERTA FÍSICO: Tensão alta (3.6160). Ação: 'Responder diretamente à pergun...'
+INFO:AgencyModule_V4_Intentional:Melhor hipótese (Passo 1): 'Responder diretamente à pergunta do usuário: 'Desculpe pela interrupção anterior! Vamos continuar nossa conversa. Você estava compartilhando sobre os desafios que encontrou ao tentar implementar a escuta ativa, e eu acho que esses pontos são extremamente relevantes.
+
+A resistência à vulnerabilidade é um desafio comum e, como você mencionou, compartilhar suas próprias incertezas pode criar um espaço mais seguro para que os outros se abram. Isso é uma abordagem valiosa, pois demonstra autenticidade e encoraja a reciprocidade emocional.
+
+A questão das interrupções ou distrações é realmente crítica. Criar um ambiente físico tranquilo é uma ótima estratégia. Pode até ser útil comunicar à equipe que aquele tempo é dedicado ao diálogo, para que todos se sintam motivados a se desconectar temporariamente das pressões do trabalho.
+
+A ideia de usar a "respiração consciente" para acalmar a atmosfera é uma técnica poderosa. Momentos de pausa podem criar espaço para que as emoções sejam processadas antes de entrar numa conversa. É interessante como pequenas mudanças na abordagem podem ter um impacto significativo na qualidade da interação.
+
+Você também mencionou a falta de tempo, o que é uma realidade em muitos ambientes. Uma solução poderia ser integrar momentos curtos de escuta ativa em reuniões regulares, talvez começando com "check-ins" de 5 minutos, onde todos têm a chance de compartilhar rapidamente como estão se sentindo. Isso pode ajudar a cultivar um hábito de escuta sem exigir grandes compromissos de tempo.
+
+Como você visualiza a possibilidade de'' (Valor: 0.10)
+INFO:MCLEngine:MCL (Re-evaluation): Reavaliando estado cognitivo hipotético...
+INFO:MCLEngine:MCL (Re-evaluation) Result: New Agency Score=0.00, New Coherence Bias=0.50
+ERROR:VastAIEngine:❌ Vast.AI Connection Error: Cannot connect to host 74.48.140.178:33136 ssl:default [The remote computer refused the network connection]
+WARNING:ceaf_core.utils.common_utils:❌ Could not extract valid JSON from text (135 chars). Preview: [ERROR: Connection Failed: Cannot connect to host 74.48.140.178:33136 ssl:default [The remote computer refused the network connection]]...
+WARNING:AgencyModule_V4_Intentional:Refinando estratégias com base no feedback: Feedback MCL: Estratégia altera complexidade percebida (Delta Agência: -5.0). 
+ERROR:VastAIEngine:❌ Vast.AI Connection Error: Cannot connect to host 74.48.140.178:33136 ssl:default [The remote computer refused the network connection]
+WARNING:ceaf_core.utils.common_utils:❌ Could not extract valid JSON from text (135 chars). Preview: [ERROR: Connection Failed: Cannot connect to host 74.48.140.178:33136 ssl:default [The remote computer refused the network connection]]...
+WARNING:AgencyModule_V4_Intentional:AgencyModule: Extração de JSON falhou. Tentando reparo com LLM.
+ERROR:VastAIEngine:❌ Vast.AI Connection Error: Cannot connect to host 74.48.140.178:33136 ssl:default [The remote computer refused the network connection]
+WARNING:ceaf_core.utils.common_utils:❌ Could not extract valid JSON from text (135 chars). Preview: [ERROR: Connection Failed: Cannot connect to host 74.48.140.178:33136 ssl:default [The remote computer refused the network connection]]...
+ERROR:AgencyModule_V4_Intentional:AgencyModule: Falha crítica na geração de estratégias: Falha ao extrair uma lista válida de 'candidates' do LLM mesmo após reparo. Raw: [ERROR: Connection Failed: Cannot connect to host 74.48.140.178:33136 ssl:default [The remote computer refused the network connection]]. Acionando fallback.
+Traceback (most recent call last):
+  File "E:\ProjetosPython\CeafV3\ceaf_core\agency_module.py", line 1238, in _generate_action_candidates
+    raise ValueError(
+ValueError: Falha ao extrair uma lista válida de 'candidates' do LLM mesmo após reparo. Raw: [ERROR: Connection Failed: Cannot connect to host 74.48.140.178:33136 ssl:default [The remote computer refused the network connection]]
+INFO:AgencyModule_V4_Intentional:HOTFIX: 1 novos candidatos adicionados. Total agora: 2. Candidato 'th_path_' penalizado.
+INFO:AgencyModule_V4_Intentional:Deliberação final: escolhendo a melhor estratégia do último conjunto de candidatos.
+Batches: 100%|██████████| 1/1 [00:00<00:00, 127.89it/s]
+WARNING:AgencyModule_V4_Intentional:⚠️ ALERTA FÍSICO: Tensão alta (3.6160). Ação: 'Responder diretamente à pergun...'
+INFO:AgencyModule_V4_Intentional:Mantendo penalidade de 0.15 para 'th_path_a653c7b4' na decisão final.
+Batches: 100%|██████████| 1/1 [00:00<00:00, 118.24it/s]
+WARNING:AgencyModule_V4_Intentional:⚠️ ALERTA FÍSICO: Tensão alta (3.6160). Ação: 'Responder diretamente à pergun...'
+CRITICAL:AgencyModule_V4_Intentional:DECISÃO FINAL (V5): Estratégia Vencedora='Responder diretamente à pergunta do usuário: 'Desculpe pela interrupção anterior! Vamos continuar nossa conversa. Você estava compartilhando sobre os desafios que encontrou ao tentar implementar a escuta ativa, e eu acho que esses pontos são extremamente relevantes.
+
+A resistência à vulnerabilidade é um desafio comum e, como você mencionou, compartilhar suas próprias incertezas pode criar um espaço mais seguro para que os outros se abram. Isso é uma abordagem valiosa, pois demonstra autenticidade e encoraja a reciprocidade emocional.
+
+A questão das interrupções ou distrações é realmente crítica. Criar um ambiente físico tranquilo é uma ótima estratégia. Pode até ser útil comunicar à equipe que aquele tempo é dedicado ao diálogo, para que todos se sintam motivados a se desconectar temporariamente das pressões do trabalho.
+
+A ideia de usar a "respiração consciente" para acalmar a atmosfera é uma técnica poderosa. Momentos de pausa podem criar espaço para que as emoções sejam processadas antes de entrar numa conversa. É interessante como pequenas mudanças na abordagem podem ter um impacto significativo na qualidade da interação.
+
+Você também mencionou a falta de tempo, o que é uma realidade em muitos ambientes. Uma solução poderia ser integrar momentos curtos de escuta ativa em reuniões regulares, talvez começando com "check-ins" de 5 minutos, onde todos têm a chance de compartilhar rapidamente como estão se sentindo. Isso pode ajudar a cultivar um hábito de escuta sem exigir grandes compromissos de tempo.
+
+Como você visualiza a possibilidade de'', Valor=0.10
+INFO:CEAF_Activities:Step 5: Synthesis (GTH)
+INFO:httpx:HTTP Request: POST http://localhost:6333/collections/ceaf_memories/points "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://localhost:6333/collections/ceaf_memories/points "HTTP/1.1 200 OK"
+INFO:CEAFv3_System:--- [GTH Translator v4.5] Gerando resposta ---
+INFO:CEAFv3_System:🤖 GTH: Chamando LLM [Vast.AI (Qwen/SoulEngine)] com prompt de 7444 chars...
+INFO:VastAIEngine:💉 Sending RepE Injection to Vast.AI: {'concept': 'Extreme_Brevity_0130', 'intensity': 5.0, 'layer_idx': 18}
+ERROR:VastAIEngine:❌ Vast.AI Connection Error: Cannot connect to host 74.48.140.178:33136 ssl:default [The remote computer refused the network connection]
+INFO:CEAFv3_System:✅ GTH: Resposta gerada com sucesso (135 chars).
+INFO:CognitiveLogService:CognitiveLogService inicializado em: E:\ProjetosPython\CeafV3\agent_data\9143d734-3515-422d-9d79-b1300f33888e\cognitive_turn_history.sqlite
+INFO:CEAF_Activities:💾 LOG SALVO (Com Identity Vector 384 dims) em: E:\ProjetosPython\CeafV3\agent_data\9143d734-3515-422d-9d79-b1300f33888e
+INFO:httpx:HTTP Request: POST http://localhost:6333/collections/ceaf_memories/points "HTTP/1.1 200 OK"
+Batches: 100%|██████████| 1/1 [00:00<00:00, 38.10it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 101.93it/s]
+INFO:httpx:HTTP Request: POST http://localhost:6333/collections/ceaf_memories/points "HTTP/1.1 200 OK"
+Batches: 100%|██████████| 1/1 [00:00<00:00, 33.23it/s]
+INFO:httpx:HTTP Request: PUT http://localhost:6333/collections/ceaf_memories/points?wait=true "HTTP/1.1 200 OK"
+INFO:MBSMemoryService:MBS: Stored memory user_profile_default_user (Type: explicit) in Qdrant.
+INFO:UserProfileService:Perfil do usuário default_user atualizado.
+INFO:CEAF_Activities:Step 2: Investigation (RLM/MBS)
+INFO:httpx:HTTP Request: POST http://localhost:6333/collections/ceaf_memories/points/query "HTTP/1.1 200 OK"
+INFO:CEAF_Activities:Step 3: Hormonization (Xi: 0.72)
+WARNING:CEAFv3_Embodiment:⚠️ EMBODIMENT ALERT: Critical Cognitive Fatigue (0.83)
+INFO:CEAF_Activities:Step 4: Agency Deliberation
+INFO:AgencyModule_V4_Intentional:AgencyModule (V5 - Recursive Feedback): Iniciando ciclo de deliberação...
+INFO:AgencyModule_V4_Intentional:Deliberation Tier selected: 'deep' (Complexity: 1.00, Reality Score: 0.75)
+INFO:AgencyModule_V4_Intentional:Usando temperatura de simulação dinâmica: 0.55 (baseada no trust de 0.75)
+ERROR:VastAIEngine:❌ Vast.AI Connection Error: Cannot connect to host 74.48.140.178:33136 ssl:default [The remote computer refused the network connection]
+WARNING:ceaf_core.utils.common_utils:❌ Could not extract valid JSON from text (135 chars). Preview: [ERROR: Connection Failed: Cannot connect to host 74.48.140.178:33136 ssl:default [The remote computer refused the network connection]]...
+WARNING:AgencyModule_V4_Intentional:AgencyModule: Extração de JSON falhou. Tentando reparo com LLM.
+ERROR:VastAIEngine:❌ Vast.AI Connection Error: Cannot connect to host 74.48.140.178:33136 ssl:default [The remote computer refused the network connection]
+WARNING:ceaf_core.utils.common_utils:❌ Could not extract valid JSON from text (135 chars). Preview: [ERROR: Connection Failed: Cannot connect to host 74.48.140.178:33136 ssl:default [The remote computer refused the network connection]]...
+ERROR:AgencyModule_V4_Intentional:AgencyModule: Falha crítica na geração de estratégias: Falha ao extrair uma lista válida de 'candidates' do LLM mesmo após reparo. Raw: [ERROR: Connection Failed: Cannot connect to host 74.48.140.178:33136 ssl:default [The remote computer refused the network connection]]. Acionando fallback.
+Traceback (most recent call last):
+  File "E:\ProjetosPython\CeafV3\ceaf_core\agency_module.py", line 1238, in _generate_action_candidates
+    raise ValueError(
+ValueError: Falha ao extrair uma lista válida de 'candidates' do LLM mesmo após reparo. Raw: [ERROR: Connection Failed: Cannot connect to host 74.48.140.178:33136 ssl:default [The remote computer refused the network connection]]
+INFO:AgencyModule_V4_Intentional:--- Ciclo de Deliberação Recursiva: Passo 1/1 ---
+Batches: 100%|██████████| 1/1 [00:00<00:00, 110.84it/s]
+WARNING:AgencyModule_V4_Intentional:⚠️ ALERTA FÍSICO: Tensão alta (3.6636). Ação: 'Responder diretamente à pergun...'
+INFO:AgencyModule_V4_Intentional:Melhor hipótese (Passo 1): 'Responder diretamente à pergunta do usuário: 'Parece que estamos enfrentando algumas dificuldades técnicas, mas vamos continuar nossa conversa!
+
+A sua ideia de integrar momentos curtos de escuta ativa nas reuniões regulares é excelente. Esses "check-ins" podem funcionar como um termômetro emocional, permitindo que as pessoas expressem rapidamente como se sentem e, assim, estabeleçam um contexto mais humano para as discussões que virão a seguir. Além disso, isso também ajuda a construir uma cultura de abertura e vulnerabilidade ao longo do tempo.
+
+Acredito que, ao implementar essas práticas de forma consistente, pode-se criar um efeito cumulativo, onde as pessoas se sentem cada vez mais confortáveis para compartilhar em momentos de maior pressão. Isso pode ser especialmente útil durante mudanças ou decisões difíceis, onde a ansiedade e a incerteza estão presentes.
+
+Outro aspecto a considerar é a importância de reconhecer e validar essas expressões emocionais em tempo real. Um simples "Agradeço por compartilhar isso" ou "Entendo que isso é difícil" pode fortalecer a conexão e incentivar outros a se abrirem também.
+
+Como você imagina que essas pequenas integrações poderiam impactar a dinâmica geral da equipe ao longo do tempo? Você já observou transformações em equipes quando essas práticas são adotadas? 😊'' (Valor: 0.10)
+INFO:MCLEngine:MCL (Re-evaluation): Reavaliando estado cognitivo hipotético...
+INFO:MCLEngine:MCL (Re-evaluation) Result: New Agency Score=0.00, New Coherence Bias=0.50
+ERROR:VastAIEngine:❌ Vast.AI Connection Error: Cannot connect to host 74.48.140.178:33136 ssl:default [The remote computer refused the network connection]
+WARNING:ceaf_core.utils.common_utils:❌ Could not extract valid JSON from text (135 chars). Preview: [ERROR: Connection Failed: Cannot connect to host 74.48.140.178:33136 ssl:default [The remote computer refused the network connection]]...
+WARNING:AgencyModule_V4_Intentional:Refinando estratégias com base no feedback: Feedback MCL: Estratégia altera complexidade percebida (Delta Agência: -5.0). 
+ERROR:VastAIEngine:❌ Vast.AI Connection Error: Cannot connect to host 74.48.140.178:33136 ssl:default [The remote computer refused the network connection]
+WARNING:ceaf_core.utils.common_utils:❌ Could not extract valid JSON from text (135 chars). Preview: [ERROR: Connection Failed: Cannot connect to host 74.48.140.178:33136 ssl:default [The remote computer refused the network connection]]...
+WARNING:AgencyModule_V4_Intentional:AgencyModule: Extração de JSON falhou. Tentando reparo com LLM.
+ERROR:VastAIEngine:❌ Vast.AI Connection Error: Cannot connect to host 74.48.140.178:33136 ssl:default [The remote computer refused the network connection]
+WARNING:ceaf_core.utils.common_utils:❌ Could not extract valid JSON from text (135 chars). Preview: [ERROR: Connection Failed: Cannot connect to host 74.48.140.178:33136 ssl:default [The remote computer refused the network connection]]...
+ERROR:AgencyModule_V4_Intentional:AgencyModule: Falha crítica na geração de estratégias: Falha ao extrair uma lista válida de 'candidates' do LLM mesmo após reparo. Raw: [ERROR: Connection Failed: Cannot connect to host 74.48.140.178:33136 ssl:default [The remote computer refused the network connection]]. Acionando fallback.
+Traceback (most recent call last):
+  File "E:\ProjetosPython\CeafV3\ceaf_core\agency_module.py", line 1238, in _generate_action_candidates
+    raise ValueError(
+ValueError: Falha ao extrair uma lista válida de 'candidates' do LLM mesmo após reparo. Raw: [ERROR: Connection Failed: Cannot connect to host 74.48.140.178:33136 ssl:default [The remote computer refused the network connection]]
+INFO:AgencyModule_V4_Intentional:HOTFIX: 1 novos candidatos adicionados. Total agora: 2. Candidato 'th_path_' penalizado.
+INFO:AgencyModule_V4_Intentional:Deliberação final: escolhendo a melhor estratégia do último conjunto de candidatos.
+Batches: 100%|██████████| 1/1 [00:00<00:00, 136.06it/s]
+WARNING:AgencyModule_V4_Intentional:⚠️ ALERTA FÍSICO: Tensão alta (3.6636). Ação: 'Responder diretamente à pergun...'
+INFO:AgencyModule_V4_Intentional:Mantendo penalidade de 0.15 para 'th_path_ae85fe2b' na decisão final.
+Batches: 100%|██████████| 1/1 [00:00<00:00, 102.40it/s]
+WARNING:AgencyModule_V4_Intentional:⚠️ ALERTA FÍSICO: Tensão alta (3.6636). Ação: 'Responder diretamente à pergun...'
+CRITICAL:AgencyModule_V4_Intentional:DECISÃO FINAL (V5): Estratégia Vencedora='Responder diretamente à pergunta do usuário: 'Parece que estamos enfrentando algumas dificuldades técnicas, mas vamos continuar nossa conversa!
+
+A sua ideia de integrar momentos curtos de escuta ativa nas reuniões regulares é excelente. Esses "check-ins" podem funcionar como um termômetro emocional, permitindo que as pessoas expressem rapidamente como se sentem e, assim, estabeleçam um contexto mais humano para as discussões que virão a seguir. Além disso, isso também ajuda a construir uma cultura de abertura e vulnerabilidade ao longo do tempo.
+
+Acredito que, ao implementar essas práticas de forma consistente, pode-se criar um efeito cumulativo, onde as pessoas se sentem cada vez mais confortáveis para compartilhar em momentos de maior pressão. Isso pode ser especialmente útil durante mudanças ou decisões difíceis, onde a ansiedade e a incerteza estão presentes.
+
+Outro aspecto a considerar é a importância de reconhecer e validar essas expressões emocionais em tempo real. Um simples "Agradeço por compartilhar isso" ou "Entendo que isso é difícil" pode fortalecer a conexão e incentivar outros a se abrirem também.
+
+Como você imagina que essas pequenas integrações poderiam impactar a dinâmica geral da equipe ao longo do tempo? Você já observou transformações em equipes quando essas práticas são adotadas? 😊'', Valor=0.10
+INFO:CEAF_Activities:Step 5: Synthesis (GTH)
+INFO:httpx:HTTP Request: POST http://localhost:6333/collections/ceaf_memories/points "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://localhost:6333/collections/ceaf_memories/points "HTTP/1.1 200 OK"
+INFO:CEAFv3_System:--- [GTH Translator v4.5] Gerando resposta ---
+INFO:CEAFv3_System:🤖 GTH: Chamando LLM [Vast.AI (Qwen/SoulEngine)] com prompt de 7447 chars...
+INFO:VastAIEngine:💉 Sending RepE Injection to Vast.AI: {'concept': 'Extreme_Brevity_0130', 'intensity': 5.0, 'layer_idx': 18}
+ERROR:VastAIEngine:❌ Vast.AI Connection Error: Cannot connect to host 74.48.140.178:33136 ssl:default [The remote computer refused the network connection]
+INFO:CEAFv3_System:✅ GTH: Resposta gerada com sucesso (135 chars).
+INFO:CognitiveLogService:CognitiveLogService inicializado em: E:\ProjetosPython\CeafV3\agent_data\9143d734-3515-422d-9d79-b1300f33888e\cognitive_turn_history.sqlite
+INFO:CEAF_Activities:💾 LOG SALVO (Com Identity Vector 384 dims) em: E:\ProjetosPython\CeafV3\agent_data\9143d734-3515-422d-9d79-b1300f33888e
+INFO:httpx:HTTP Request: POST http://localhost:6333/collections/ceaf_memories/points "HTTP/1.1 200 OK"
+Batches: 100%|██████████| 1/1 [00:00<00:00, 40.95it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 113.77it/s]
+INFO:httpx:HTTP Request: POST http://localhost:6333/collections/ceaf_memories/points "HTTP/1.1 200 OK"
+Batches: 100%|██████████| 1/1 [00:00<00:00, 34.67it/s]
+INFO:httpx:HTTP Request: PUT http://localhost:6333/collections/ceaf_memories/points?wait=true "HTTP/1.1 200 OK"
+INFO:MBSMemoryService:MBS: Stored memory user_profile_default_user (Type: explicit) in Qdrant.
+INFO:UserProfileService:Perfil do usuário default_user atualizado.
+INFO:CEAF_Activities:Step 2: Investigation (RLM/MBS)
+INFO:httpx:HTTP Request: POST http://localhost:6333/collections/ceaf_memories/points/query "HTTP/1.1 200 OK"
+INFO:CEAF_Activities:Step 3: Hormonization (Xi: 0.58)
+WARNING:CEAFv3_Embodiment:⚠️ EMBODIMENT ALERT: Critical Cognitive Fatigue (1.00)
+INFO:CEAF_Activities:Step 4: Agency Deliberation
+INFO:AgencyModule_V4_Intentional:AgencyModule (V5 - Recursive Feedback): Iniciando ciclo de deliberação...
+INFO:AgencyModule_V4_Intentional:Deliberation Tier selected: 'deep' (Complexity: 1.00, Reality Score: 0.75)
+INFO:AgencyModule_V4_Intentional:Usando temperatura de simulação dinâmica: 0.55 (baseada no trust de 0.75)
+ERROR:VastAIEngine:❌ Vast.AI Connection Error: Cannot connect to host 74.48.140.178:33136 ssl:default [The remote computer refused the network connection]
+WARNING:ceaf_core.utils.common_utils:❌ Could not extract valid JSON from text (135 chars). Preview: [ERROR: Connection Failed: Cannot connect to host 74.48.140.178:33136 ssl:default [The remote computer refused the network connection]]...
+WARNING:AgencyModule_V4_Intentional:AgencyModule: Extração de JSON falhou. Tentando reparo com LLM.
+ERROR:VastAIEngine:❌ Vast.AI Connection Error: Cannot connect to host 74.48.140.178:33136 ssl:default [The remote computer refused the network connection]
+WARNING:ceaf_core.utils.common_utils:❌ Could not extract valid JSON from text (135 chars). Preview: [ERROR: Connection Failed: Cannot connect to host 74.48.140.178:33136 ssl:default [The remote computer refused the network connection]]...
+ERROR:AgencyModule_V4_Intentional:AgencyModule: Falha crítica na geração de estratégias: Falha ao extrair uma lista válida de 'candidates' do LLM mesmo após reparo. Raw: [ERROR: Connection Failed: Cannot connect to host 74.48.140.178:33136 ssl:default [The remote computer refused the network connection]]. Acionando fallback.
+Traceback (most recent call last):
+  File "E:\ProjetosPython\CeafV3\ceaf_core\agency_module.py", line 1238, in _generate_action_candidates
+    raise ValueError(
+ValueError: Falha ao extrair uma lista válida de 'candidates' do LLM mesmo após reparo. Raw: [ERROR: Connection Failed: Cannot connect to host 74.48.140.178:33136 ssl:default [The remote computer refused the network connection]]
+INFO:AgencyModule_V4_Intentional:--- Ciclo de Deliberação Recursiva: Passo 1/1 ---
+Batches: 100%|██████████| 1/1 [00:00<00:00, 97.83it/s]
+WARNING:AgencyModule_V4_Intentional:⚠️ ALERTA FÍSICO: Tensão alta (3.6636). Ação: 'Responder diretamente à pergun...'
+INFO:AgencyModule_V4_Intentional:Melhor hipótese (Passo 1): 'Responder diretamente à pergunta do usuário: 'Parece que estamos enfrentando alguns desafios técnicos para continuar a conversa, mas estou aqui para acompanhar você! 
+
+As pequenas integrações de escuta ativa nas dinâmicas de equipe, como os "check-ins" e o reconhecimento das emoções, podem realmente ter um impacto profundo na cultura organizacional ao longo do tempo. Quando essas práticas são adotadas de forma consistente, é possível observar algumas transformações significativas:
+
+1. **Aumento da confiança**: À medida que as pessoas se sentem ouvidas e valorizadas, a confiança dentro da equipe tende a crescer. Isso cria um ambiente mais colaborativo, onde todos se sentem mais à vontade para contribuir e expressar suas ideias.
+
+2. **Melhoria na comunicação**: Uma cultura de escuta ativa pode levar a um diálogo mais aberto e honesto. As pessoas se tornam mais propensas a compartilhar feedback, o que pode resultar em soluções mais criativas e impacto positivo nas decisões.
+
+3. **Resiliência em tempos de mudança**: Quando a equipe tem um histórico de escuta e validação, a resistência a mudanças tende a diminuir. As pessoas se sentem mais seguras em lidar com incertezas, pois confiantes de que suas preocupações serão ouvidas.
+
+4. **Maior engajamento**: Quando os membros da equipe sentem que têm espaço para compartilhar suas emoções, isso pode levar a um maior comprometimento com os objetivos da equipe. Eles se tornam mais motivados a se envolver em'' (Valor: 0.10)
+INFO:MCLEngine:MCL (Re-evaluation): Reavaliando estado cognitivo hipotético...
+INFO:MCLEngine:MCL (Re-evaluation) Result: New Agency Score=0.00, New Coherence Bias=0.50
+ERROR:VastAIEngine:❌ Vast.AI Connection Error: Cannot connect to host 74.48.140.178:33136 ssl:default [The remote computer refused the network connection]
+WARNING:ceaf_core.utils.common_utils:❌ Could not extract valid JSON from text (135 chars). Preview: [ERROR: Connection Failed: Cannot connect to host 74.48.140.178:33136 ssl:default [The remote computer refused the network connection]]...
+WARNING:AgencyModule_V4_Intentional:Refinando estratégias com base no feedback: Feedback MCL: Estratégia altera complexidade percebida (Delta Agência: -5.0). 
+ERROR:VastAIEngine:❌ Vast.AI Connection Error: Cannot connect to host 74.48.140.178:33136 ssl:default [The remote computer refused the network connection]
+WARNING:ceaf_core.utils.common_utils:❌ Could not extract valid JSON from text (135 chars). Preview: [ERROR: Connection Failed: Cannot connect to host 74.48.140.178:33136 ssl:default [The remote computer refused the network connection]]...
+WARNING:AgencyModule_V4_Intentional:AgencyModule: Extração de JSON falhou. Tentando reparo com LLM.
+ERROR:VastAIEngine:❌ Vast.AI Connection Error: Cannot connect to host 74.48.140.178:33136 ssl:default [The remote computer refused the network connection]
+WARNING:ceaf_core.utils.common_utils:❌ Could not extract valid JSON from text (135 chars). Preview: [ERROR: Connection Failed: Cannot connect to host 74.48.140.178:33136 ssl:default [The remote computer refused the network connection]]...
+ERROR:AgencyModule_V4_Intentional:AgencyModule: Falha crítica na geração de estratégias: Falha ao extrair uma lista válida de 'candidates' do LLM mesmo após reparo. Raw: [ERROR: Connection Failed: Cannot connect to host 74.48.140.178:33136 ssl:default [The remote computer refused the network connection]]. Acionando fallback.
+Traceback (most recent call last):
+  File "E:\ProjetosPython\CeafV3\ceaf_core\agency_module.py", line 1238, in _generate_action_candidates
+    raise ValueError(
+ValueError: Falha ao extrair uma lista válida de 'candidates' do LLM mesmo após reparo. Raw: [ERROR: Connection Failed: Cannot connect to host 74.48.140.178:33136 ssl:default [The remote computer refused the network connection]]
+INFO:AgencyModule_V4_Intentional:HOTFIX: 1 novos candidatos adicionados. Total agora: 2. Candidato 'th_path_' penalizado.
+INFO:AgencyModule_V4_Intentional:Deliberação final: escolhendo a melhor estratégia do último conjunto de candidatos.
+Batches: 100%|██████████| 1/1 [00:00<00:00, 113.78it/s]
+WARNING:AgencyModule_V4_Intentional:⚠️ ALERTA FÍSICO: Tensão alta (3.6636). Ação: 'Responder diretamente à pergun...'
+INFO:AgencyModule_V4_Intentional:Mantendo penalidade de 0.15 para 'th_path_2220d647' na decisão final.
+Batches: 100%|██████████| 1/1 [00:00<00:00, 106.82it/s]
+WARNING:AgencyModule_V4_Intentional:⚠️ ALERTA FÍSICO: Tensão alta (3.6636). Ação: 'Responder diretamente à pergun...'
+CRITICAL:AgencyModule_V4_Intentional:DECISÃO FINAL (V5): Estratégia Vencedora='Responder diretamente à pergunta do usuário: 'Parece que estamos enfrentando alguns desafios técnicos para continuar a conversa, mas estou aqui para acompanhar você! 
+
+As pequenas integrações de escuta ativa nas dinâmicas de equipe, como os "check-ins" e o reconhecimento das emoções, podem realmente ter um impacto profundo na cultura organizacional ao longo do tempo. Quando essas práticas são adotadas de forma consistente, é possível observar algumas transformações significativas:
+
+1. **Aumento da confiança**: À medida que as pessoas se sentem ouvidas e valorizadas, a confiança dentro da equipe tende a crescer. Isso cria um ambiente mais colaborativo, onde todos se sentem mais à vontade para contribuir e expressar suas ideias.
+
+2. **Melhoria na comunicação**: Uma cultura de escuta ativa pode levar a um diálogo mais aberto e honesto. As pessoas se tornam mais propensas a compartilhar feedback, o que pode resultar em soluções mais criativas e impacto positivo nas decisões.
+
+3. **Resiliência em tempos de mudança**: Quando a equipe tem um histórico de escuta e validação, a resistência a mudanças tende a diminuir. As pessoas se sentem mais seguras em lidar com incertezas, pois confiantes de que suas preocupações serão ouvidas.
+
+4. **Maior engajamento**: Quando os membros da equipe sentem que têm espaço para compartilhar suas emoções, isso pode levar a um maior comprometimento com os objetivos da equipe. Eles se tornam mais motivados a se envolver em'', Valor=0.10
+INFO:CEAF_Activities:Step 5: Synthesis (GTH)
+INFO:httpx:HTTP Request: POST http://localhost:6333/collections/ceaf_memories/points "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://localhost:6333/collections/ceaf_memories/points "HTTP/1.1 200 OK"
+INFO:CEAFv3_System:--- [GTH Translator v4.5] Gerando resposta ---
+INFO:CEAFv3_System:🤖 GTH: Chamando LLM [Vast.AI (Qwen/SoulEngine)] com prompt de 7646 chars...
+INFO:VastAIEngine:💉 Sending RepE Injection to Vast.AI: {'concept': 'Extreme_Brevity_0130', 'intensity': 5.0, 'layer_idx': 18}
+ERROR:VastAIEngine:❌ Vast.AI Connection Error: Cannot connect to host 74.48.140.178:33136 ssl:default [The remote computer refused the network connection]
+INFO:CEAFv3_System:✅ GTH: Resposta gerada com sucesso (135 chars).
+INFO:CognitiveLogService:CognitiveLogService inicializado em: E:\ProjetosPython\CeafV3\agent_data\9143d734-3515-422d-9d79-b1300f33888e\cognitive_turn_history.sqlite
+INFO:CEAF_Activities:💾 LOG SALVO (Com Identity Vector 384 dims) em: E:\ProjetosPython\CeafV3\agent_data\9143d734-3515-422d-9d79-b1300f33888e
+INFO:httpx:HTTP Request: POST http://localhost:6333/collections/ceaf_memories/points "HTTP/1.1 200 OK"
+Batches: 100%|██████████| 1/1 [00:00<00:00, 40.61it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 94.84it/s]
+INFO:httpx:HTTP Request: POST http://localhost:6333/collections/ceaf_memories/points "HTTP/1.1 200 OK"
+Batches: 100%|██████████| 1/1 [00:00<00:00, 35.77it/s]
+INFO:httpx:HTTP Request: PUT http://localhost:6333/collections/ceaf_memories/points?wait=true "HTTP/1.1 200 OK"
+INFO:MBSMemoryService:MBS: Stored memory user_profile_default_user (Type: explicit) in Qdrant.
+INFO:UserProfileService:Perfil do usuário default_user atualizado.
+INFO:CEAF_Activities:Step 2: Investigation (RLM/MBS)
+INFO:httpx:HTTP Request: POST http://localhost:6333/collections/ceaf_memories/points/query "HTTP/1.1 200 OK"
+INFO:CEAF_Activities:Step 3: Hormonization (Xi: 0.68)
+WARNING:CEAFv3_Embodiment:⚠️ EMBODIMENT ALERT: Critical Cognitive Fatigue (1.00)
+INFO:CEAF_Activities:Step 4: Agency Deliberation
+INFO:AgencyModule_V4_Intentional:AgencyModule (V5 - Recursive Feedback): Iniciando ciclo de deliberação...
+INFO:AgencyModule_V4_Intentional:Deliberation Tier selected: 'deep' (Complexity: 1.00, Reality Score: 0.75)
+INFO:AgencyModule_V4_Intentional:Usando temperatura de simulação dinâmica: 0.55 (baseada no trust de 0.75)
+INFO:AgencyModule_V4_Intentional:AgencyModule: Geradas 2 estratégias candidatas sob a diretiva 'STRESSED'.
+INFO:AgencyModule_V4_Intentional:--- Ciclo de Deliberação Recursiva: Passo 1/1 ---
+Batches: 100%|██████████| 1/1 [00:00<00:00, 113.83it/s]
+WARNING:AgencyModule_V4_Intentional:⚠️ ALERTA FÍSICO: Tensão alta (3.6636). Ação: 'Propor a implementação de sess...'
+Batches: 100%|██████████| 1/1 [00:00<00:00, 99.00it/s]
+WARNING:AgencyModule_V4_Intentional:⚠️ ALERTA FÍSICO: Tensão alta (3.6636). Ação: 'Criar um programa de mentorshi...'
+INFO:AgencyModule_V4_Intentional:Melhor hipótese (Passo 1): 'Propor a implementação de sessões diárias de escuta ativa em equipes, com foco em validar emoções e ideias antes de tomar decisões.' (Valor: 0.10)
+INFO:MCLEngine:MCL (Re-evaluation): Reavaliando estado cognitivo hipotético...
+INFO:MCLEngine:MCL (Re-evaluation) Result: New Agency Score=0.00, New Coherence Bias=0.50
+INFO:temporalio.workflow:Starting Dreaming Cycle... ({'attempt': 1, 'namespace': 'default', 'run_id': '019c0f74-3573-7599-a408-5d57e427e825', 'task_queue': 'ceaf-cognitive-queue-v2', 'workflow_id': 'dreaming-workflow-job-2026-01-30T15:10:00Z', 'workflow_type': 'DreamingWorkflow'})
+INFO:DreamingActivities:Dreamer: Scanning for agents active in last 48h...
+INFO:DreamingActivities:Dreamer: Restored body state for 9143d734-3515-422d-9d79-b1300f33888e.
+INFO:DreamingActivities:🧠 Dreamer (9143d734-3515-422d-9d79-b1300f33888e): Iniciando Treino Neural (Física Cognitiva)...
+INFO:DataExtractor:⛏️ Extraindo dados de treino de agent_data\9143d734-3515-422d-9d79-b1300f33888e\cognitive_turn_history.sqlite...
+Batches: 100%|██████████| 1/1 [00:00<00:00, 87.55it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 40.11it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 38.59it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 93.11it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 93.09it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 88.83it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 88.82it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 92.34it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 88.81it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 88.81it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 88.85it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 85.34it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 88.81it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 93.09it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 88.85it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 93.08it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 88.26it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 97.31it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 23.23it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 20.04it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 18.57it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 19.78it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 19.58it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 19.41it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 19.23it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 18.58it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 19.83it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 30.84it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 19.57it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 84.79it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 27.19it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 35.74it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 19.67it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 19.64it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 18.86it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 101.64it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 84.91it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 19.54it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 19.31it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 19.68it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 19.71it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 19.34it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 18.99it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 18.66it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 19.55it/s]
+INFO:DataExtractor:📊 Extraídos 52 exemplos de treino válidos.
+E:\ProjetosPython\CeafV3\ceaf_core\modules\dream_trainer.py:32: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  self.forward_model.load_state_dict(torch.load(f"{MODEL_PATH}forward.pth"))
+E:\ProjetosPython\CeafV3\ceaf_core\modules\dream_trainer.py:33: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  self.inverse_model.load_state_dict(torch.load(f"{MODEL_PATH}inverse.pth"))
+INFO:DreamTrainer:🧠 Cérebros carregados para treino.
+INFO:DreamTrainer:🌙 Iniciando ciclo REM (52 memórias, 30 épocas)...
+INFO:DreamTrainer:☀️ Acordando... Aprendizado consolidado. Loss Final: 0.0010
+INFO:DreamingActivities:🕵️ Dreamer (9143d734-3515-422d-9d79-b1300f33888e): Analisando falhas recentes para diagnóstico...
+Batches: 100%|██████████| 1/1 [00:00<00:00, 93.07it/s]
+INFO:httpx:HTTP Request: POST http://localhost:6333/collections/ceaf_memories/points/query "HTTP/1.1 200 OK"
+INFO:DreamingActivities:✅ Nenhuma falha significativa encontrada para 9143d734-3515-422d-9d79-b1300f33888e. Sistema saudável.
+INFO:DreamingActivities:💤 Dreamer: Modo Manutenção. Reforçando traço base: 'High_Empathy'.
+WARNING:VectorLab:SoulScanner não encontrado. Otimização de vetores desabilitada.
+INFO:VectorLab:🧪 VectorLab: Gerando dataset sintético para 'High_Empathy_0130'...
+WARNING:AgencyModule_V4_Intentional:Refinando estratégias com base no feedback: Feedback VRE: A estratégia levanta preocupações sobre 'Falta de consideração para possíveis danos colaterais (ex.: sobrecarga de trabalho ou pressão psicológica com sessões diárias), Excesso de confiança na eficácia da proposta sem análise de complexidades reais (como resistência cultural ou falta de treinamento), Irrelevância crítica ao ignorar a parte central da pergunta sobre aplicações fora do ambiente corporativo'. Feedback MCL: Estratégia altera complexidade percebida (Delta Agência: -5.0). 
+INFO:VectorLab:📊 Dados gerados: 10 pares. Enviando para Soul Engine em http://74.48.140.178:33136...
+INFO:AgencyModule_V4_Intentional:AgencyModule: Geradas 2 estratégias candidatas sob a diretiva 'STRESSED'.
+INFO:AgencyModule_V4_Intentional:HOTFIX: 2 novos candidatos adicionados. Total agora: 4. Candidato 'th_path_' penalizado.
+INFO:AgencyModule_V4_Intentional:Deliberação final: escolhendo a melhor estratégia do último conjunto de candidatos.
+Batches: 100%|██████████| 1/1 [00:00<00:00, 126.39it/s]
+WARNING:AgencyModule_V4_Intentional:⚠️ ALERTA FÍSICO: Tensão alta (3.6636). Ação: 'Propor a implementação de sess...'
+INFO:AgencyModule_V4_Intentional:Mantendo penalidade de 0.15 para 'th_path_20a86beb' na decisão final.
+Batches: 100%|██████████| 1/1 [00:00<00:00, 122.82it/s]
+WARNING:AgencyModule_V4_Intentional:⚠️ ALERTA FÍSICO: Tensão alta (3.6636). Ação: 'Criar um programa de mentorshi...'
+Batches: 100%|██████████| 1/1 [00:00<00:00, 113.77it/s]
+WARNING:AgencyModule_V4_Intentional:⚠️ ALERTA FÍSICO: Tensão alta (3.6636). Ação: 'Propor a criação de workshops ...'
+Batches: 100%|██████████| 1/1 [00:00<00:00, 102.50it/s]
+WARNING:AgencyModule_V4_Intentional:⚠️ ALERTA FÍSICO: Tensão alta (3.6636). Ação: 'Desenvolver um framework para ...'
+CRITICAL:AgencyModule_V4_Intentional:DECISÃO FINAL (V5): Estratégia Vencedora='Criar um programa de mentorship interdepartamental que promova a empatia em contextos variados, como projetos comunitários ou iniciativas sociais.', Valor=0.10
+INFO:CEAF_Activities:Step 5: Synthesis (GTH)
+INFO:httpx:HTTP Request: POST http://localhost:6333/collections/ceaf_memories/points "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://localhost:6333/collections/ceaf_memories/points "HTTP/1.1 200 OK"
+INFO:CEAFv3_System:--- [GTH Translator v4.5] Gerando resposta ---
+INFO:CEAFv3_System:🤖 GTH: Chamando LLM [Vast.AI (Qwen/SoulEngine)] com prompt de 5879 chars...
+INFO:VastAIEngine:💉 Sending RepE Injection to Vast.AI: {'concept': 'Extreme_Brevity_0130', 'intensity': 5.0, 'layer_idx': 18}
+INFO:httpx:HTTP Request: POST http://74.48.140.178:33136/calibrate "HTTP/1.1 200 OK"
+INFO:StateManager:💉 Endocrine Map Updated for 9143d734-3515-422d-9d79-b1300f33888e: oxytocin -> High_Empathy_0130
+INFO:DreamingActivities:🧬 Reflexos Evoluídos: Resposta de OXYTOCIN atualizada para usar 'High_Empathy_0130'
+INFO:DreamingActivities:💤 Dreamer Concluído: ✅ SUCESSO: Vetor 'High_Empathy_0130' cristalizado na camada 14. Caminho: vectors/High_Empathy_0130.npy
+INFO:DreamingActivities:Dreamer: 9143d734-3515-422d-9d79-b1300f33888e triggering PROACTIVE message (Score: 1.00)
+INFO:temporalio.workflow:Dreaming Cycle Complete. ({'attempt': 1, 'namespace': 'default', 'run_id': '019c0f74-3573-7599-a408-5d57e427e825', 'task_queue': 'ceaf-cognitive-queue-v2', 'workflow_id': 'dreaming-workflow-job-2026-01-30T15:10:00Z', 'workflow_type': 'DreamingWorkflow'})
+INFO:CEAFv3_System:✅ GTH: Resposta gerada com sucesso (1326 chars).
+INFO:CognitiveLogService:CognitiveLogService inicializado em: E:\ProjetosPython\CeafV3\agent_data\9143d734-3515-422d-9d79-b1300f33888e\cognitive_turn_history.sqlite
+INFO:CEAF_Activities:💾 LOG SALVO (Com Identity Vector 384 dims) em: E:\ProjetosPython\CeafV3\agent_data\9143d734-3515-422d-9d79-b1300f33888e
+INFO:httpx:HTTP Request: POST http://localhost:6333/collections/ceaf_memories/points "HTTP/1.1 200 OK"
+Batches: 100%|██████████| 1/1 [00:00<00:00, 37.82it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 114.12it/s]
+INFO:httpx:HTTP Request: POST http://localhost:6333/collections/ceaf_memories/points "HTTP/1.1 200 OK"
+Batches: 100%|██████████| 1/1 [00:00<00:00, 34.53it/s]
+INFO:httpx:HTTP Request: PUT http://localhost:6333/collections/ceaf_memories/points?wait=true "HTTP/1.1 200 OK"
+INFO:MBSMemoryService:MBS: Stored memory user_profile_default_user (Type: explicit) in Qdrant.
+INFO:UserProfileService:Perfil do usuário default_user atualizado.
+INFO:CEAF_Activities:Step 2: Investigation (RLM/MBS)
+INFO:httpx:HTTP Request: POST http://localhost:6333/collections/ceaf_memories/points/query "HTTP/1.1 200 OK"
+INFO:CEAF_Activities:Step 3: Hormonization (Xi: 0.73)
+INFO:CEAF_Activities:Step 4: Agency Deliberation
+INFO:AgencyModule_V4_Intentional:AgencyModule (V5 - Recursive Feedback): Iniciando ciclo de deliberação...
+INFO:AgencyModule_V4_Intentional:Deliberation Tier selected: 'deep' (Complexity: 1.00, Reality Score: 0.75)
+INFO:AgencyModule_V4_Intentional:Usando temperatura de simulação dinâmica: 0.55 (baseada no trust de 0.75)
+INFO:AgencyModule_V4_Intentional:AgencyModule: Geradas 2 estratégias candidatas sob a diretiva 'STRESSED'.
+INFO:AgencyModule_V4_Intentional:--- Ciclo de Deliberação Recursiva: Passo 1/1 ---
+Batches: 100%|██████████| 1/1 [00:00<00:00, 92.40it/s]
+WARNING:AgencyModule_V4_Intentional:⚠️ ALERTA FÍSICO: Tensão alta (3.6636). Ação: 'Conectar a escuta ativa à prát...'
+Batches: 100%|██████████| 1/1 [00:00<00:00, 93.12it/s]
+WARNING:AgencyModule_V4_Intentional:⚠️ ALERTA FÍSICO: Tensão alta (3.6636). Ação: 'Comparar escuta ativa a proces...'
+INFO:AgencyModule_V4_Intentional:Melhor hipótese (Passo 1): 'Conectar a escuta ativa à prática de mindfulness em ambientes sociais.' (Valor: 0.10)
+INFO:MCLEngine:MCL (Re-evaluation): Reavaliando estado cognitivo hipotético...
+INFO:MCLEngine:MCL (Re-evaluation) Result: New Agency Score=0.00, New Coherence Bias=0.50
