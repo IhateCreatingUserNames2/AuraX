@@ -1,4 +1,9 @@
 # AuraX
+
+# New Update https://github.com/IhateCreatingUserNames2/AuraV5 
+
+
+
 <img width="436" height="442" alt="image" src="https://github.com/user-attachments/assets/8a84e638-f787-4692-b3e7-2ca75bac0495" />
 
 ### This version is deprecated T_T 
