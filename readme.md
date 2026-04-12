@@ -8,6 +8,12 @@
 
 ### This version is deprecated T_T 
 
+### NEW VERSION IS STABLE!!! not released yet! 
+### But finally, after years, I have reached Stability, 
+### Aura can be itself no matter what, no Sycophancy, no amnesia in long texts. 
+
+<img width="663" height="654" alt="image" src="https://github.com/user-attachments/assets/ea957c11-b92d-4e27-9472-5ecf71c0b565" />
+
 
 AuraX is a neuro-symbolic architecture for AI agents that addresses limitations in theory of mind and temporal reasoning found in standard language models. The system implements geometric state representation and persistent memory through vector databases, enabling coherent perspective-taking and continuous temporal dynamics.
 
